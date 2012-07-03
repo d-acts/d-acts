@@ -4,23 +4,37 @@
 <!DOCTYPE rdf:RDF [
     <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
     <!ENTITY obo "http://purl.obolibrary.org/obo/" >
+    <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
     <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY snap "http://www.ifomis.org/bfo/1.1/snap#" >
+    <!ENTITY span "http://www.ifomis.org/bfo/1.1/span#" >
+    <!ENTITY ro "http://www.obofoundry.org/ro/ro.owl#" >
     <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY iao "http://purl.obolibrary.org/obo/iao.owl/" >
     <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
 ]>
 
 
-<rdf:RDF xmlns="http://www.semanticweb.org/ontologies/2012/0/Ontology1327600704187.owl#"
-     xml:base="http://www.semanticweb.org/ontologies/2012/0/Ontology1327600704187.owl"
+<rdf:RDF xmlns="http://purl.obofoundry.org/obo/iao/d-acts.owl#"
+     xml:base="http://purl.obofoundry.org/obo/iao/d-acts.owl"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:ro="http://www.obofoundry.org/ro/ro.owl#"
+     xmlns:iao="&obo;iao.owl/"
+     xmlns:snap="http://www.ifomis.org/bfo/1.1/snap#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-    <owl:Ontology rdf:about="http://d-acts.googlecode.com/files/d-acts_v0.2.owl">
-        <owl:imports rdf:resource="http://d-acts.googlecode.com/svn/mkavh568OBI_import.owl"/>
-        <owl:imports rdf:resource="http://d-acts.googlecode.com/svn/pf8fe9jyIAOimport.owl"/>
-        <owl:imports rdf:resource="&obo;bfo.owl"/>
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:span="http://www.ifomis.org/bfo/1.1/span#">
+    <owl:Ontology rdf:about="http://purl.obofoundry.org/obo/iao/d-acts.owl">
+        <dc:creator>Mathias Brochhausen</dc:creator>
+        <dc:creator>Mauricio B. Almeida</dc:creator>
+        <dc:creator>Laura Slaughter</dc:creator>
+        <owl:versionInfo>2012-07-03</owl:versionInfo>
+        <dc:title xml:lang="en">document act ontology</dc:title>
+        <owl:versionInfo xml:lang="en">initial relealse version</owl:versionInfo>
+        <owl:imports rdf:resource="&obo;iao/dev/iao.owl"/>
     </owl:Ontology>
     
 
@@ -58,47 +72,27 @@
     
 
 
-    <!-- http://www.semanticweb.org/ontologies/2012/0/Ontology1327600704187.owl#&#39;is_occupied_by&#39; -->
+    <!-- http://purl.obolibrary.org/obo/IAO_0021011 -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1327600704187.owl#&#39;is_occupied_by&#39;">
-        <obo:IAO_0000115 xml:lang="en">The relation between a temporal or spatiotemporal region and an occurrent which is exactly occupied by the latter.</obo:IAO_0000115>
-        <rdfs:range rdf:resource="&obo;BFO_0000003"/>
-        <rdfs:domain rdf:resource="&obo;BFO_0000008"/>
-        <owl:inverseOf rdf:resource="http://www.semanticweb.org/ontologies/2012/0/Ontology1327600704187.owl#occupies"/>
+    <owl:ObjectProperty rdf:about="&obo;IAO_0021011">
+        <rdfs:label xml:lang="en">socio-legally revokes</rdfs:label>
+        <obo:IAO_0000117>Mathias Brochhausen</obo:IAO_0000117>
+        <obo:IAO_0000115 xml:lang="en">d socio-legally revokes s if s participates in d and at the end of d s no longer exists.
+It is important to note that this going out of existence of is complete and unlike the going out of existence for material entities which basically always are transformed into something else. After the declaration nothing is left of the socio-legal generically dependent continuant in question.</obo:IAO_0000115>
+        <rdfs:range rdf:resource="&obo;IAO_0021004"/>
+        <rdfs:domain rdf:resource="&obo;IAO_0021005"/>
+        <rdfs:subPropertyOf rdf:resource="&ro;has_participant"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/ontologies/2012/0/Ontology1327600704187.owl#is_addressee_of -->
+    <!-- http://purl.obolibrary.org/obo/IAO_0021012 -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1327600704187.owl#is_addressee_of">
-        <rdf:type rdf:resource="&owl;AsymmetricProperty"/>
-        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
-        <obo:IAO_0000115 xml:lang="en">The relation between a document and its intended recipient. </obo:IAO_0000115>
-        <rdfs:range rdf:resource="&obo;BFO_0000004"/>
-        <rdfs:domain rdf:resource="&obo;IAO_0000310"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.semanticweb.org/ontologies/2012/0/Ontology1327600704187.owl#issues -->
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1327600704187.owl#issues">
-        <rdf:type rdf:resource="&owl;AsymmetricProperty"/>
-        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
-        <obo:IAO_0000115 xml:lang="en">The relation between a material document bearer and an independent continuant (human being, automaton, organization) that validates and publishes the material document bearer to elicit specific document acts by its authority. </obo:IAO_0000115>
-        <rdfs:range rdf:resource="&obo;BFO_0000004"/>
-        <rdfs:subPropertyOf rdf:resource="&obo;BFO_0000056"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2012/0/Ontology1327600704187.owl#&#39;material_document_bearer&#39;"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.semanticweb.org/ontologies/2012/0/Ontology1327600704187.owl#occupies -->
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1327600704187.owl#occupies">
-        <rdfs:domain rdf:resource="&obo;BFO_0000003"/>
-        <rdfs:range rdf:resource="&obo;BFO_0000008"/>
+    <owl:ObjectProperty rdf:about="&obo;IAO_0021012">
+        <rdfs:label xml:lang="en">socio-legally transfer</rdfs:label>
+        <obo:IAO_0000117>Mathias Brochhausen</obo:IAO_0000117>
+        <obo:IAO_0000115 xml:lang="en">d socio-legally transfers s if s participates in d and d has specified input  (concretization of s)1 and specified output  (concretization of s )2, where (conretization of s)1 and (conretization of s)2 are not identical.</obo:IAO_0000115>
+        <rdfs:subPropertyOf rdf:resource="&ro;has_participant"/>
     </owl:ObjectProperty>
     
 
@@ -114,261 +108,159 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/BFO_0000020 -->
+    <!-- http://purl.obolibrary.org/obo/IAO_0021000 -->
 
-    <rdf:Description rdf:about="&obo;BFO_0000020">
-        <rdfs:subClassOf rdf:resource="&obo;BFO_0000005"/>
-    </rdf:Description>
+    <owl:Class rdf:about="&obo;IAO_0021000">
+        <rdfs:label xml:lang="en">claim</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0021004"/>
+    </owl:Class>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/IAO_0000030 -->
+    <!-- http://purl.obolibrary.org/obo/IAO_0021001 -->
 
-    <rdf:Description rdf:about="&obo;IAO_0000030">
-        <rdfs:subClassOf rdf:resource="&obo;BFO_0000031"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="&obo;BFO_0000001"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-    </rdf:Description>
+    <owl:Class rdf:about="&obo;IAO_0021001">
+        <rdfs:label xml:lang="en">obligation</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0021004"/>
+    </owl:Class>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/IAO_0000178 -->
+    <!-- http://purl.obolibrary.org/obo/IAO_0021002 -->
 
-    <rdf:Description rdf:about="&obo;IAO_0000178">
+    <owl:Class rdf:about="&obo;IAO_0021002">
+        <rdfs:label xml:lang="en">document act</rdfs:label>
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="&obo;BFO_0000040"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="&obo;BFO_0000053"/>
-                        <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
                             <owl:Restriction>
-                                <owl:onProperty rdf:resource="&obo;BFO_0000058"/>
-                                <owl:someValuesFrom rdf:resource="&obo;IAO_0000030"/>
+                                <owl:onProperty rdf:resource="&obo;IAO_0021011"/>
+                                <owl:someValuesFrom rdf:resource="&obo;IAO_0021004"/>
                             </owl:Restriction>
-                        </owl:someValuesFrom>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="&obo;IAO_0021012"/>
+                                <owl:someValuesFrom rdf:resource="&obo;IAO_0021004"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="&obo;OBI_0000299"/>
+                                <owl:someValuesFrom rdf:resource="&obo;IAO_0021004"/>
+                            </owl:Restriction>
+                        </owl:unionOf>
+                    </owl:Class>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
+                        <owl:someValuesFrom rdf:resource="&obo;IAO_0000310"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;OBI_0000299"/>
+                        <owl:someValuesFrom rdf:resource="&obo;IAO_0000310"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="&obo;BFO_0000040"/>
-    </rdf:Description>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/IAO_0000310 -->
-
-    <rdf:Description rdf:about="&obo;IAO_0000310">
-        <rdfs:subClassOf rdf:resource="&obo;IAO_0000030"/>
-    </rdf:Description>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OBI_0000260 -->
-
-    <rdf:Description rdf:about="&obo;OBI_0000260">
-        <rdfs:subClassOf rdf:resource="&obo;BFO_0000017"/>
-    </rdf:Description>
-    
-
-
-    <!-- http://www.semanticweb.org/ontologies/2012/0/Ontology1327600704187.owl#&#39;document_act&#39; -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1327600704187.owl#&#39;document_act&#39;">
-        <rdfs:subClassOf rdf:resource="&obo;BFO_0000007"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000057"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2012/0/Ontology1327600704187.owl#&#39;material_document_bearer&#39;"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0021005"/>
         <obo:IAO_0000115 xml:lang="en">A document act is a planned process with a document as a participant realizing the document&#39;s intended use. </obo:IAO_0000115>
+        <obo:IAO_0000117>Mathias Brochhausen</obo:IAO_0000117>
         <obo:IAO_0000112 xml:lang="en">me filling in an immigration form, a judge signing and stamping a court order, a nurse carrying out procedures following a clinical guideline</obo:IAO_0000112>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/ontologies/2012/0/Ontology1327600704187.owl#&#39;document_act_duration&#39; -->
+    <!-- http://purl.obolibrary.org/obo/IAO_0021004 -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1327600704187.owl#&#39;document_act_duration&#39;">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="&obo;BFO_0000008"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2012/0/Ontology1327600704187.owl#&#39;is_occupied_by&#39;"/>
-                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2012/0/Ontology1327600704187.owl#&#39;document_act&#39;"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="&obo;BFO_0000008"/>
-        <obo:IAO_0000115 xml:lang="en">The time span in which a document act unfolds.</obo:IAO_0000115>
-        <obo:IAO_0000112 xml:lang="en">the time it takes to fill in a form and submit it, the time it takes a nurse to carry out a procedure based on a guideline</obo:IAO_0000112>
+    <owl:Class rdf:about="&obo;IAO_0021004">
+        <rdfs:label xml:lang="en">socio-legal generically dependent continuant</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&snap;GenericallyDependentContinuant"/>
+        <obo:IAO_0000115>Socio-legal generically dependent continuants are generically dependent continuants that come into existence through social acts and are concretized as roles. The differ from information content entity in so much that they are not about something, but exist as quasi-abstract entities. In addition their concretizations are not qualites inhering in independent contiunants, but roles borne by an organism or an aggegate of organisms.</obo:IAO_0000115>
+        <obo:IAO_0000117>Mathias Brochhausen</obo:IAO_0000117>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/ontologies/2012/0/Ontology1327600704187.owl#&#39;document_act_location&#39; -->
+    <!-- http://purl.obolibrary.org/obo/IAO_0021005 -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1327600704187.owl#&#39;document_act_location&#39;">
+    <owl:Class rdf:about="&obo;IAO_0021005">
+        <rdfs:label xml:lang="de">Bestimmungsakt</rdfs:label>
+        <rdfs:label xml:lang="en">declaration</rdfs:label>
         <owl:equivalentClass>
             <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="&obo;BFO_0000029"/>
+                <owl:unionOf rdf:parseType="Collection">
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="&obo;BFO_0000067"/>
-                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2012/0/Ontology1327600704187.owl#&#39;document_act&#39;"/>
+                        <owl:onProperty rdf:resource="&obo;IAO_0021011"/>
+                        <owl:someValuesFrom rdf:resource="&obo;IAO_0021004"/>
                     </owl:Restriction>
-                </owl:intersectionOf>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;IAO_0021012"/>
+                        <owl:someValuesFrom rdf:resource="&obo;IAO_0021004"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;OBI_0000299"/>
+                        <owl:someValuesFrom rdf:resource="&obo;IAO_0021004"/>
+                    </owl:Restriction>
+                </owl:unionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="&obo;BFO_0000029"/>
-        <obo:IAO_0000115 xml:lang="en">The site in which a document act takes place. </obo:IAO_0000115>
-        <obo:IAO_0000112 xml:lang="en">a patient&#39;s room in which a nurse carries out a procedure according to a clinical guideline</obo:IAO_0000112>
+        <rdfs:subClassOf rdf:resource="&obo;OBI_0000011"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/ontologies/2012/0/Ontology1327600704187.owl#&#39;document_act_precedent&#39; -->
+    <!-- http://purl.obolibrary.org/obo/IAO_0021014 -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1327600704187.owl#&#39;document_act_precedent&#39;">
-        <rdfs:subClassOf rdf:resource="&obo;BFO_0000007"/>
-        <rdfs:subClassOf>
+    <owl:Class rdf:about="&obo;IAO_0021014">
+        <rdfs:label xml:lang="en">document act executive role</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&snap;Role"/>
+        <obo:IAO_0000117>Mathias Brochhausen</obo:IAO_0000117>
+        <obo:IAO_0000115 xml:lang="en">The role borne by the human being or the aggregate of human beings that is the active participant in a document act.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0021015 -->
+
+    <owl:Class rdf:about="&obo;IAO_0021015">
+        <rdfs:label xml:lang="en">document template creator role</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&snap;Role"/>
+        <obo:IAO_0000117 xml:lang="en">Mathias Brochhausen</obo:IAO_0000117>
+        <obo:IAO_0000115 xml:lang="en">The role of a human being or an aggregate of human beings preparing the initial document to undergo a document act, thus creating a socio-legal generically dependent continuant.</obo:IAO_0000115>
+        <rdfs:comment xml:lang="en">not that the &quot;template&quot; does not need to be a template at all. It can be a document that is getting stamped and signed and by these acts creating some socio-legal generically dependent continuants.</rdfs:comment>
+        <obo:IAO_0000112 xml:lang="en">the role borne by the US Citizen and Immigration Service realized by providing the template form for entering the US as a non-resident alien, the role of a guideline committee in putting together a clinical guideline</obo:IAO_0000112>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0021017 -->
+
+    <owl:Class rdf:about="&obo;IAO_0021017">
+        <rdfs:label xml:lang="en">claimant role</rdfs:label>
+        <owl:equivalentClass>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000063"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2012/0/Ontology1327600704187.owl#&#39;document_act&#39;"/>
+                <owl:onProperty rdf:resource="&obo;OBI_0000294"/>
+                <owl:allValuesFrom rdf:resource="&obo;IAO_0021000"/>
             </owl:Restriction>
-        </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">A process that is a necessary precedent for a document act. </obo:IAO_0000115>
-        <obo:IAO_0000112 xml:lang="en">The consent process of a patient or a patient representative before a procedure (e.g. a surgical procedure) is carried out by a medical professional (for instance, a surgeon) according to a guideline. </obo:IAO_0000112>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/ontologies/2012/0/Ontology1327600704187.owl#&#39;document_addressee&#39; -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1327600704187.owl#&#39;document_addressee&#39;">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="&obo;BFO_0000004"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2012/0/Ontology1327600704187.owl#is_addressee_of"/>
-                        <owl:someValuesFrom rdf:resource="&obo;IAO_0000310"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="&obo;BFO_0000004"/>
-        <obo:IAO_0000115 xml:lang="en">An independent continuant (human being, automaton, organization) that is the intended recipient of a document.</obo:IAO_0000115>
-        <obo:IAO_0000112 xml:lang="en">non-US citizens on a plan entering the USA, all Catholics</obo:IAO_0000112>
+        <rdfs:subClassOf rdf:resource="&snap;Role"/>
+        <obo:IAO_0000117>Mathias Brochhausen</obo:IAO_0000117>
+        <obo:IAO_0000115 xml:lang="en">The role of a human being or an aggregate of human beings concretizing a claim.</obo:IAO_0000115>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/ontologies/2012/0/Ontology1327600704187.owl#&#39;document_issuer&#39; -->
+    <!-- http://purl.obolibrary.org/obo/IAO_0021018 -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1327600704187.owl#&#39;document_issuer&#39;">
+    <owl:Class rdf:about="&obo;IAO_0021018">
+        <rdfs:label xml:lang="en">obligator role</rdfs:label>
         <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="&obo;BFO_0000004"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2012/0/Ontology1327600704187.owl#issues"/>
-                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2012/0/Ontology1327600704187.owl#&#39;material_document_bearer&#39;"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="&obo;BFO_0000004"/>
-        <obo:IAO_0000115 xml:lang="en">A document issuer is an independent continuant that issues a material document bearer. </obo:IAO_0000115>
-        <obo:IAO_0000112 xml:lang="en">the pope issuing an encyclical, the university human resource computer system issuing a resolution, a guideline panel issuing a guideline document</obo:IAO_0000112>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/ontologies/2012/0/Ontology1327600704187.owl#&#39;document_proposition&#39; -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1327600704187.owl#&#39;document_proposition&#39;">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2012/0/Ontology1327600704187.owl#proposition"/>
-        <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="&obo;IAO_0000310"/>
+                <owl:onProperty rdf:resource="&obo;OBI_0000294"/>
+                <owl:allValuesFrom rdf:resource="&obo;IAO_0021001"/>
             </owl:Restriction>
-        </rdfs:subClassOf>
-        <obo:IAO_0000112 xml:lang="en">&quot;John Doe is a citizen of Paraguay and is 5.11 feet tall.&quot;; &quot;Jane Doe consents to donate one of her kidneys.&quot;</obo:IAO_0000112>
-        <obo:IAO_0000115 xml:lang="en">The proposition that characterizes the intention of a document.</obo:IAO_0000115>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/ontologies/2012/0/Ontology1327600704187.owl#&#39;material_document_bearer&#39; -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1327600704187.owl#&#39;material_document_bearer&#39;">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="&obo;IAO_0000178"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="&obo;BFO_0000053"/>
-                        <owl:someValuesFrom>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="&obo;BFO_0000058"/>
-                                <owl:someValuesFrom rdf:resource="&obo;IAO_0000310"/>
-                            </owl:Restriction>
-                        </owl:someValuesFrom>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="&obo;IAO_0000178"/>
-        <obo:IAO_0000115 xml:lang="en">A material information bearer that bears the concretization of a document.</obo:IAO_0000115>
-        <obo:IAO_0000112 xml:lang="en">an immigration form printed on paper, an online order form on a server</obo:IAO_0000112>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/ontologies/2012/0/Ontology1327600704187.owl#document_concretization -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1327600704187.owl#document_concretization">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="&obo;BFO_0000020"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="&obo;BFO_0000059"/>
-                        <owl:someValuesFrom rdf:resource="&obo;IAO_0000310"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="&obo;BFO_0000020"/>
-        <obo:IAO_0000115 xml:lang="en">A specifically dependent continuant that is the concretization of a document and serves to realize the document act or inhere in a material format. </obo:IAO_0000115>
-        <obo:IAO_0000112 xml:lang="en">the pattern inhering in ink on the paper forming a book presenting a clinical guideline, the plan to seize world power in my mind </obo:IAO_0000112>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/ontologies/2012/0/Ontology1327600704187.owl#proposition -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1327600704187.owl#proposition">
-        <rdfs:subClassOf rdf:resource="&obo;IAO_0000030"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="&obo;IAO_0000030"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <obo:IAO_0000112 xml:lang="en">&quot;John Doe steals pears.&quot;, 5&lt;234, &quot;All Ferraris are red.&quot;</obo:IAO_0000112>
-        <obo:IAO_0000115 xml:lang="en">&quot;The abstract content of a proposition. Abstract content is purely combinatorial: from this viewpoint, any content tht can be generated by means of combinatorial rules is assumed to exist in the domain of quantification&quot;</obo:IAO_0000115>
-        <obo:IAO_0000119 xml:lang="en">DOLCE
-http://www.loa-cnr.it/ontologies/DOLCE-Lite#proposition</obo:IAO_0000119>
+        <rdfs:subClassOf rdf:resource="&snap;Role"/>
+        <obo:IAO_0000117>Mathias Brochhausen</obo:IAO_0000117>
+        <obo:IAO_0000115 xml:lang="en">The role of a human being or an aggregate of human beings  concretizing an obligation.</obo:IAO_0000115>
     </owl:Class>
 </rdf:RDF>
 
