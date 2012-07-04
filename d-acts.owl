@@ -197,9 +197,8 @@ It is important to note that this going out of existence of is complete and unli
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0021005"/>
-        <obo:IAO_0000115 xml:lang="en">A document act is a planned process with a document as a participant realizing the document&#39;s intended use. </obo:IAO_0000115>
         <obo:IAO_0000117>Mathias Brochhausen</obo:IAO_0000117>
-        <obo:IAO_0000112 xml:lang="en">me filling in an immigration form, a judge signing and stamping a court order, a nurse carrying out procedures following a clinical guideline</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">me filling in an immigration form, a judge signing and stamping a court order</obo:IAO_0000112>
     </owl:Class>
     
 
@@ -222,20 +221,45 @@ It is important to note that this going out of existence of is complete and unli
         <rdfs:label xml:lang="en">declaration</rdfs:label>
         <owl:equivalentClass>
             <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="&obo;IAO_0021011"/>
+                                <owl:someValuesFrom rdf:resource="&obo;IAO_0021004"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="&obo;IAO_0021012"/>
+                                <owl:someValuesFrom rdf:resource="&obo;IAO_0021004"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="&obo;OBI_0000299"/>
+                                <owl:someValuesFrom rdf:resource="&obo;IAO_0021004"/>
+                            </owl:Restriction>
+                        </owl:unionOf>
+                    </owl:Class>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="&obo;IAO_0021011"/>
-                        <owl:someValuesFrom rdf:resource="&obo;IAO_0021004"/>
+                        <owl:onProperty rdf:resource="&ro;has_agent"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <owl:Class>
+                                        <owl:unionOf rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="&obo;NCBITaxon_9606"/>
+                                            <rdf:Description rdf:about="&obo;OBI_0000245"/>
+                                            <rdf:Description rdf:about="&obo;OMRSE_00000023"/>
+                                            <rdf:Description rdf:about="&obo;OMRSE_00000033"/>
+                                        </owl:unionOf>
+                                    </owl:Class>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="&OBO_REL;bearer_of"/>
+                                        <owl:someValuesFrom rdf:resource="&obo;IAO_0021014"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
                     </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="&obo;IAO_0021012"/>
-                        <owl:someValuesFrom rdf:resource="&obo;IAO_0021004"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="&obo;OBI_0000299"/>
-                        <owl:someValuesFrom rdf:resource="&obo;IAO_0021004"/>
-                    </owl:Restriction>
-                </owl:unionOf>
+                </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="&obo;OBI_0000011"/>
@@ -246,7 +270,7 @@ It is important to note that this going out of existence of is complete and unli
     <!-- http://purl.obolibrary.org/obo/IAO_0021014 -->
 
     <owl:Class rdf:about="&obo;IAO_0021014">
-        <rdfs:label xml:lang="en">document act executive role</rdfs:label>
+        <rdfs:label xml:lang="en">declaration executive role</rdfs:label>
         <rdfs:subClassOf rdf:resource="&snap;Role"/>
         <obo:IAO_0000117>Mathias Brochhausen</obo:IAO_0000117>
         <obo:IAO_0000115 xml:lang="en">The role borne by the human being or the aggregate of human beings that is the active participant in a document act.</obo:IAO_0000115>
