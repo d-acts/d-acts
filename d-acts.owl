@@ -13,6 +13,7 @@
     <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
     <!ENTITY iao "http://purl.obolibrary.org/obo/iao.owl/" >
     <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY oboInOwl "http://www.geneontology.org/formats/oboInOwl#" >
 ]>
 
 
@@ -22,18 +23,19 @@
      xmlns:ro="http://www.obofoundry.org/ro/ro.owl#"
      xmlns:iao="&obo;iao.owl/"
      xmlns:snap="http://www.ifomis.org/bfo/1.1/snap#"
-     xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:OBO_REL="http://purl.org/obo/owl/OBO_REL#"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:span="http://www.ifomis.org/bfo/1.1/span#">
     <owl:Ontology rdf:about="http://purl.obofoundry.org/obo/iao/d-acts.owl">
         <dc:creator>Mathias Brochhausen</dc:creator>
         <dc:creator>Mauricio B. Almeida</dc:creator>
         <dc:creator>Laura Slaughter</dc:creator>
-        <owl:versionInfo>2012-07-04</owl:versionInfo>
+        <owl:versionInfo>2012-07-05</owl:versionInfo>
         <owl:versionInfo xml:lang="en">development version</owl:versionInfo>
         <dc:title xml:lang="en">document act ontology</dc:title>
         <owl:imports rdf:resource="&obo;iao/dev/iao.owl"/>
@@ -74,10 +76,22 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/BFO_0000055 -->
+
+    <owl:ObjectProperty rdf:about="&obo;BFO_0000055">
+        <rdfs:label xml:lang="en">realizes</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/IAO_0021011 -->
 
     <owl:ObjectProperty rdf:about="&obo;IAO_0021011">
-        <rdfs:label xml:lang="en">socio-legally revokes</rdfs:label>
+        <rdf:type rdf:resource="&owl;AsymmetricProperty"/>
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <rdfs:label xml:lang="en">legally revokes</rdfs:label>
         <obo:IAO_0000117>Mathias Brochhausen</obo:IAO_0000117>
         <obo:IAO_0000115 xml:lang="en">d socio-legally revokes s if s participates in d and at the end of d s no longer exists.
 It is important to note that this going out of existence of is complete and unlike the going out of existence for material entities which basically always are transformed into something else. After the declaration nothing is left of the socio-legal generically dependent continuant in question.</obo:IAO_0000115>
@@ -91,9 +105,14 @@ It is important to note that this going out of existence of is complete and unli
     <!-- http://purl.obolibrary.org/obo/IAO_0021012 -->
 
     <owl:ObjectProperty rdf:about="&obo;IAO_0021012">
-        <rdfs:label xml:lang="en">socio-legally transfer</rdfs:label>
+        <rdf:type rdf:resource="&owl;AsymmetricProperty"/>
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <rdfs:label xml:lang="en">legally transfers</rdfs:label>
         <obo:IAO_0000117>Mathias Brochhausen</obo:IAO_0000117>
-        <obo:IAO_0000115 xml:lang="en">d socio-legally transfers s if s participates in d and d has specified input  (concretization of s)1 and specified output  (concretization of s )2, where (conretization of s)1 and (conretization of s)2 are not identical.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">legally transfers is a relation between a declaration and a legal generically dependent continuant. d socio-legally transfers s if s participates in d and d has specified input  (concretization of s)1 and specified output  (concretization of s )2, where (concretization  of s)1 and (concretization  of s)2 are not identical.</obo:IAO_0000115>
+        <rdfs:range rdf:resource="&obo;IAO_0021004"/>
+        <rdfs:domain rdf:resource="&obo;IAO_0021005"/>
         <rdfs:subPropertyOf rdf:resource="&ro;has_participant"/>
     </owl:ObjectProperty>
     
@@ -126,8 +145,9 @@ It is important to note that this going out of existence of is complete and unli
     <!-- http://purl.obolibrary.org/obo/IAO_0021000 -->
 
     <owl:Class rdf:about="&obo;IAO_0021000">
-        <rdfs:label xml:lang="en">claim</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;IAO_0021004"/>
+        <rdfs:label xml:lang="en">obsolete_claim</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&oboInOwl;ObsoleteClass"/>
+        <obo:IAO_0000231 rdf:resource="&obo;IAO_0000226"/>
     </owl:Class>
     
 
@@ -135,8 +155,9 @@ It is important to note that this going out of existence of is complete and unli
     <!-- http://purl.obolibrary.org/obo/IAO_0021001 -->
 
     <owl:Class rdf:about="&obo;IAO_0021001">
-        <rdfs:label xml:lang="en">obligation</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;IAO_0021004"/>
+        <rdfs:label xml:lang="en">obsolete_obligation</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&oboInOwl;ObsoleteClass"/>
+        <obo:IAO_0000231 rdf:resource="&obo;IAO_0000226"/>
     </owl:Class>
     
 
@@ -176,20 +197,12 @@ It is important to note that this going out of existence of is complete and unli
                         <owl:onProperty rdf:resource="&ro;has_agent"/>
                         <owl:someValuesFrom>
                             <owl:Class>
-                                <owl:intersectionOf rdf:parseType="Collection">
-                                    <owl:Class>
-                                        <owl:unionOf rdf:parseType="Collection">
-                                            <rdf:Description rdf:about="&obo;NCBITaxon_9606"/>
-                                            <rdf:Description rdf:about="&obo;OBI_0000245"/>
-                                            <rdf:Description rdf:about="&obo;OMRSE_00000023"/>
-                                            <rdf:Description rdf:about="&obo;OMRSE_00000033"/>
-                                        </owl:unionOf>
-                                    </owl:Class>
-                                    <owl:Restriction>
-                                        <owl:onProperty rdf:resource="&OBO_REL;bearer_of"/>
-                                        <owl:someValuesFrom rdf:resource="&obo;IAO_0021014"/>
-                                    </owl:Restriction>
-                                </owl:intersectionOf>
+                                <owl:unionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="&obo;NCBITaxon_9606"/>
+                                    <rdf:Description rdf:about="&obo;OBI_0000245"/>
+                                    <rdf:Description rdf:about="&obo;OMRSE_00000023"/>
+                                    <rdf:Description rdf:about="&obo;OMRSE_00000033"/>
+                                </owl:unionOf>
                             </owl:Class>
                         </owl:someValuesFrom>
                     </owl:Restriction>
@@ -206,10 +219,16 @@ It is important to note that this going out of existence of is complete and unli
     <!-- http://purl.obolibrary.org/obo/IAO_0021004 -->
 
     <owl:Class rdf:about="&obo;IAO_0021004">
-        <rdfs:label xml:lang="en">socio-legal generically dependent continuant</rdfs:label>
+        <rdfs:label xml:lang="en">legal generically dependent continuant</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000312"/>
+                <owl:someValuesFrom rdf:resource="&obo;IAO_0021005"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="&snap;GenericallyDependentContinuant"/>
-        <obo:IAO_0000115>Socio-legal generically dependent continuants are generically dependent continuants that come into existence through social acts and are concretized as roles. The differ from information content entity in so much that they are not about something, but exist as quasi-abstract entities. In addition their concretizations are not qualites inhering in independent contiunants, but roles borne by an organism or an aggegate of organisms.</obo:IAO_0000115>
         <obo:IAO_0000117>Mathias Brochhausen</obo:IAO_0000117>
+        <obo:IAO_0000115 xml:lang="en">Legal generically dependent continuants are generically dependent continuants that come into existence through social acts, namely declarations, and are concretized as roles. They differ from information content entity in so much that they are not about something, but exist as quasi-abstract social entities. In addition their concretizations are not qualities inhering in independent continuants, but roles borne by an organism or an aggregate of organisms. Each legal generically dependent continuant can only be concretized once at each time.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -242,20 +261,12 @@ It is important to note that this going out of existence of is complete and unli
                         <owl:onProperty rdf:resource="&ro;has_agent"/>
                         <owl:someValuesFrom>
                             <owl:Class>
-                                <owl:intersectionOf rdf:parseType="Collection">
-                                    <owl:Class>
-                                        <owl:unionOf rdf:parseType="Collection">
-                                            <rdf:Description rdf:about="&obo;NCBITaxon_9606"/>
-                                            <rdf:Description rdf:about="&obo;OBI_0000245"/>
-                                            <rdf:Description rdf:about="&obo;OMRSE_00000023"/>
-                                            <rdf:Description rdf:about="&obo;OMRSE_00000033"/>
-                                        </owl:unionOf>
-                                    </owl:Class>
-                                    <owl:Restriction>
-                                        <owl:onProperty rdf:resource="&OBO_REL;bearer_of"/>
-                                        <owl:someValuesFrom rdf:resource="&obo;IAO_0021014"/>
-                                    </owl:Restriction>
-                                </owl:intersectionOf>
+                                <owl:unionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="&obo;NCBITaxon_9606"/>
+                                    <rdf:Description rdf:about="&obo;OBI_0000245"/>
+                                    <rdf:Description rdf:about="&obo;OMRSE_00000023"/>
+                                    <rdf:Description rdf:about="&obo;OMRSE_00000033"/>
+                                </owl:unionOf>
                             </owl:Class>
                         </owl:someValuesFrom>
                     </owl:Restriction>
@@ -271,9 +282,10 @@ It is important to note that this going out of existence of is complete and unli
 
     <owl:Class rdf:about="&obo;IAO_0021014">
         <rdfs:label xml:lang="en">declaration executive role</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&snap;Role"/>
+        <rdfs:subClassOf rdf:resource="&oboInOwl;ObsoleteClass"/>
         <obo:IAO_0000117>Mathias Brochhausen</obo:IAO_0000117>
-        <obo:IAO_0000115 xml:lang="en">The role borne by the human being or the aggregate of human beings that is the active participant in a document act.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">The role borne by a human being, an organization or an aggregate of either of both that is realized by being the active participant in a declaration.</obo:IAO_0000115>
+        <obo:IAO_0000231 rdf:resource="&obo;IAO_0000226"/>
     </owl:Class>
     
 
@@ -282,11 +294,12 @@ It is important to note that this going out of existence of is complete and unli
 
     <owl:Class rdf:about="&obo;IAO_0021015">
         <rdfs:label xml:lang="en">document template creator role</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&snap;Role"/>
+        <rdfs:subClassOf rdf:resource="&oboInOwl;ObsoleteClass"/>
         <obo:IAO_0000117 xml:lang="en">Mathias Brochhausen</obo:IAO_0000117>
         <obo:IAO_0000115 xml:lang="en">The role of a human being or an aggregate of human beings preparing the initial document to undergo a document act, thus creating a socio-legal generically dependent continuant.</obo:IAO_0000115>
         <rdfs:comment xml:lang="en">not that the &quot;template&quot; does not need to be a template at all. It can be a document that is getting stamped and signed and by these acts creating some socio-legal generically dependent continuants.</rdfs:comment>
         <obo:IAO_0000112 xml:lang="en">the role borne by the US Citizen and Immigration Service realized by providing the template form for entering the US as a non-resident alien, the role of a guideline committee in putting together a clinical guideline</obo:IAO_0000112>
+        <obo:IAO_0000231 rdf:resource="&obo;IAO_0000226"/>
     </owl:Class>
     
 
@@ -295,15 +308,10 @@ It is important to note that this going out of existence of is complete and unli
 
     <owl:Class rdf:about="&obo;IAO_0021017">
         <rdfs:label xml:lang="en">claimant role</rdfs:label>
-        <owl:equivalentClass>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OBI_0000294"/>
-                <owl:allValuesFrom rdf:resource="&obo;IAO_0021000"/>
-            </owl:Restriction>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="&snap;Role"/>
+        <rdfs:subClassOf rdf:resource="&oboInOwl;ObsoleteClass"/>
         <obo:IAO_0000117>Mathias Brochhausen</obo:IAO_0000117>
         <obo:IAO_0000115 xml:lang="en">The role of a human being or an aggregate of human beings concretizing a claim.</obo:IAO_0000115>
+        <obo:IAO_0000231 rdf:resource="&obo;IAO_0000226"/>
     </owl:Class>
     
 
@@ -312,15 +320,125 @@ It is important to note that this going out of existence of is complete and unli
 
     <owl:Class rdf:about="&obo;IAO_0021018">
         <rdfs:label xml:lang="en">obligator role</rdfs:label>
-        <owl:equivalentClass>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OBI_0000294"/>
-                <owl:allValuesFrom rdf:resource="&obo;IAO_0021001"/>
-            </owl:Restriction>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="&snap;Role"/>
+        <rdfs:subClassOf rdf:resource="&oboInOwl;ObsoleteClass"/>
         <obo:IAO_0000117>Mathias Brochhausen</obo:IAO_0000117>
         <obo:IAO_0000115 xml:lang="en">The role of a human being or an aggregate of human beings  concretizing an obligation.</obo:IAO_0000115>
+        <obo:IAO_0000231 rdf:resource="&obo;IAO_0000226"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0021020 -->
+
+    <owl:Class rdf:about="&obo;IAO_0021020">
+        <rdfs:label xml:lang="en">declaration target</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="&OBO_REL;bearer_of"/>
+                                <owl:someValuesFrom>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="&obo;OBI_0000294"/>
+                                        <owl:someValuesFrom rdf:resource="&obo;IAO_0021004"/>
+                                    </owl:Restriction>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="&ro;participates_in"/>
+                                <owl:someValuesFrom rdf:resource="&obo;IAO_0021005"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="&obo;NCBITaxon_9606"/>
+                            <rdf:Description rdf:about="&obo;OBI_0000245"/>
+                            <rdf:Description rdf:about="&obo;OMRSE_00000023"/>
+                            <rdf:Description rdf:about="&obo;OMRSE_00000033"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&snap;MaterialEntity"/>
+        <obo:IAO_0000115 xml:lang="en">The human being or organization or aggregate of any of the aforementioned that is the bearer of a concretization of a legal generically dependent continuant brought about or transferred in a declaration.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0021021 -->
+
+    <owl:Class rdf:about="&obo;IAO_0021021">
+        <rdfs:label xml:lang="en">document act template creator</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="&obo;NCBITaxon_9606"/>
+                            <rdf:Description rdf:about="&obo;OBI_0000245"/>
+                            <rdf:Description rdf:about="&obo;OMRSE_00000023"/>
+                            <rdf:Description rdf:about="&obo;OMRSE_00000033"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&ro;agent_in"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="&obo;OBI_0000011"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="&obo;OBI_0000299"/>
+                                        <owl:someValuesFrom>
+                                            <owl:Class>
+                                                <owl:intersectionOf rdf:parseType="Collection">
+                                                    <rdf:Description rdf:about="&obo;IAO_0000310"/>
+                                                    <owl:Restriction>
+                                                        <owl:onProperty rdf:resource="&ro;participates_in"/>
+                                                        <owl:someValuesFrom rdf:resource="&obo;IAO_0021002"/>
+                                                    </owl:Restriction>
+                                                </owl:intersectionOf>
+                                            </owl:Class>
+                                        </owl:someValuesFrom>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&snap;MaterialEntity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0021022 -->
+
+    <owl:Class rdf:about="&obo;IAO_0021022">
+        <rdfs:label xml:lang="en">declaration performer</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="&obo;NCBITaxon_9606"/>
+                            <rdf:Description rdf:about="&obo;OBI_0000245"/>
+                            <rdf:Description rdf:about="&obo;OMRSE_00000023"/>
+                            <rdf:Description rdf:about="&obo;OMRSE_00000033"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&ro;agent_in"/>
+                        <owl:someValuesFrom rdf:resource="&obo;IAO_0021005"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&snap;MaterialEntity"/>
     </owl:Class>
     
 
