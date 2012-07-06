@@ -35,9 +35,11 @@
         <dc:creator>Mathias Brochhausen</dc:creator>
         <dc:creator>Mauricio B. Almeida</dc:creator>
         <dc:creator>Laura Slaughter</dc:creator>
-        <owl:versionInfo>2012-07-05</owl:versionInfo>
-        <owl:versionInfo xml:lang="en">development version</owl:versionInfo>
+        <owl:versionInfo>2012-07-06</owl:versionInfo>
+        <rdfs:comment xml:lang="en">The ontology is based on a theory of document acts proposed by Barry Smith (Barry Smith, “Document Acts”, Proceedings of the Conference on Collective Intentionality, Basel, Switzerland August 23-26, 2010, in press &amp; Barry Smith, “How to Do Things with Documents”, Rivista di Estetica, 50 (2012), in press.)
+However, there are some amendments from our side which are to be found in the documentation.</rdfs:comment>
         <dc:title xml:lang="en">document act ontology</dc:title>
+        <owl:versionInfo xml:lang="en">release version</owl:versionInfo>
         <owl:imports rdf:resource="&obo;iao/dev/iao.owl"/>
     </owl:Ontology>
     
@@ -210,8 +212,9 @@ It is important to note that this going out of existence of is complete and unli
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0021005"/>
+        <obo:IAO_0000115 xml:lang="en">A declaration that is made using a document to temporally extend the effects of the declaration.</obo:IAO_0000115>
         <obo:IAO_0000117>Mathias Brochhausen</obo:IAO_0000117>
-        <obo:IAO_0000112 xml:lang="en">me filling in an immigration form, a judge signing and stamping a court order</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">my filling in an immigration form, a judge&#39;s signing and stamping a court order</obo:IAO_0000112>
     </owl:Class>
     
 
@@ -229,6 +232,7 @@ It is important to note that this going out of existence of is complete and unli
         <rdfs:subClassOf rdf:resource="&snap;GenericallyDependentContinuant"/>
         <obo:IAO_0000117>Mathias Brochhausen</obo:IAO_0000117>
         <obo:IAO_0000115 xml:lang="en">Legal generically dependent continuants are generically dependent continuants that come into existence through social acts, namely declarations, and are concretized as roles. They differ from information content entity in so much that they are not about something, but exist as quasi-abstract social entities. In addition their concretizations are not qualities inhering in independent continuants, but roles borne by an organism or an aggregate of organisms. Each legal generically dependent continuant can only be concretized once at each time.</obo:IAO_0000115>
+        <obo:IAO_0000112 xml:lang="en">your claim to the bag of beans you paid for, my obligation to pay my rent to my landlord</obo:IAO_0000112>
     </owl:Class>
     
 
@@ -236,7 +240,7 @@ It is important to note that this going out of existence of is complete and unli
     <!-- http://purl.obolibrary.org/obo/IAO_0021005 -->
 
     <owl:Class rdf:about="&obo;IAO_0021005">
-        <rdfs:label xml:lang="de">Bestimmungsakt</rdfs:label>
+        <rdfs:label xml:lang="de">Bestimmung</rdfs:label>
         <rdfs:label xml:lang="en">declaration</rdfs:label>
         <owl:equivalentClass>
             <owl:Class>
@@ -274,6 +278,9 @@ It is important to note that this going out of existence of is complete and unli
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="&obo;OBI_0000011"/>
+        <obo:IAO_0000115 xml:lang="en">A social act that brings about, transfers or revokes a socio-legal entity. Declarations do not depend on words spoken or written, but sometimes are merely specific planned processes.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Mathias Brochhausen</obo:IAO_0000117>
+        <obo:IAO_0000112 xml:lang="en">my consenting verbally to buy a used tv set for $ 500, Jane Doe&#39;s signing of the divorce papers, John Robie&#39;s taking of Mrs. Steven&#39;s jewels</obo:IAO_0000112>
     </owl:Class>
     
 
@@ -364,7 +371,9 @@ It is important to note that this going out of existence of is complete and unli
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="&snap;MaterialEntity"/>
+        <obo:IAO_0000117>Mathias Brochhausen</obo:IAO_0000117>
         <obo:IAO_0000115 xml:lang="en">The human being or organization or aggregate of any of the aforementioned that is the bearer of a concretization of a legal generically dependent continuant brought about or transferred in a declaration.</obo:IAO_0000115>
+        <obo:IAO_0000112 xml:lang="en">me, as a spouse in my marriage; John Doe as debtor to a specific bank</obo:IAO_0000112>
     </owl:Class>
     
 
@@ -412,6 +421,9 @@ It is important to note that this going out of existence of is complete and unli
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="&snap;MaterialEntity"/>
+        <obo:IAO_0000117>Mathias Brochhausen</obo:IAO_0000117>
+        <obo:IAO_0000115 xml:lang="en">The human being or organization or aggregate of any of the aforementioned that prepares a document that is the specified input to a document act and thus becomes the document template for the document that is the output of the document act.</obo:IAO_0000115>
+        <obo:IAO_0000112 xml:lang="en">U.S. Citizenship and Imigration Service as creator of the immigration form that is being filled in, a national professional association as creators of a clinical guideline that is to be certified</obo:IAO_0000112>
     </owl:Class>
     
 
@@ -439,6 +451,9 @@ It is important to note that this going out of existence of is complete and unli
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="&snap;MaterialEntity"/>
+        <obo:IAO_0000115 xml:lang="en">Def.: The human being or organization or aggregate of any of the aforementioned that is the agent in a declaration.</obo:IAO_0000115>
+        <obo:IAO_0000117>Mathias Brochhausen</obo:IAO_0000117>
+        <obo:IAO_0000112 xml:lang="en">the judge who signing a court order, the hospital committee to voted in favor of accepting a guideline as obligatory</obo:IAO_0000112>
     </owl:Class>
     
 
