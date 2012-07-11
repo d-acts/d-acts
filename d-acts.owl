@@ -262,15 +262,27 @@ It is important to note that this going out of existence of is complete and unli
                         </owl:unionOf>
                     </owl:Class>
                     <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;BFO_0000055"/>
+                        <owl:someValuesFrom rdf:resource="&obo;IAO_0021022"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
                         <owl:onProperty rdf:resource="&ro;has_agent"/>
                         <owl:someValuesFrom>
                             <owl:Class>
-                                <owl:unionOf rdf:parseType="Collection">
-                                    <rdf:Description rdf:about="&obo;NCBITaxon_9606"/>
-                                    <rdf:Description rdf:about="&obo;OBI_0000245"/>
-                                    <rdf:Description rdf:about="&obo;OMRSE_00000023"/>
-                                    <rdf:Description rdf:about="&obo;OMRSE_00000033"/>
-                                </owl:unionOf>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <owl:Class>
+                                        <owl:unionOf rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="&obo;NCBITaxon_9606"/>
+                                            <rdf:Description rdf:about="&obo;OBI_0000245"/>
+                                            <rdf:Description rdf:about="&obo;OMRSE_00000023"/>
+                                            <rdf:Description rdf:about="&obo;OMRSE_00000033"/>
+                                        </owl:unionOf>
+                                    </owl:Class>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="&OBO_REL;bearer_of"/>
+                                        <owl:someValuesFrom rdf:resource="&obo;IAO_0021022"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
                             </owl:Class>
                         </owl:someValuesFrom>
                     </owl:Restriction>
@@ -343,49 +355,6 @@ It is important to note that this going out of existence of is complete and unli
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Class>
-                        <owl:intersectionOf rdf:parseType="Collection">
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="&OBO_REL;bearer_of"/>
-                                <owl:someValuesFrom>
-                                    <owl:Restriction>
-                                        <owl:onProperty rdf:resource="&obo;OBI_0000294"/>
-                                        <owl:someValuesFrom rdf:resource="&obo;IAO_0021004"/>
-                                    </owl:Restriction>
-                                </owl:someValuesFrom>
-                            </owl:Restriction>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="&ro;participates_in"/>
-                                <owl:someValuesFrom rdf:resource="&obo;IAO_0021005"/>
-                            </owl:Restriction>
-                        </owl:intersectionOf>
-                    </owl:Class>
-                    <owl:Class>
-                        <owl:unionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="&obo;NCBITaxon_9606"/>
-                            <rdf:Description rdf:about="&obo;OBI_0000245"/>
-                            <rdf:Description rdf:about="&obo;OMRSE_00000023"/>
-                            <rdf:Description rdf:about="&obo;OMRSE_00000033"/>
-                        </owl:unionOf>
-                    </owl:Class>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="&snap;MaterialEntity"/>
-        <obo:IAO_0000117>Mathias Brochhausen</obo:IAO_0000117>
-        <obo:IAO_0000115 xml:lang="en">The human being or organization or aggregate of any of the aforementioned that is the bearer of a concretization of a legal generically dependent continuant brought about or transferred in a declaration.</obo:IAO_0000115>
-        <obo:IAO_0000112 xml:lang="en">me, as a spouse in my marriage; John Doe as debtor to a specific bank</obo:IAO_0000112>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/IAO_0021021 -->
-
-    <owl:Class rdf:about="&obo;IAO_0021021">
-        <rdfs:label xml:lang="en">document act template creator</rdfs:label>
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <owl:Class>
                         <owl:unionOf rdf:parseType="Collection">
                             <rdf:Description rdf:about="&obo;NCBITaxon_9606"/>
                             <rdf:Description rdf:about="&obo;OBI_0000245"/>
@@ -394,24 +363,17 @@ It is important to note that this going out of existence of is complete and unli
                         </owl:unionOf>
                     </owl:Class>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="&ro;agent_in"/>
+                        <owl:onProperty rdf:resource="&OBO_REL;bearer_of"/>
                         <owl:someValuesFrom>
                             <owl:Class>
                                 <owl:intersectionOf rdf:parseType="Collection">
-                                    <rdf:Description rdf:about="&obo;OBI_0000011"/>
                                     <owl:Restriction>
-                                        <owl:onProperty rdf:resource="&obo;OBI_0000299"/>
-                                        <owl:someValuesFrom>
-                                            <owl:Class>
-                                                <owl:intersectionOf rdf:parseType="Collection">
-                                                    <rdf:Description rdf:about="&obo;IAO_0000310"/>
-                                                    <owl:Restriction>
-                                                        <owl:onProperty rdf:resource="&ro;participates_in"/>
-                                                        <owl:someValuesFrom rdf:resource="&obo;IAO_0021002"/>
-                                                    </owl:Restriction>
-                                                </owl:intersectionOf>
-                                            </owl:Class>
-                                        </owl:someValuesFrom>
+                                        <owl:onProperty rdf:resource="&obo;OBI_0000294"/>
+                                        <owl:someValuesFrom rdf:resource="&obo;IAO_0021004"/>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="&ro;participates_in"/>
+                                        <owl:someValuesFrom rdf:resource="&obo;IAO_0021005"/>
                                     </owl:Restriction>
                                 </owl:intersectionOf>
                             </owl:Class>
@@ -422,8 +384,63 @@ It is important to note that this going out of existence of is complete and unli
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="&snap;MaterialEntity"/>
         <obo:IAO_0000117>Mathias Brochhausen</obo:IAO_0000117>
-        <obo:IAO_0000115 xml:lang="en">The human being or organization or aggregate of any of the aforementioned that prepares a document that is the specified input to a document act and thus becomes the document template for the document that is the output of the document act.</obo:IAO_0000115>
-        <obo:IAO_0000112 xml:lang="en">U.S. Citizenship and Imigration Service as creator of the immigration form that is being filled in, a national professional association as creators of a clinical guideline that is to be certified</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">The human being or organization or aggregate of any of the aforementioned that is the bearer of a concretization of a legal generically dependent continuant brought about or transferred in a declaration.</obo:IAO_0000115>
+        <obo:IAO_0000112 xml:lang="en">me as a bearer of a spouse role, which participates in a document act, John Doe as bearer of a debtor role, which participates in a document act</obo:IAO_0000112>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0021021 -->
+
+    <owl:Class rdf:about="&obo;IAO_0021021">
+        <rdfs:label xml:lang="en">document act template creator role</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&snap;Role"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&OBO_REL;inheres_in"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <owl:Class>
+                                <owl:unionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="&obo;NCBITaxon_9606"/>
+                                    <rdf:Description rdf:about="&obo;OBI_0000245"/>
+                                    <rdf:Description rdf:about="&obo;OMRSE_00000023"/>
+                                    <rdf:Description rdf:about="&obo;OMRSE_00000033"/>
+                                </owl:unionOf>
+                            </owl:Class>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="&obo;OBI_0000300"/>
+                                <owl:allValuesFrom>
+                                    <owl:Class>
+                                        <owl:intersectionOf rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="&obo;OBI_0000011"/>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="&obo;OBI_0000299"/>
+                                                <owl:someValuesFrom>
+                                                    <owl:Class>
+                                                        <owl:intersectionOf rdf:parseType="Collection">
+                                                            <rdf:Description rdf:about="&obo;IAO_0000310"/>
+                                                            <owl:Restriction>
+                                                                <owl:onProperty rdf:resource="&ro;participates_in"/>
+                                                                <owl:someValuesFrom rdf:resource="&obo;IAO_0021002"/>
+                                                            </owl:Restriction>
+                                                        </owl:intersectionOf>
+                                                    </owl:Class>
+                                                </owl:someValuesFrom>
+                                            </owl:Restriction>
+                                        </owl:intersectionOf>
+                                    </owl:Class>
+                                </owl:allValuesFrom>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">A role that inheres in a human being or organization or aggregate of any of the aforementioned that prepares a document that is the specified input to a document act and is the input document of a document act.</obo:IAO_0000115>
+        <obo:IAO_0000117>Mathias Brochhausen</obo:IAO_0000117>
+        <obo:IAO_0000112 xml:lang="en">The role of the U.S. Citizenship and Immigration Service realized by the creation of an immigration form that is being filled in, the role of a national professional association realized by the creation of a clinical guideline that is to be certified</obo:IAO_0000112>
     </owl:Class>
     
 
@@ -431,29 +448,34 @@ It is important to note that this going out of existence of is complete and unli
     <!-- http://purl.obolibrary.org/obo/IAO_0021022 -->
 
     <owl:Class rdf:about="&obo;IAO_0021022">
-        <rdfs:label xml:lang="en">declaration performer</rdfs:label>
-        <owl:equivalentClass>
+        <rdfs:label xml:lang="en">declaration performer role</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&snap;Role"/>
+        <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <owl:Class>
-                        <owl:unionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="&obo;NCBITaxon_9606"/>
-                            <rdf:Description rdf:about="&obo;OBI_0000245"/>
-                            <rdf:Description rdf:about="&obo;OMRSE_00000023"/>
-                            <rdf:Description rdf:about="&obo;OMRSE_00000033"/>
-                        </owl:unionOf>
-                    </owl:Class>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="&ro;agent_in"/>
-                        <owl:someValuesFrom rdf:resource="&obo;IAO_0021005"/>
+                        <owl:onProperty rdf:resource="&OBO_REL;inheres_in"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:unionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="&obo;NCBITaxon_9606"/>
+                                    <rdf:Description rdf:about="&obo;OBI_0000245"/>
+                                    <rdf:Description rdf:about="&obo;OMRSE_00000023"/>
+                                    <rdf:Description rdf:about="&obo;OMRSE_00000033"/>
+                                </owl:unionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;OBI_0000300"/>
+                        <owl:allValuesFrom rdf:resource="&obo;IAO_0021005"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="&snap;MaterialEntity"/>
-        <obo:IAO_0000115 xml:lang="en">Def.: The human being or organization or aggregate of any of the aforementioned that is the agent in a declaration.</obo:IAO_0000115>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">A role inhering in a human being or an organization or an aggregate of any of the aforementioned that is realized by the bearer being the agent in a declaration.</obo:IAO_0000115>
         <obo:IAO_0000117>Mathias Brochhausen</obo:IAO_0000117>
-        <obo:IAO_0000112 xml:lang="en">the judge who signing a court order, the hospital committee to voted in favor of accepting a guideline as obligatory</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">a judge&#39;s role of signing a court order, a hospital committee&#39;s to sanction conformance to a specific guideline for hospital employees.</obo:IAO_0000112>
     </owl:Class>
     
 
