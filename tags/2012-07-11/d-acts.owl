@@ -35,7 +35,7 @@
         <dc:creator>Mathias Brochhausen</dc:creator>
         <dc:creator>Mauricio B. Almeida</dc:creator>
         <dc:creator>Laura Slaughter</dc:creator>
-        <owl:versionInfo>2012-07-06</owl:versionInfo>
+        <owl:versionInfo>2012-07-11</owl:versionInfo>
         <rdfs:comment xml:lang="en">The ontology is based on a theory of document acts proposed by Barry Smith (Barry Smith, “Document Acts”, Proceedings of the Conference on Collective Intentionality, Basel, Switzerland August 23-26, 2010, in press &amp; Barry Smith, “How to Do Things with Documents”, Rivista di Estetica, 50 (2012), in press.)
 However, there are some amendments from our side which are to be found in the documentation.</rdfs:comment>
         <dc:title xml:lang="en">document act ontology</dc:title>
