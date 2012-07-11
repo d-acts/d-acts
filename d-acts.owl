@@ -290,7 +290,8 @@ It is important to note that this going out of existence of is complete and unli
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="&obo;OBI_0000011"/>
-        <obo:IAO_0000115 xml:lang="en">A social act that brings about, transfers or revokes a socio-legal entity. Declarations do not depend on words spoken or written, but sometimes are merely specific planned processes.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A planned process that is a social act and brings about, transfers or revokes a socio-legal entity. Declarations do not depend on words spoken or written, but sometimes are merely specific planned processes.
+</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Mathias Brochhausen</obo:IAO_0000117>
         <obo:IAO_0000112 xml:lang="en">my consenting verbally to buy a used tv set for $ 500, Jane Doe&#39;s signing of the divorce papers, John Robie&#39;s taking of Mrs. Steven&#39;s jewels</obo:IAO_0000112>
     </owl:Class>
