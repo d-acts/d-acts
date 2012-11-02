@@ -35,8 +35,15 @@
         <dc:creator>Mathias Brochhausen</dc:creator>
         <dc:creator>Mauricio B. Almeida</dc:creator>
         <dc:creator>Laura Slaughter</dc:creator>
-        <owl:versionInfo>2012-07-11</owl:versionInfo>
-        <rdfs:comment xml:lang="en">The ontology is based on a theory of document acts proposed by Barry Smith (Barry Smith, “Document Acts”, Proceedings of the Conference on Collective Intentionality, Basel, Switzerland August 23-26, 2010, in press &amp; Barry Smith, “How to Do Things with Documents”, Rivista di Estetica, 50 (2012), in press.)
+        <owl:versionInfo>2012-11-02</owl:versionInfo>
+        <rdfs:comment xml:lang="en">The ontology is based on a theory of document acts proposed by Barry Smith and Reinach&#39;s theory of social acts and legal entities:
+
+Reinach, A. (1989), Sämtliche Werke. Texkritische Ausgabe, Edited by Karl Schuhmann and Barry Smith, München: Philosophia Verlag.
+
+Smith, B. (2008) “Searle and de Soto: The new ontology of the social world”, The Mystery of Capital and the Construction of Social Reality, B. Smith, D.M. Mark  and I. Ehrlich, United States, Open Court., 35-52.
+
+Smith, B. (2012) &quot;How to Do Things With Documents&quot;, Rivista di estetica, 50 (2/2012), LII: 179-198.
+
 However, there are some amendments from our side which are to be found in the documentation.</rdfs:comment>
         <dc:title xml:lang="en">document act ontology</dc:title>
         <owl:versionInfo xml:lang="en">release version</owl:versionInfo>
@@ -96,7 +103,7 @@ However, there are some amendments from our side which are to be found in the do
         <rdfs:label xml:lang="en">legally revokes</rdfs:label>
         <obo:IAO_0000117>Mathias Brochhausen</obo:IAO_0000117>
         <obo:IAO_0000115 xml:lang="en">d socio-legally revokes s if s participates in d and at the end of d s no longer exists.
-It is important to note that this going out of existence of is complete and unlike the going out of existence for material entities which basically always are transformed into something else. After the declaration nothing is left of the socio-legal generically dependent continuant in question.</obo:IAO_0000115>
+It is important to note that this going out of existence of s is complete and unlike the going out of existence for material entities which basically always are transformed into something else. After the declaration nothing is left of the socio-legal generically dependent continuant in question.</obo:IAO_0000115>
         <rdfs:range rdf:resource="&obo;IAO_0021004"/>
         <rdfs:domain rdf:resource="&obo;IAO_0021005"/>
         <rdfs:subPropertyOf rdf:resource="&ro;has_participant"/>
@@ -112,7 +119,7 @@ It is important to note that this going out of existence of is complete and unli
         <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
         <rdfs:label xml:lang="en">legally transfers</rdfs:label>
         <obo:IAO_0000117>Mathias Brochhausen</obo:IAO_0000117>
-        <obo:IAO_0000115 xml:lang="en">legally transfers is a relation between a declaration and a legal generically dependent continuant. d socio-legally transfers s if s participates in d and d has specified input  (concretization of s)1 and specified output  (concretization of s )2, where (concretization  of s)1 and (concretization  of s)2 are not identical.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">d socio-legally transfers l if l participates in d and d has specified input  (concretization of l)1 and specified output  (concretization of l)2, where (concretization of l)1 and (concretization of l)2 are not identical.</obo:IAO_0000115>
         <rdfs:range rdf:resource="&obo;IAO_0021004"/>
         <rdfs:domain rdf:resource="&obo;IAO_0021005"/>
         <rdfs:subPropertyOf rdf:resource="&ro;has_participant"/>
@@ -219,10 +226,22 @@ It is important to note that this going out of existence of is complete and unli
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0021003 -->
+
+    <owl:Class rdf:about="&obo;IAO_0021003">
+        <rdfs:label xml:lang="en">social act</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&span;ProcessualEntity"/>
+        <obo:IAO_0000117>Mathias Brochhausen</obo:IAO_0000117>
+        <obo:IAO_0000115 xml:lang="en">A process that is carried out by a self-conscious being and is spontaneous, directed towards another conscious being and needs to be perceived.</obo:IAO_0000115>
+        <obo:IAO_0000112 xml:lang="en">Colonel Klink giving Sergeant Schultz an order, Jake promising Jill to take her to the junior prom  </obo:IAO_0000112>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/IAO_0021004 -->
 
     <owl:Class rdf:about="&obo;IAO_0021004">
-        <rdfs:label xml:lang="en">legal generically dependent continuant</rdfs:label>
+        <rdfs:label xml:lang="en">socio-legal generically dependent continuant</rdfs:label>
         <owl:equivalentClass>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;OBI_0000312"/>
@@ -231,8 +250,8 @@ It is important to note that this going out of existence of is complete and unli
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="&snap;GenericallyDependentContinuant"/>
         <obo:IAO_0000117>Mathias Brochhausen</obo:IAO_0000117>
-        <obo:IAO_0000115 xml:lang="en">Legal generically dependent continuants are generically dependent continuants that come into existence through social acts, namely declarations, and are concretized as roles. They differ from information content entity in so much that they are not about something, but exist as quasi-abstract social entities. In addition their concretizations are not qualities inhering in independent continuants, but roles borne by an organism or an aggregate of organisms. Each legal generically dependent continuant can only be concretized once at each time.</obo:IAO_0000115>
-        <obo:IAO_0000112 xml:lang="en">your claim to the bag of beans you paid for, my obligation to pay my rent to my landlord</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">Socio-legal generically dependent continuants are generically dependent continuants that come into existence through declarations and are concretized as roles. They differ from information content entities in  that they are not about something, but exist as quasi-abstract social entities. In addition their concretizations are not qualities inhering in independent continuants, but roles borne by an organism or an aggregate of organisms. Each socio-legal generically dependent continuant can only be concretized once at each given time.</obo:IAO_0000115>
+        <obo:IAO_0000112 xml:lang="en">the claim of a piece of land, the obligation to pay rent to the owner of a rental property</obo:IAO_0000112>
     </owl:Class>
     
 
@@ -240,7 +259,6 @@ It is important to note that this going out of existence of is complete and unli
     <!-- http://purl.obolibrary.org/obo/IAO_0021005 -->
 
     <owl:Class rdf:about="&obo;IAO_0021005">
-        <rdfs:label xml:lang="de">Bestimmung</rdfs:label>
         <rdfs:label xml:lang="en">declaration</rdfs:label>
         <owl:equivalentClass>
             <owl:Class>
@@ -289,11 +307,11 @@ It is important to note that this going out of existence of is complete and unli
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="&obo;OBI_0000011"/>
-        <obo:IAO_0000115 xml:lang="en">A planned process that is a social act and brings about, transfers or revokes a socio-legal entity. Declarations do not depend on words spoken or written, but sometimes are merely specific planned processes.
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0021003"/>
+        <obo:IAO_0000115 xml:lang="en">A social act that brings about, transfers or revokes a socio-legal generically dependent continuant. Declarations do not depend on words spoken or written, but sometimes are merely actions, for instance the signing of a document.
 </obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Mathias Brochhausen</obo:IAO_0000117>
-        <obo:IAO_0000112 xml:lang="en">my consenting verbally to buy a used tv set for $ 500, Jane Doe&#39;s signing of the divorce papers, John Robie&#39;s taking of Mrs. Steven&#39;s jewels</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">my consenting verbally to buy a used TV set for $ 500, Jane Doe&#39;s signing of the divorce papers, John Robie&#39;s taking of Mrs. Steven&#39;s jewels</obo:IAO_0000112>
     </owl:Class>
     
 
@@ -301,7 +319,7 @@ It is important to note that this going out of existence of is complete and unli
     <!-- http://purl.obolibrary.org/obo/IAO_0021014 -->
 
     <owl:Class rdf:about="&obo;IAO_0021014">
-        <rdfs:label xml:lang="en">declaration executive role</rdfs:label>
+        <rdfs:label xml:lang="en">obsolete_declaration executive role</rdfs:label>
         <rdfs:subClassOf rdf:resource="&oboInOwl;ObsoleteClass"/>
         <obo:IAO_0000117>Mathias Brochhausen</obo:IAO_0000117>
         <obo:IAO_0000115 xml:lang="en">The role borne by a human being, an organization or an aggregate of either of both that is realized by being the active participant in a declaration.</obo:IAO_0000115>
@@ -313,7 +331,7 @@ It is important to note that this going out of existence of is complete and unli
     <!-- http://purl.obolibrary.org/obo/IAO_0021015 -->
 
     <owl:Class rdf:about="&obo;IAO_0021015">
-        <rdfs:label xml:lang="en">document template creator role</rdfs:label>
+        <rdfs:label xml:lang="en">obsolete_document template creator role</rdfs:label>
         <rdfs:subClassOf rdf:resource="&oboInOwl;ObsoleteClass"/>
         <obo:IAO_0000117 xml:lang="en">Mathias Brochhausen</obo:IAO_0000117>
         <obo:IAO_0000115 xml:lang="en">The role of a human being or an aggregate of human beings preparing the initial document to undergo a document act, thus creating a socio-legal generically dependent continuant.</obo:IAO_0000115>
@@ -327,7 +345,7 @@ It is important to note that this going out of existence of is complete and unli
     <!-- http://purl.obolibrary.org/obo/IAO_0021017 -->
 
     <owl:Class rdf:about="&obo;IAO_0021017">
-        <rdfs:label xml:lang="en">claimant role</rdfs:label>
+        <rdfs:label xml:lang="en">obsolete_claimant role</rdfs:label>
         <rdfs:subClassOf rdf:resource="&oboInOwl;ObsoleteClass"/>
         <obo:IAO_0000117>Mathias Brochhausen</obo:IAO_0000117>
         <obo:IAO_0000115 xml:lang="en">The role of a human being or an aggregate of human beings concretizing a claim.</obo:IAO_0000115>
@@ -339,7 +357,7 @@ It is important to note that this going out of existence of is complete and unli
     <!-- http://purl.obolibrary.org/obo/IAO_0021018 -->
 
     <owl:Class rdf:about="&obo;IAO_0021018">
-        <rdfs:label xml:lang="en">obligator role</rdfs:label>
+        <rdfs:label xml:lang="en">obsolete_obligator role</rdfs:label>
         <rdfs:subClassOf rdf:resource="&oboInOwl;ObsoleteClass"/>
         <obo:IAO_0000117>Mathias Brochhausen</obo:IAO_0000117>
         <obo:IAO_0000115 xml:lang="en">The role of a human being or an aggregate of human beings  concretizing an obligation.</obo:IAO_0000115>
@@ -385,7 +403,7 @@ It is important to note that this going out of existence of is complete and unli
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="&snap;MaterialEntity"/>
         <obo:IAO_0000117>Mathias Brochhausen</obo:IAO_0000117>
-        <obo:IAO_0000115 xml:lang="en">The human being or organization or aggregate of any of the aforementioned that is the bearer of a concretization of a legal generically dependent continuant brought about or transferred in a declaration.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">The human being or organization or aggregate of any of the aforementioned that is the bearer of a concretization of a socio-legal generically dependent continuant brought about by or transferred in a specific document act.</obo:IAO_0000115>
         <obo:IAO_0000112 xml:lang="en">me as a bearer of a spouse role, which participates in a document act, John Doe as bearer of a debtor role, which participates in a document act</obo:IAO_0000112>
     </owl:Class>
     
