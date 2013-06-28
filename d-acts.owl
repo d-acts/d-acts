@@ -31,11 +31,11 @@
      xmlns:OBO_REL="http://purl.org/obo/owl/OBO_REL#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:span="http://www.ifomis.org/bfo/1.1/span#">
-    <owl:Ontology rdf:about="http://purl.obofoundry.org/obo/iao/d-acts.owl">
+    <owl:Ontology rdf:about="http://purl.obofoundry.org/obo/iao/d-acts/2012-07-11/d-acts.owl">
+        <owl:versionInfo>2012-11-02</owl:versionInfo>
         <dc:creator>Mathias Brochhausen</dc:creator>
         <dc:creator>Mauricio B. Almeida</dc:creator>
         <dc:creator>Laura Slaughter</dc:creator>
-        <owl:versionInfo>2012-11-02</owl:versionInfo>
         <rdfs:comment xml:lang="en">The ontology is based on a theory of document acts proposed by Barry Smith:
 
 Smith, B. (2008) “Searle and de Soto: The new ontology of the social world”, The Mystery of Capital and the Construction of Social Reality, B. Smith, D.M. Mark  and I. Ehrlich, United States, Open Court., 35-52.
