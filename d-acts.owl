@@ -31,12 +31,12 @@
      xmlns:OBO_REL="http://purl.org/obo/owl/OBO_REL#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:span="http://www.ifomis.org/bfo/1.1/span#">
-    <owl:Ontology rdf:about="http://purl.obofoundry.org/obo/iao/d-acts.owl">
+    <owl:Ontology rdf:about="http://purl.obofoundry.org/obo/iao/d-acts/dev/d-acts.owl">
         <dc:creator>Amanda Hicks</dc:creator>
-        <dc:creator>Mathias Brochhausen</dc:creator>
-        <dc:creator>Mauricio B. Almeida</dc:creator>
         <dc:creator>Laura Slaughter</dc:creator>
+        <dc:creator>Mathias Brochhausen</dc:creator>
         <owl:versionInfo>2013-04-21</owl:versionInfo>
+        <dc:creator>Mauricio B. Almeida</dc:creator>
         <rdfs:comment xml:lang="en">The ontology is based on a theory of document acts proposed by Barry Smith and Reinach&#39;s theory of social acts and legal entities:
 
 Reinach, A. (1989), Sämtliche Werke. Texkritische Ausgabe, Edited by Karl Schuhmann and Barry Smith, München: Philosophia Verlag.
