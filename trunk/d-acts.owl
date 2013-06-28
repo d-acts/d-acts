@@ -35,7 +35,6 @@
         <dc:creator>Amanda Hicks</dc:creator>
         <dc:creator>Laura Slaughter</dc:creator>
         <dc:creator>Mathias Brochhausen</dc:creator>
-        <owl:versionInfo>2013-04-21</owl:versionInfo>
         <dc:creator>Mauricio B. Almeida</dc:creator>
         <rdfs:comment xml:lang="en">The ontology is based on a theory of document acts proposed by Barry Smith and Reinach&#39;s theory of social acts and legal entities:
 
@@ -47,6 +46,7 @@ Smith, B. (2012) &quot;How to Do Things With Documents&quot;, Rivista di estetic
 
 However, there are some amendments from our side which are to be found in the documentation.</rdfs:comment>
         <rdfs:comment xml:lang="en">This version includes identity documents. </rdfs:comment>
+        <owl:versionInfo xml:lang="en">development</owl:versionInfo>
         <dc:title xml:lang="en">document act ontology</dc:title>
         <owl:versionInfo xml:lang="en">release version</owl:versionInfo>
         <owl:imports rdf:resource="&obo;iao/pno.owl"/>
