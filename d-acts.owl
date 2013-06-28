@@ -27,11 +27,11 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:span="http://www.ifomis.org/bfo/1.1/span#">
-    <owl:Ontology rdf:about="http://purl.obofoundry.org/obo/iao/d-acts.owl">
-        <dc:creator>Mathias Brochhausen</dc:creator>
-        <dc:creator>Mauricio B. Almeida</dc:creator>
+    <owl:Ontology rdf:about="http://purl.obofoundry.org/obo/iao/d-acts/2012-07-03/d-acts.owl">
         <dc:creator>Laura Slaughter</dc:creator>
         <owl:versionInfo>2012-07-03</owl:versionInfo>
+        <dc:creator>Mauricio B. Almeida</dc:creator>
+        <dc:creator>Mathias Brochhausen</dc:creator>
         <dc:title xml:lang="en">document act ontology</dc:title>
         <owl:versionInfo xml:lang="en">initial relealse version</owl:versionInfo>
         <owl:imports rdf:resource="&obo;iao/dev/iao.owl"/>
