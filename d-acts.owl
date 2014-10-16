@@ -33,10 +33,10 @@
      xmlns:span="http://www.ifomis.org/bfo/1.1/span#">
     <owl:Ontology rdf:about="http://purl.obofoundry.org/obo/iao/d-acts/dev/d-acts.owl">
         <dc:creator>Mauricio B. Almeida</dc:creator>
+        <owl:versionInfo>2014-10-16</owl:versionInfo>
         <dc:creator>Mathias Brochhausen</dc:creator>
         <dc:creator>Laura Slaughter</dc:creator>
         <dc:creator>Amanda Hicks</dc:creator>
-        <owl:versionInfo>2013-11-27</owl:versionInfo>
         <rdfs:comment xml:lang="en">The ontology is based on a theory of document acts proposed by Barry Smith and Reinach&apos;s theory of social acts and legal entities:
 
 Reinach, A. (1989), Sämtliche Werke. Texkritische Ausgabe, Edited by Karl Schuhmann and Barry Smith, München: Philosophia Verlag.
@@ -226,7 +226,7 @@ It is important to note that this going out of existence of s is complete and un
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="&ro;has_part"/>
-                        <owl:someValuesFrom rdf:resource="&obo;IAO_0000027"/>
+                        <owl:someValuesFrom rdf:resource="&obo;IAO_0000030"/>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty>
@@ -238,7 +238,7 @@ It is important to note that this going out of existence of s is complete and un
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="&ro;has_part"/>
-                        <owl:allValuesFrom rdf:resource="&obo;IAO_0000027"/>
+                        <owl:allValuesFrom rdf:resource="&obo;IAO_0000030"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -803,6 +803,18 @@ This issue is outside the scope of OBI.</obo:IAO_0000116>
         <rdfs:comment xml:lang="en">It is often convenient to group organizations together that otherwise might not even interact with one another. </rdfs:comment>
         <obo:IAO_0000117 xml:lang="en">William R. Hogan</obo:IAO_0000117>
     </owl:Class>
+    
+
+
+    <!-- http://www.ifomis.org/bfo/1.1/snap#Object -->
+
+    <owl:Class rdf:about="&snap;Object"/>
+    
+
+
+    <!-- http://www.ifomis.org/bfo/1.1/snap#ObjectAggregate -->
+
+    <owl:Class rdf:about="&snap;ObjectAggregate"/>
 </rdf:RDF>
 
 
