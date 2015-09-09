@@ -5,52 +5,30 @@
     <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
     <!ENTITY obo "http://purl.obolibrary.org/obo/" >
     <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
-    <!ENTITY OBO_REL "http://purl.org/obo/owl/OBO_REL#" >
     <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
-    <!ENTITY span "http://www.ifomis.org/bfo/1.1/span#" >
-    <!ENTITY snap "http://www.ifomis.org/bfo/1.1/snap#" >
-    <!ENTITY ro "http://www.obofoundry.org/ro/ro.owl#" >
     <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
-    <!ENTITY iao "http://purl.obolibrary.org/obo/iao.owl/" >
     <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
     <!ENTITY oboInOwl "http://www.geneontology.org/formats/oboInOwl#" >
 ]>
 
 
-<rdf:RDF xmlns="http://purl.obofoundry.org/obo/iao/d-acts.owl#"
-     xml:base="http://purl.obofoundry.org/obo/iao/d-acts.owl"
+<rdf:RDF xmlns="&obo;iao/pno.owl#"
+     xml:base="&obo;iao/pno.owl"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
-     xmlns:OBO_REL="http://purl.org/obo/owl/OBO_REL#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-     xmlns:iao="&obo;iao.owl/"
-     xmlns:ro="http://www.obofoundry.org/ro/ro.owl#"
      xmlns:obo="http://purl.obolibrary.org/obo/"
-     xmlns:span="http://www.ifomis.org/bfo/1.1/span#"
-     xmlns:snap="http://www.ifomis.org/bfo/1.1/snap#"
      xmlns:dc="http://purl.org/dc/elements/1.1/">
-    <owl:Ontology rdf:about="http://purl.obofoundry.org/obo/iao/d-acts/dev/d-acts.owl">
-        <dc:creator>Mauricio B. Almeida</dc:creator>
-        <owl:versionInfo>2014-10-16</owl:versionInfo>
-        <dc:creator>Amanda Hicks</dc:creator>
+    <owl:Ontology rdf:about="&obo;iao/pno/bfo2/pno.owl">
+        <dc:contributor>William R. Hogan</dc:contributor>
         <dc:creator>Mathias Brochhausen</dc:creator>
-        <dc:creator>Laura Slaughter</dc:creator>
-        <rdfs:comment xml:lang="en">The ontology is based on a theory of document acts proposed by Barry Smith and Reinach&apos;s theory of social acts and legal entities:
-
-Reinach, A. (1989), Sämtliche Werke. Texkritische Ausgabe, Edited by Karl Schuhmann and Barry Smith, München: Philosophia Verlag.
-
-Smith, B. (2008) “Searle and de Soto: The new ontology of the social world”, The Mystery of Capital and the Construction of Social Reality, B. Smith, D.M. Mark  and I. Ehrlich, United States, Open Court., 35-52.
-
-Smith, B. (2012) &quot;How to Do Things With Documents&quot;, Rivista di estetica, 50 (2/2012), LII: 179-198.
-
-However, there are some amendments from our side which are to be found in the documentation.</rdfs:comment>
-        <rdfs:comment xml:lang="en">This version includes identity documents. </rdfs:comment>
-        <owl:versionInfo xml:lang="en">development</owl:versionInfo>
-        <dc:title xml:lang="en">document act ontology</dc:title>
-        <owl:imports rdf:resource="&obo;iao/2015-02-23/iao.owl"/>
-        <owl:imports rdf:resource="&obo;iao/pno/bfo2/pno.owl"/>
+        <dc:identifier>PNO</dc:identifier>
+        <dc:title xml:lang="en">proper name ontology</dc:title>
+        <owl:versionInfo xml:lang="en">release version 2015-09-09</owl:versionInfo>
+        <owl:imports rdf:resource="&obo;bfo/2014-05-03/classes-only.owl"/>
+        <owl:imports rdf:resource="&obo;ro/releases/2015-02-11/core.owl"/>
     </owl:Ontology>
     
 
@@ -68,44 +46,53 @@ However, there are some amendments from our side which are to be found in the do
 
     <!-- http://purl.obolibrary.org/obo/IAO_0000111 -->
 
-    <rdf:Description rdf:about="&obo;IAO_0000111">
+    <owl:AnnotationProperty rdf:about="&obo;IAO_0000111">
         <rdfs:label>editor preferred term</rdfs:label>
         <rdfs:label xml:lang="en">editor preferred label</rdfs:label>
         <rdfs:label xml:lang="en">editor preferred term</rdfs:label>
-    </rdf:Description>
+    </owl:AnnotationProperty>
     
 
 
     <!-- http://purl.obolibrary.org/obo/IAO_0000112 -->
 
-    <rdf:Description rdf:about="&obo;IAO_0000112">
-        <rdfs:label xml:lang="en">example of usage</rdfs:label>
-    </rdf:Description>
+    <owl:AnnotationProperty rdf:about="&obo;IAO_0000112"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000114 -->
+
+    <owl:AnnotationProperty rdf:about="&obo;IAO_0000114"/>
     
 
 
     <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
 
-    <rdf:Description rdf:about="&obo;IAO_0000115">
-        <rdfs:label rdf:datatype="&xsd;string">definition</rdfs:label>
-        <rdfs:label rdf:datatype="&xsd;string">textual definition</rdfs:label>
-        <rdfs:label>definition</rdfs:label>
-        <rdfs:label xml:lang="en">definition</rdfs:label>
-    </rdf:Description>
+    <owl:AnnotationProperty rdf:about="&obo;IAO_0000115"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000116 -->
+
+    <owl:AnnotationProperty rdf:about="&obo;IAO_0000116"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000117 -->
+
+    <owl:AnnotationProperty rdf:about="&obo;IAO_0000117"/>
     
 
 
     <!-- http://purl.obolibrary.org/obo/IAO_0000118 -->
 
-    <rdf:Description rdf:about="&obo;IAO_0000118">
-        <rdfs:label xml:lang="en">alternative term</rdfs:label>
-    </rdf:Description>
+    <owl:AnnotationProperty rdf:about="&obo;IAO_0000118"/>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/IAO_0000231 -->
+    <!-- http://purl.obolibrary.org/obo/IAO_0000119 -->
 
-    <owl:AnnotationProperty rdf:about="&obo;IAO_0000231"/>
+    <owl:AnnotationProperty rdf:about="&obo;IAO_0000119"/>
     
 
 
@@ -117,10 +104,34 @@ However, there are some amendments from our side which are to be found in the do
     
 
 
-    <!-- http://purl.obolibrary.org/obo/IAO_0000600 -->
+    <!-- http://purl.org/dc/elements/1.1/creator -->
 
-    <rdf:Description rdf:about="&obo;IAO_0000600">
-        <rdfs:label xml:lang="en">elucidation</rdfs:label>
+    <owl:AnnotationProperty rdf:about="&dc;creator"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasDefinition -->
+
+    <owl:AnnotationProperty rdf:about="&oboInOwl;hasDefinition"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasOBONamespace -->
+
+    <owl:AnnotationProperty rdf:about="&oboInOwl;hasOBONamespace"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#inSubset -->
+
+    <owl:AnnotationProperty rdf:about="&oboInOwl;inSubset"/>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#label -->
+
+    <rdf:Description rdf:about="&rdfs;label">
+        <rdfs:label>label</rdfs:label>
     </rdf:Description>
     
 
@@ -136,104 +147,107 @@ However, there are some amendments from our side which are to be found in the do
     
 
 
-    <!-- http://purl.obolibrary.org/obo/BFO_0000054 -->
+    <!-- http://purl.obolibrary.org/obo/BFO_0000050 -->
 
-    <owl:ObjectProperty rdf:about="&obo;BFO_0000054">
-        <rdfs:label xml:lang="en">realized in</rdfs:label>
-        <obo:IAO_0000412 rdf:datatype="&xsd;string">http://purl.obolibrary.org/obo/iao.owl</obo:IAO_0000412>
-        <rdfs:comment>Paraphrase of elucidation: a relation between a realizable entity and a process, where there is some material entity that is bearer of the realizable entity and participates in the process, and the realizable entity comes to be realized in the course of the process</rdfs:comment>
-        <obo:IAO_0000600 xml:lang="en">[copied from inverse property &apos;realizes&apos;] to say that b realizes c at t is to assert that there is some material entity d &amp; b is a process which has participant d at t &amp; c is a disposition or role of which d is bearer_of at t&amp; the type instantiated by b is correlated with the type instantiated by c. (axiom label in BFO2 Reference: [059-003])</obo:IAO_0000600>
-        <obo:IAO_0000118 xml:lang="en">is realized by</obo:IAO_0000118>
-        <obo:IAO_0000111 xml:lang="en">realized in</obo:IAO_0000111>
-        <obo:IAO_0000118 xml:lang="en">realized_in</obo:IAO_0000118>
-        <obo:IAO_0000112 xml:lang="en">this disease is realized in this disease course</obo:IAO_0000112>
-        <obo:IAO_0000112 xml:lang="en">this fragility is realized in this shattering</obo:IAO_0000112>
-        <obo:IAO_0000112 xml:lang="en">this investigator role is realized in this investigation</obo:IAO_0000112>
-        <rdfs:isDefinedBy rdf:resource="&obo;bfo.owl"/>
+    <owl:ObjectProperty rdf:about="&obo;BFO_0000050"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0020012 -->
+
+    <owl:ObjectProperty rdf:about="&obo;IAO_0020012">
+        <rdf:type rdf:resource="&owl;AsymmetricProperty"/>
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <rdfs:label xml:lang="en">designates</rdfs:label>
+        <dc:creator>Mathias Brochhausen</dc:creator>
+        <obo:IAO_0000115 xml:lang="en">x designates y, if for any given group of language users, x is an information content entity, is about y, and represents y in a linguistic context..</obo:IAO_0000115>
+        <rdfs:range rdf:resource="&obo;BFO_0000001"/>
+        <rdfs:domain rdf:resource="&obo;IAO_0000030"/>
+        <owl:inverseOf rdf:resource="&obo;IAO_0020018"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0020013 -->
+
+    <owl:ObjectProperty rdf:about="&obo;IAO_0020013">
+        <rdf:type rdf:resource="&owl;AsymmetricProperty"/>
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <rdfs:label xml:lang="en">is_borrowed_reference_to</rdfs:label>
+        <dc:creator>Mathias Brochhausen</dc:creator>
+        <obo:IAO_0000115 xml:lang="en">x is_borrowed_reference_for y, if x is a proper name that is used to refer to one individual among a specific group after the dubbing process took place.</obo:IAO_0000115>
+        <rdfs:range rdf:resource="&obo;BFO_0000001"/>
+        <rdfs:domain rdf:resource="&obo;IAO_0020000"/>
         <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/BFO_0000055 -->
+    <!-- http://purl.obolibrary.org/obo/IAO_0020014 -->
 
-    <owl:ObjectProperty rdf:about="&obo;BFO_0000055">
-        <rdfs:label xml:lang="en">realizes</rdfs:label>
-        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/BFO_0000058 -->
-
-    <owl:ObjectProperty rdf:about="&obo;BFO_0000058"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/IAO_0000136 -->
-
-    <owl:ObjectProperty rdf:about="&obo;IAO_0000136"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/IAO_0021011 -->
-
-    <owl:ObjectProperty rdf:about="&obo;IAO_0021011">
+    <owl:ObjectProperty rdf:about="&obo;IAO_0020014">
         <rdf:type rdf:resource="&owl;AsymmetricProperty"/>
-        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
         <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
-        <rdfs:label xml:lang="en">legally revokes</rdfs:label>
-        <obo:IAO_0000117>Mathias Brochhausen</obo:IAO_0000117>
-        <obo:IAO_0000115 xml:lang="en">d socio-legally revokes s if s participates in d and at the end of d s no longer exists.
-It is important to note that this going out of existence of s is complete and unlike the going out of existence for material entities which basically always are transformed into something else. After the declaration nothing is left of the socio-legal generically dependent continuant in question.</obo:IAO_0000115>
-        <rdfs:range rdf:resource="&obo;IAO_0021004"/>
-        <rdfs:domain rdf:resource="&obo;IAO_0021005"/>
-        <rdfs:subPropertyOf rdf:resource="&ro;has_participant"/>
+        <rdfs:label xml:lang="en">is_fixing_reference_to</rdfs:label>
+        <dc:creator>Mathias Brochhausen</dc:creator>
+        <obo:IAO_0000115 xml:lang="en">x is_fixed_reference_for y, if x is an utterance or graphemes concretized as writing quality inhering in some independent continuant that is used to single out one individual and refer to the latter among a specific group after the.</obo:IAO_0000115>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/IAO_0021012 -->
+    <!-- http://purl.obolibrary.org/obo/IAO_0020018 -->
 
-    <owl:ObjectProperty rdf:about="&obo;IAO_0021012">
+    <owl:ObjectProperty rdf:about="&obo;IAO_0020018">
         <rdf:type rdf:resource="&owl;AsymmetricProperty"/>
-        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
         <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
-        <rdfs:label xml:lang="en">legally transfers</rdfs:label>
+        <rdfs:label xml:lang="en">is designated by</rdfs:label>
         <obo:IAO_0000117>Mathias Brochhausen</obo:IAO_0000117>
-        <obo:IAO_0000115 xml:lang="en">d socio-legally transfers l if l participates in d and d has specified input  (concretization of l)1 and specified output  (concretization of l)2, where (concretization of l)1 and (concretization of l)2 are not identical.</obo:IAO_0000115>
-        <rdfs:range rdf:resource="&obo;IAO_0021004"/>
-        <rdfs:domain rdf:resource="&obo;IAO_0021005"/>
-        <rdfs:subPropertyOf rdf:resource="&ro;has_participant"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OBI_0000293 -->
-
-    <owl:ObjectProperty rdf:about="&obo;OBI_0000293">
-        <rdfs:domain rdf:resource="&obo;OBI_0000011"/>
+        <obo:IAO_0000115 xml:lang="en">p1 is designated by p2, if p2 is an information content entity that represents p1 in a linguistic context.</obo:IAO_0000115>
     </owl:ObjectProperty>
     
 
 
     <!-- http://purl.obolibrary.org/obo/OBI_0000299 -->
 
-    <rdf:Description rdf:about="&obo;OBI_0000299">
-        <rdfs:domain rdf:resource="&obo;OBI_0000011"/>
-    </rdf:Description>
+    <owl:ObjectProperty rdf:about="&obo;OBI_0000299">
+        <rdfs:label xml:lang="en">has_specified_output</rdfs:label>
+    </owl:ObjectProperty>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/OMRSE_00000020 -->
+    <!-- http://purl.obolibrary.org/obo/OBI_0000312 -->
 
-    <owl:ObjectProperty rdf:about="&obo;OMRSE_00000020">
-        <rdfs:label>is-aggregate-of</rdfs:label>
-        <obo:IAO_0000231 xml:lang="en">BFO relation takes precedence.</obo:IAO_0000231>
-        <rdfs:comment xml:lang="en">We anticipate BFO 2.0 including and defining this relation.  When it does, we will obsolete this property and declare it equivalent to the BFO 2.0 relation.
-</rdfs:comment>
-        <owl:deprecated xml:lang="en">true</owl:deprecated>
-        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    <owl:ObjectProperty rdf:about="&obo;OBI_0000312">
+        <rdfs:label>is_specified_output_of</rdfs:label>
+        <rdfs:range rdf:resource="&obo;OBI_0000011"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0000052 -->
+
+    <owl:ObjectProperty rdf:about="&obo;RO_0000052"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0000053 -->
+
+    <owl:ObjectProperty rdf:about="&obo;RO_0000053">
+        <rdfs:label xml:lang="en">bearer_of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0000056 -->
+
+    <owl:ObjectProperty rdf:about="&obo;RO_0000056"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0000057 -->
+
+    <owl:ObjectProperty rdf:about="&obo;RO_0000057">
+        <rdfs:label>has_participant</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -242,10 +256,10 @@ It is important to note that this going out of existence of s is complete and un
 
     <owl:ObjectProperty rdf:about="&obo;RO_0000058">
         <rdfs:label xml:lang="en">is concretized as</rdfs:label>
-        <obo:IAO_0000412 rdf:datatype="&xsd;string">http://purl.obolibrary.org/obo/iao.owl</obo:IAO_0000412>
-        <obo:IAO_0000112 xml:lang="en">A journal article is an information artifact that inheres in some number of printed journals. For each copy of the printed journal there is some quality that carries the journal article, such as a pattern of ink. The journal article (a generically dependent continuant) is concretized as the quality (a specifically dependent continuant), and both depend on that copy of the printed journal (an independent continuant).</obo:IAO_0000112>
-        <obo:IAO_0000115 xml:lang="en">A relationship between a generically dependent continuant and a specifically dependent continuant, in which the generically dependent continuant depends on some independent continuant in virtue of the fact that the specifically dependent continuant also depends on that same independent continuant. A generically dependent continuant may be concretized as multiple specifically dependent continuants.</obo:IAO_0000115>
-        <obo:IAO_0000112 xml:lang="en">An investigator reads a protocol and forms a plan to carry out an assay. The plan is a realizable entity (a specifically dependent continuant) that concretizes the protocol (a generically dependent continuant), and both depend on the investigator (an independent continuant). The plan is then realized by the assay (a process).</obo:IAO_0000112>
+        <obo:IAO_0000412 rdf:datatype="&xsd;string">http://purl.obolibrary.org/obo/obi.owl</obo:IAO_0000412>
+        <obo:IAO_0000111 xml:lang="en">is concretized as</obo:IAO_0000111>
+        <rdfs:range rdf:resource="&obo;BFO_0000020"/>
+        <rdfs:domain rdf:resource="&obo;BFO_0000031"/>
         <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
     </owl:ObjectProperty>
     
@@ -255,48 +269,13 @@ It is important to note that this going out of existence of s is complete and un
 
     <owl:ObjectProperty rdf:about="&obo;RO_0000059">
         <rdfs:label xml:lang="en">concretizes</rdfs:label>
-        <obo:IAO_0000412 rdf:datatype="&xsd;string">http://purl.obolibrary.org/obo/iao.owl</obo:IAO_0000412>
-        <obo:IAO_0000112 xml:lang="en">A journal article is an information artifact that inheres in some number of printed journals. For each copy of the printed journal there is some quality that carries the journal article, such as a pattern of ink. The quality (a specifically dependent continuant) concretizes the journal article (a generically dependent continuant), and both depend on that copy of the printed journal (an independent continuant).</obo:IAO_0000112>
-        <obo:IAO_0000115 xml:lang="en">A relationship between a specifically dependent continuant and a generically dependent continuant, in which the generically dependent continuant depends on some independent continuant in virtue of the fact that the specifically dependent continuant also depends on that same independent continuant. Multiple specifically dependent continuants can concretize the same generically dependent continuant.</obo:IAO_0000115>
-        <obo:IAO_0000112 xml:lang="en">An investigator reads a protocol and forms a plan to carry out an assay. The plan is a realizable entity (a specifically dependent continuant) that concretizes the protocol (a generically dependent continuant), and both depend on the investigator (an independent continuant). The plan is then realized by the assay (a process).</obo:IAO_0000112>
+        <obo:IAO_0000412 rdf:datatype="&xsd;string">http://purl.obolibrary.org/obo/obi.owl</obo:IAO_0000412>
+        <obo:IAO_0000111 xml:lang="en">concretizes</obo:IAO_0000111>
+        <rdfs:domain rdf:resource="&obo;BFO_0000020"/>
+        <rdfs:range rdf:resource="&obo;BFO_0000031"/>
+        <owl:inverseOf rdf:resource="&obo;RO_0000058"/>
         <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
     </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.org/obo/owl/OBO_REL#bearer_of -->
-
-    <owl:ObjectProperty rdf:about="&OBO_REL;bearer_of"/>
-    
-
-
-    <!-- http://purl.org/obo/owl/OBO_REL#inheres_in -->
-
-    <owl:ObjectProperty rdf:about="&OBO_REL;inheres_in"/>
-    
-
-
-    <!-- http://www.obofoundry.org/ro/ro.owl#has_agent -->
-
-    <owl:ObjectProperty rdf:about="&ro;has_agent"/>
-    
-
-
-    <!-- http://www.obofoundry.org/ro/ro.owl#has_part -->
-
-    <owl:ObjectProperty rdf:about="&ro;has_part"/>
-    
-
-
-    <!-- http://www.obofoundry.org/ro/ro.owl#has_participant -->
-
-    <owl:ObjectProperty rdf:about="&ro;has_participant"/>
-    
-
-
-    <!-- http://www.obofoundry.org/ro/ro.owl#participates_in -->
-
-    <owl:ObjectProperty rdf:about="&ro;participates_in"/>
     
 
 
@@ -311,487 +290,414 @@ It is important to note that this going out of existence of s is complete and un
     
 
 
-    <!-- http://purl.obolibrary.org/obo/IAO_0000027 -->
+    <!-- http://purl.obolibrary.org/obo/BFO_0000001 -->
 
-    <owl:Class rdf:about="&obo;IAO_0000027"/>
+    <owl:Class rdf:about="&obo;BFO_0000001"/>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/IAO_0000310 -->
+    <!-- http://purl.obolibrary.org/obo/BFO_0000004 -->
 
-    <owl:Class rdf:about="&obo;IAO_0000310"/>
+    <owl:Class rdf:about="&obo;BFO_0000004"/>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/IAO_0020021 -->
+    <!-- http://purl.obolibrary.org/obo/BFO_0000015 -->
 
-    <owl:Class rdf:about="&obo;IAO_0020021">
-        <rdfs:label xml:lang="en">identity document</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;IAO_0000310"/>
-        <obo:IAO_0000117>Amanda Hicks</obo:IAO_0000117>
-        <obo:IAO_0000115 xml:lang="en">a document that denotes some identity and is concretized by the bearer of some credential role</obo:IAO_0000115>
+    <owl:Class rdf:about="&obo;BFO_0000015"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000019 -->
+
+    <owl:Class rdf:about="&obo;BFO_0000019"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000020 -->
+
+    <owl:Class rdf:about="&obo;BFO_0000020"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000031 -->
+
+    <owl:Class rdf:about="&obo;BFO_0000031"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000040 -->
+
+    <owl:Class rdf:about="&obo;BFO_0000040"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_49443 -->
+
+    <owl:Class rdf:about="&obo;FMA_49443">
+        <rdfs:label xml:lang="en">Anatomical cluster</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;FMA_67135"/>
     </owl:Class>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/IAO_0020022 -->
+    <!-- http://purl.obolibrary.org/obo/FMA_55457 -->
 
-    <owl:Class rdf:about="&obo;IAO_0020022">
-        <rdfs:label xml:lang="en">documented identity</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;IAO_0000030"/>
-        <rdfs:subClassOf>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="&ro;has_part"/>
-                        <owl:someValuesFrom rdf:resource="&obo;IAO_0000030"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty>
-                            <rdf:Description>
-                                <owl:inverseOf rdf:resource="&obo;IAO_0000136"/>
-                            </rdf:Description>
-                        </owl:onProperty>
-                        <owl:someValuesFrom rdf:resource="&obo;IAO_0020021"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="&ro;has_part"/>
-                        <owl:allValuesFrom rdf:resource="&obo;IAO_0000030"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </rdfs:subClassOf>
-        <obo:IAO_0000117>Amanda Hicks</obo:IAO_0000117>
-        <obo:IAO_0000115 xml:lang="en">a documented identity is the aggregate of all data items about an entity.  Notice that a documented identity is not itself a document since a document is intended to be understood as a whole and data items about an individual are usually scattered across different documents.</obo:IAO_0000115>
-        <rdfs:comment xml:lang="en">is an aggregate of ICEs also an ICE? yes
-Is part_of the appropriate relation to use for data items and documented identities?</rdfs:comment>
+    <owl:Class rdf:about="&obo;FMA_55457">
+        <rdfs:label xml:lang="en">vocal fold</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;FMA_64854"/>
     </owl:Class>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/IAO_0020023 -->
+    <!-- http://purl.obolibrary.org/obo/FMA_64854 -->
 
-    <owl:Class rdf:about="&obo;IAO_0020023">
-        <rdfs:label xml:lang="en">authentication</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;BFO_0000015"/>
-        <rdfs:subClassOf>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="&obo;BFO_0000015"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="&obo;BFO_0000055"/>
-                        <owl:someValuesFrom rdf:resource="&obo;IAO_0020024"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="&ro;has_participant"/>
-                        <owl:someValuesFrom rdf:resource="&obo;IAO_0000027"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="&ro;has_participant"/>
-                        <owl:someValuesFrom>
-                            <owl:Restriction>
-                                <owl:onProperty>
-                                    <rdf:Description>
-                                        <owl:inverseOf rdf:resource="&obo;IAO_0000136"/>
-                                    </rdf:Description>
-                                </owl:onProperty>
-                                <owl:someValuesFrom rdf:resource="&obo;IAO_0000027"/>
-                            </owl:Restriction>
-                        </owl:someValuesFrom>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </rdfs:subClassOf>
-        <obo:IAO_0000117>Amanda Hicks</obo:IAO_0000117>
-        <obo:IAO_0000112> I order a beer and the bartender authenticates my age by looking at my DOB on my driver&apos;s license.  I sign into my email account, and the system authenticates my permission to read the email by checking the password I enter against my password listed in the database.</obo:IAO_0000112>
-        <obo:IAO_0000115 xml:lang="en">Authentication is the act of checking or verifying an identity claim (that is either tacit or explicit). 
-</obo:IAO_0000115>
+    <owl:Class rdf:about="&obo;FMA_64854">
+        <rdfs:label xml:lang="en">Subdivision of larynx</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;FMA_64989"/>
     </owl:Class>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/IAO_0020024 -->
+    <!-- http://purl.obolibrary.org/obo/FMA_64989 -->
 
-    <owl:Class rdf:about="&obo;IAO_0020024">
-        <rdfs:label xml:lang="en">credential role</rdfs:label>
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="&obo;BFO_0000023"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="&obo;BFO_0000054"/>
-                        <owl:someValuesFrom rdf:resource="&obo;IAO_0020023"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="&OBO_REL;inheres_in"/>
-                        <owl:someValuesFrom>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="&OBO_REL;bearer_of"/>
-                                <owl:someValuesFrom>
-                                    <owl:Restriction>
-                                        <owl:onProperty rdf:resource="&obo;RO_0000059"/>
-                                        <owl:someValuesFrom rdf:resource="&obo;IAO_0020021"/>
-                                    </owl:Restriction>
-                                </owl:someValuesFrom>
-                            </owl:Restriction>
-                        </owl:someValuesFrom>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="&obo;BFO_0000023"/>
-        <obo:IAO_0000115 xml:lang="en"> a role that inheres in a concretization of an identity document and is realized by an authentication process</obo:IAO_0000115>
-        <obo:IAO_0000117 xml:lang="en">Amanda Hicks</obo:IAO_0000117>
+    <owl:Class rdf:about="&obo;FMA_64989">
+        <rdfs:label xml:lang="en">Heterogeneous cluster</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;FMA_49443"/>
     </owl:Class>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/IAO_0021000 -->
+    <!-- http://purl.obolibrary.org/obo/FMA_67135 -->
 
-    <owl:Class rdf:about="&obo;IAO_0021000">
-        <rdfs:label xml:lang="en">obsolete_claim</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&oboInOwl;ObsoleteClass"/>
-        <obo:IAO_0000231 rdf:resource="&obo;IAO_0000226"/>
+    <owl:Class rdf:about="&obo;FMA_67135">
+        <rdfs:label xml:lang="en">Anatomical structure</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;FMA_67165"/>
     </owl:Class>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/IAO_0021001 -->
+    <!-- http://purl.obolibrary.org/obo/FMA_67165 -->
 
-    <owl:Class rdf:about="&obo;IAO_0021001">
-        <rdfs:label xml:lang="en">obsolete_obligation</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&oboInOwl;ObsoleteClass"/>
-        <obo:IAO_0000231 rdf:resource="&obo;IAO_0000226"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/IAO_0021002 -->
-
-    <owl:Class rdf:about="&obo;IAO_0021002">
-        <rdfs:label xml:lang="en">document act</rdfs:label>
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <owl:Class>
-                        <owl:unionOf rdf:parseType="Collection">
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="&obo;IAO_0021011"/>
-                                <owl:someValuesFrom rdf:resource="&obo;IAO_0021004"/>
-                            </owl:Restriction>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="&obo;IAO_0021012"/>
-                                <owl:someValuesFrom rdf:resource="&obo;IAO_0021004"/>
-                            </owl:Restriction>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="&obo;OBI_0000299"/>
-                                <owl:someValuesFrom rdf:resource="&obo;IAO_0021004"/>
-                            </owl:Restriction>
-                        </owl:unionOf>
-                    </owl:Class>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
-                        <owl:someValuesFrom rdf:resource="&obo;IAO_0000310"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="&obo;OBI_0000299"/>
-                        <owl:someValuesFrom rdf:resource="&obo;IAO_0000310"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="&ro;has_agent"/>
-                        <owl:someValuesFrom>
-                            <owl:Class>
-                                <owl:unionOf rdf:parseType="Collection">
-                                    <rdf:Description rdf:about="&obo;NCBITaxon_9606"/>
-                                    <rdf:Description rdf:about="&obo;OBI_0000245"/>
-                                    <rdf:Description rdf:about="&obo;OMRSE_00000023"/>
-                                    <rdf:Description rdf:about="&obo;OMRSE_00000033"/>
-                                </owl:unionOf>
-                            </owl:Class>
-                        </owl:someValuesFrom>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="&obo;IAO_0021005"/>
-        <obo:IAO_0000115 xml:lang="en">A declaration that is made using a document to temporally extend the effects of the declaration.</obo:IAO_0000115>
-        <obo:IAO_0000117>Mathias Brochhausen</obo:IAO_0000117>
-        <obo:IAO_0000112 xml:lang="en">my filling in an immigration form, a judge&apos;s signing and stamping a court order</obo:IAO_0000112>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/IAO_0021003 -->
-
-    <owl:Class rdf:about="&obo;IAO_0021003">
-        <rdfs:label xml:lang="en">social act</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;BFO_0000015"/>
-        <obo:IAO_0000115 xml:lang="en">A process that is carried out by a conscious being or an aggregate of conscious beings and is spontaneous, directed towards other conscious beings and aggregates thereof and needs to be perceived.</obo:IAO_0000115>
-        <obo:IAO_0000112 xml:lang="en">Colonel Klink giving Sergeant Schultz an order, Jake promising Jill to take her to the junior prom</obo:IAO_0000112>
-        <obo:IAO_0000117>Mathias Brochhausen</obo:IAO_0000117>
-        <rdfs:comment xml:lang="en">MB: Regarding the use of the term &apos;sponteneous&apos; in the definition:
-The term is used in the following meaning of being self generated. It does not stand in contrast to being planned.</rdfs:comment>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/IAO_0021004 -->
-
-    <owl:Class rdf:about="&obo;IAO_0021004">
-        <rdfs:label xml:lang="en">socio-legal generically dependent continuant</rdfs:label>
-        <owl:equivalentClass>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OBI_0000312"/>
-                <owl:someValuesFrom rdf:resource="&obo;IAO_0021005"/>
-            </owl:Restriction>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="&obo;BFO_0000031"/>
-        <obo:IAO_0000117>Mathias Brochhausen</obo:IAO_0000117>
-        <obo:IAO_0000115 xml:lang="en">Socio-legal generically dependent continuants are generically dependent continuants that come into existence through declarations and are concretized as roles. They differ from information content entities in  that they are not about something, but exist as quasi-abstract social entities. Socio-legal generically dependent continuants are not concretized as qualities inhering in independent continuants, but only as realizable entities borne by an organism or an aggregate of organisms. </obo:IAO_0000115>
-        <obo:IAO_0000112 xml:lang="en">the claim of a piece of land, the obligation to pay rent to the owner of a rental property</obo:IAO_0000112>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/IAO_0021005 -->
-
-    <owl:Class rdf:about="&obo;IAO_0021005">
-        <rdfs:label xml:lang="en">declaration</rdfs:label>
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <owl:Class>
-                        <owl:unionOf rdf:parseType="Collection">
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="&obo;IAO_0021011"/>
-                                <owl:someValuesFrom rdf:resource="&obo;IAO_0021004"/>
-                            </owl:Restriction>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="&obo;IAO_0021012"/>
-                                <owl:someValuesFrom rdf:resource="&obo;IAO_0021004"/>
-                            </owl:Restriction>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="&obo;OBI_0000299"/>
-                                <owl:someValuesFrom rdf:resource="&obo;IAO_0021004"/>
-                            </owl:Restriction>
-                        </owl:unionOf>
-                    </owl:Class>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="&obo;BFO_0000055"/>
-                        <owl:someValuesFrom rdf:resource="&obo;IAO_0021022"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="&ro;has_agent"/>
-                        <owl:someValuesFrom>
-                            <owl:Class>
-                                <owl:intersectionOf rdf:parseType="Collection">
-                                    <owl:Class>
-                                        <owl:unionOf rdf:parseType="Collection">
-                                            <rdf:Description rdf:about="&obo;NCBITaxon_9606"/>
-                                            <rdf:Description rdf:about="&obo;OBI_0000245"/>
-                                            <rdf:Description rdf:about="&obo;OMRSE_00000023"/>
-                                            <rdf:Description rdf:about="&obo;OMRSE_00000033"/>
-                                        </owl:unionOf>
-                                    </owl:Class>
-                                    <owl:Restriction>
-                                        <owl:onProperty rdf:resource="&OBO_REL;bearer_of"/>
-                                        <owl:someValuesFrom rdf:resource="&obo;IAO_0021022"/>
-                                    </owl:Restriction>
-                                </owl:intersectionOf>
-                            </owl:Class>
-                        </owl:someValuesFrom>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="&obo;IAO_0021003"/>
-        <obo:IAO_0000115 xml:lang="en">A social act that brings about, transfers or revokes a socio-legal generically dependent continuant. Declarations do not depend on words spoken or written, but sometimes are merely actions, for instance the signing of a document.
-</obo:IAO_0000115>
-        <obo:IAO_0000117 xml:lang="en">Mathias Brochhausen</obo:IAO_0000117>
-        <obo:IAO_0000112 xml:lang="en">my consenting verbally to buy a used TV set for $ 500, Jane Doe&apos;s signing of the divorce papers, John Robie&apos;s taking of Mrs. Steven&apos;s jewels</obo:IAO_0000112>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/IAO_0021014 -->
-
-    <owl:Class rdf:about="&obo;IAO_0021014">
-        <rdfs:label xml:lang="en">obsolete_declaration executive role</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&oboInOwl;ObsoleteClass"/>
-        <obo:IAO_0000117>Mathias Brochhausen</obo:IAO_0000117>
-        <obo:IAO_0000115 xml:lang="en">The role borne by a human being, an organization or an aggregate of either of both that is realized by being the active participant in a declaration.</obo:IAO_0000115>
-        <obo:IAO_0000231 rdf:resource="&obo;IAO_0000226"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/IAO_0021015 -->
-
-    <owl:Class rdf:about="&obo;IAO_0021015">
-        <rdfs:label xml:lang="en">obsolete_document template creator role</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&oboInOwl;ObsoleteClass"/>
-        <obo:IAO_0000117 xml:lang="en">Mathias Brochhausen</obo:IAO_0000117>
-        <obo:IAO_0000115 xml:lang="en">The role of a human being or an aggregate of human beings preparing the initial document to undergo a document act, thus creating a socio-legal generically dependent continuant.</obo:IAO_0000115>
-        <rdfs:comment xml:lang="en">not that the &quot;template&quot; does not need to be a template at all. It can be a document that is getting stamped and signed and by these acts creating some socio-legal generically dependent continuants.</rdfs:comment>
-        <obo:IAO_0000112 xml:lang="en">the role borne by the US Citizen and Immigration Service realized by providing the template form for entering the US as a non-resident alien, the role of a guideline committee in putting together a clinical guideline</obo:IAO_0000112>
-        <obo:IAO_0000231 rdf:resource="&obo;IAO_0000226"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/IAO_0021017 -->
-
-    <owl:Class rdf:about="&obo;IAO_0021017">
-        <rdfs:label xml:lang="en">obsolete_claimant role</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&oboInOwl;ObsoleteClass"/>
-        <obo:IAO_0000117>Mathias Brochhausen</obo:IAO_0000117>
-        <obo:IAO_0000115 xml:lang="en">The role of a human being or an aggregate of human beings concretizing a claim.</obo:IAO_0000115>
-        <obo:IAO_0000231 rdf:resource="&obo;IAO_0000226"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/IAO_0021018 -->
-
-    <owl:Class rdf:about="&obo;IAO_0021018">
-        <rdfs:label xml:lang="en">obsolete_obligator role</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&oboInOwl;ObsoleteClass"/>
-        <obo:IAO_0000117>Mathias Brochhausen</obo:IAO_0000117>
-        <obo:IAO_0000115 xml:lang="en">The role of a human being or an aggregate of human beings  concretizing an obligation.</obo:IAO_0000115>
-        <obo:IAO_0000231 rdf:resource="&obo;IAO_0000226"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/IAO_0021020 -->
-
-    <owl:Class rdf:about="&obo;IAO_0021020">
-        <rdfs:label xml:lang="en">declaration target</rdfs:label>
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <owl:Class>
-                        <owl:unionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="&obo;NCBITaxon_9606"/>
-                            <rdf:Description rdf:about="&obo;OBI_0000245"/>
-                            <rdf:Description rdf:about="&obo;OMRSE_00000023"/>
-                            <rdf:Description rdf:about="&obo;OMRSE_00000033"/>
-                        </owl:unionOf>
-                    </owl:Class>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="&OBO_REL;bearer_of"/>
-                        <owl:someValuesFrom>
-                            <owl:Class>
-                                <owl:intersectionOf rdf:parseType="Collection">
-                                    <owl:Restriction>
-                                        <owl:onProperty rdf:resource="&obo;RO_0000059"/>
-                                        <owl:someValuesFrom rdf:resource="&obo;IAO_0021004"/>
-                                    </owl:Restriction>
-                                    <owl:Restriction>
-                                        <owl:onProperty rdf:resource="&ro;participates_in"/>
-                                        <owl:someValuesFrom rdf:resource="&obo;IAO_0021005"/>
-                                    </owl:Restriction>
-                                </owl:intersectionOf>
-                            </owl:Class>
-                        </owl:someValuesFrom>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
+    <owl:Class rdf:about="&obo;FMA_67165">
+        <rdfs:label xml:lang="en">Material anatomical entity</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;BFO_0000040"/>
-        <obo:IAO_0000117>Mathias Brochhausen</obo:IAO_0000117>
-        <obo:IAO_0000115 xml:lang="en">The human being or organization or aggregate of any of the aforementioned that is the bearer of a concretization of a socio-legal generically dependent continuant brought about by or transferred in a specific document act.</obo:IAO_0000115>
-        <obo:IAO_0000112 xml:lang="en">me as a bearer of a spouse role, which participates in a document act, John Doe as bearer of a debtor role, which participates in a document act</obo:IAO_0000112>
     </owl:Class>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/IAO_0021021 -->
+    <!-- http://purl.obolibrary.org/obo/IAO_0000030 -->
 
-    <owl:Class rdf:about="&obo;IAO_0021021">
-        <rdfs:label xml:lang="en">document act template creator role</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;BFO_0000023"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&OBO_REL;inheres_in"/>
-                <owl:someValuesFrom>
-                    <owl:Class>
-                        <owl:intersectionOf rdf:parseType="Collection">
-                            <owl:Class>
-                                <owl:unionOf rdf:parseType="Collection">
-                                    <rdf:Description rdf:about="&obo;NCBITaxon_9606"/>
-                                    <rdf:Description rdf:about="&obo;OBI_0000245"/>
-                                    <rdf:Description rdf:about="&obo;OMRSE_00000023"/>
-                                    <rdf:Description rdf:about="&obo;OMRSE_00000033"/>
-                                </owl:unionOf>
-                            </owl:Class>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="&obo;BFO_0000054"/>
-                                <owl:allValuesFrom>
-                                    <owl:Class>
-                                        <owl:intersectionOf rdf:parseType="Collection">
-                                            <rdf:Description rdf:about="&obo;OBI_0000011"/>
-                                            <owl:Restriction>
-                                                <owl:onProperty rdf:resource="&obo;OBI_0000299"/>
-                                                <owl:someValuesFrom>
-                                                    <owl:Class>
-                                                        <owl:intersectionOf rdf:parseType="Collection">
-                                                            <rdf:Description rdf:about="&obo;IAO_0000310"/>
-                                                            <owl:Restriction>
-                                                                <owl:onProperty rdf:resource="&ro;participates_in"/>
-                                                                <owl:someValuesFrom rdf:resource="&obo;IAO_0021002"/>
-                                                            </owl:Restriction>
-                                                        </owl:intersectionOf>
-                                                    </owl:Class>
-                                                </owl:someValuesFrom>
-                                            </owl:Restriction>
-                                        </owl:intersectionOf>
-                                    </owl:Class>
-                                </owl:allValuesFrom>
-                            </owl:Restriction>
-                        </owl:intersectionOf>
-                    </owl:Class>
-                </owl:someValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <obo:IAO_0000117>Mathias Brochhausen</obo:IAO_0000117>
-        <obo:IAO_0000115 xml:lang="en">A role that inheres in a human being or organization or aggregate of any of the aforementioned that prepares a document that is the specified input to a document act and is the input document of a document act.</obo:IAO_0000115>
-        <obo:IAO_0000112 xml:lang="en">The role of the U.S. Citizenship and Immigration Service realized by the creation of an immigration form that is being filled in, the role of a national professional association realized by the creation of a clinical guideline that is to be certified</obo:IAO_0000112>
+    <owl:Class rdf:about="&obo;IAO_0000030">
+        <rdfs:label>information content entity</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;BFO_0000031"/>
     </owl:Class>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/IAO_0021022 -->
+    <!-- http://purl.obolibrary.org/obo/IAO_0000178 -->
 
-    <owl:Class rdf:about="&obo;IAO_0021022">
-        <rdfs:label xml:lang="en">declaration performer role</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;BFO_0000023"/>
-        <rdfs:subClassOf>
+    <owl:Class rdf:about="&obo;IAO_0000178">
+        <rdfs:subClassOf rdf:resource="&obo;BFO_0000040"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0020000 -->
+
+    <owl:Class rdf:about="&obo;IAO_0020000">
+        <rdfs:label xml:lang="en">identifier</rdfs:label>
+        <rdfs:label xml:lang="en">proper name</rdfs:label>
+        <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="&OBO_REL;inheres_in"/>
-                        <owl:someValuesFrom>
-                            <owl:Class>
-                                <owl:unionOf rdf:parseType="Collection">
-                                    <rdf:Description rdf:about="&obo;NCBITaxon_9606"/>
-                                    <rdf:Description rdf:about="&obo;OBI_0000245"/>
-                                    <rdf:Description rdf:about="&obo;OMRSE_00000023"/>
-                                    <rdf:Description rdf:about="&obo;OMRSE_00000033"/>
-                                </owl:unionOf>
-                            </owl:Class>
-                        </owl:someValuesFrom>
+                        <owl:onProperty rdf:resource="&obo;IAO_0020012"/>
+                        <owl:someValuesFrom rdf:resource="&obo;BFO_0000001"/>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="&obo;BFO_0000054"/>
-                        <owl:allValuesFrom rdf:resource="&obo;IAO_0021005"/>
+                        <owl:onProperty rdf:resource="&obo;OBI_0000312"/>
+                        <owl:allValuesFrom rdf:resource="&obo;IAO_0020010"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000030"/>
+        <obo:IAO_0000115 xml:lang="en">A proper name is an information content entity that is the outcome of a dubbing process and is used to refer to one instance of entity shared by a group of people to refer to that individual entity. </obo:IAO_0000115>
+        <obo:IAO_0000117>Mathias Brochhausen</obo:IAO_0000117>
+        <dc:creator>Mathias Brochhausen</dc:creator>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0020001 -->
+
+    <owl:Class rdf:about="&obo;IAO_0020001">
+        <rdfs:label xml:lang="en">grapheme</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000030"/>
+        <obo:IAO_0000119>http://en.wikipedia.org/wiki/Grapheme</obo:IAO_0000119>
+        <obo:IAO_0000115 xml:lang="en">A grapheme  is an information content entity that is a fundamental unit in a written language. </obo:IAO_0000115>
+        <dc:creator>Mathias Brochhausen</dc:creator>
+        <obo:IAO_0000112 xml:lang="en">alphabetic letters, Chinese characters, numerical digits, punctuation marks, and the individual symbols of any of the world&apos;s writing systems</obo:IAO_0000112>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0020002 -->
+
+    <owl:Class rdf:about="&obo;IAO_0020002">
+        <rdfs:label xml:lang="en">utterance</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000030"/>
+        <obo:IAO_0000115 xml:lang="en">An utterance is an information content entity that is a complete unit of speech in spoken language. </obo:IAO_0000115>
+        <obo:IAO_0000119>Wikipedia: http://en.wikipedia.org/wiki/Utterance</obo:IAO_0000119>
+        <obo:IAO_0000117>Mathias Brochhausen</obo:IAO_0000117>
+        <dc:creator>Mathias Brochhausen</dc:creator>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0020003 -->
+
+    <owl:Class rdf:about="&obo;IAO_0020003">
+        <rdfs:label xml:lang="en">mechanical wave quality</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;BFO_0000019"/>
+        <obo:IAO_0000115 xml:lang="en">An attributive collection of qualities inhering in energy when transported through a medium in a wave.</obo:IAO_0000115>
+        <dc:creator>Mathias Brochhausen</dc:creator>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0020004 -->
+
+    <owl:Class rdf:about="&obo;IAO_0020004">
+        <rdfs:label xml:lang="en">writing quality</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;BFO_0000019"/>
+        <obo:IAO_0000117>Mathias Brochhausen</obo:IAO_0000117>
+        <dc:creator>Mathias Brochhausen</dc:creator>
+        <obo:IAO_0000115 xml:lang="en">is a quality that is the concretization of graphemes and inheres in a material object.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0020005 -->
+
+    <owl:Class rdf:about="&obo;IAO_0020005">
+        <rdfs:label>writing bearer</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&obo;IAO_0000178"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;RO_0000053"/>
+                        <owl:someValuesFrom>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="&obo;RO_0000059"/>
+                                <owl:someValuesFrom rdf:resource="&obo;IAO_0020001"/>
+                            </owl:Restriction>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000178"/>
+        <dc:creator>Mathias Brochhausen</dc:creator>
+        <obo:IAO_0000117>Mathias Brochhausen</obo:IAO_0000117>
+        <obo:IAO_0000115 xml:lang="en">is a material information bearer that bears the concretization of graphemes.</obo:IAO_0000115>
+        <obo:IAO_0000112 xml:lang="en">pieces of paper, tables, walls, floors, driveways, highway signs, computer screens, skin, tablets of clay, rocks, sheets of metal (license plates), sheets of papyrus, etc.   clouds of smoke in skywriting,</obo:IAO_0000112>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0020006 -->
+
+    <owl:Class rdf:about="&obo;IAO_0020006">
+        <rdfs:label xml:lang="en">portion of energy</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;BFO_0000004"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0020007 -->
+
+    <owl:Class rdf:about="&obo;IAO_0020007">
+        <rdfs:label xml:lang="en">sound energy</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&obo;IAO_0020006"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;RO_0000053"/>
+                        <owl:someValuesFrom rdf:resource="&obo;IAO_0020003"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;RO_0000056"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="&obo;IAO_0020009"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="&obo;RO_0000057"/>
+                                        <owl:someValuesFrom>
+                                            <owl:Class>
+                                                <owl:intersectionOf rdf:parseType="Collection">
+                                                    <rdf:Description rdf:about="&obo;BFO_0000040"/>
+                                                    <owl:Restriction>
+                                                        <owl:onProperty rdf:resource="&obo;RO_0000053"/>
+                                                        <owl:someValuesFrom rdf:resource="http://purl.org/obo/owl/PATO#PATO_0001025"/>
+                                                    </owl:Restriction>
+                                                </owl:intersectionOf>
+                                            </owl:Class>
+                                        </owl:someValuesFrom>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0020006"/>
+        <obo:IAO_0000115 xml:lang="en">Energy that is transported in a sound wave.</obo:IAO_0000115>
+        <dc:creator>Mathias Brochhausen</dc:creator>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0020008 -->
+
+    <owl:Class rdf:about="&obo;IAO_0020008">
+        <rdfs:label xml:lang="en">utterance energy</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&obo;IAO_0020007"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;RO_0000053"/>
+                        <owl:someValuesFrom>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="&obo;RO_0000059"/>
+                                <owl:someValuesFrom rdf:resource="&obo;IAO_0020002"/>
+                            </owl:Restriction>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;OBI_0000312"/>
+                        <owl:allValuesFrom rdf:resource="&obo;IAO_0020011"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0020007"/>
+        <obo:IAO_0000115 xml:lang="en">Sound energy bearing the concretization of an utterance and being the output of an uttering process. </obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0020009 -->
+
+    <owl:Class rdf:about="&obo;IAO_0020009">
+        <rdfs:label xml:lang="en">oscillating</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;BFO_0000015"/>
+        <obo:IAO_0000119>http://en.wikipedia.org/wiki/Oscillation</obo:IAO_0000119>
+        <dc:creator>Mathias Brochhausen</dc:creator>
+        <obo:IAO_0000115 xml:lang="en">Oscillating is a processual that shows repetitive variation, typically in time, of some measured quality about a central value (often a point of equilibrium) or between two or more different states.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0020010 -->
+
+    <owl:Class rdf:about="&obo;IAO_0020010">
+        <rdfs:label xml:lang="en">dubbing process</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000299"/>
+                <owl:someValuesFrom rdf:resource="&obo;IAO_0020000"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&obo;OBI_0000011"/>
+        <obo:IAO_0000115 xml:lang="en">A dubbing process is a planned process that provides a reference to an individual entity shared by a group of subscribers to refer to that individual entity.</obo:IAO_0000115>
+        <obo:IAO_0000117>Mathias Brochhausen</obo:IAO_0000117>
+        <dc:creator>Mathias Brochhausen</dc:creator>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0020011 -->
+
+    <owl:Class rdf:about="&obo;IAO_0020011">
+        <rdfs:label xml:lang="en">utterance process</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000299"/>
+                <owl:someValuesFrom rdf:resource="&obo;IAO_0020008"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&obo;OBI_0000011"/>
+        <obo:IAO_0000117>Mathias Brochhausen</obo:IAO_0000117>
+        <dc:creator>Mathias Brochhausen</dc:creator>
+        <obo:IAO_0000119 xml:lang="en">http://en.wiktionary.org/wiki/utter</obo:IAO_0000119>
+        <obo:IAO_0000115 xml:lang="en">is a planned process of making speech sounds which may or may not have an actual language involved. </obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0020015 -->
+
+    <owl:Class rdf:about="&obo;IAO_0020015">
+        <rdfs:label xml:lang="en">personal name</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&obo;IAO_0020000"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;IAO_0020012"/>
+                        <owl:allValuesFrom rdf:resource="&obo;NCBITaxon_9606"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0020000"/>
+        <obo:IAO_0000115 xml:lang="en">A personal name is a proper name identifying an individual person.</obo:IAO_0000115>
+        <obo:IAO_0000117>Mathias Brochhausen</obo:IAO_0000117>
+        <rdfs:comment xml:lang="en">Personal names &quot;today usually comprises a given name bestowed at birth or at a young age plus a surname. It is nearly universal for a human to have a name; except in rare cases, for example feral children growing up in isolation, or infants orphaned by natural disaster for whom no written record survives.[citation needed] The Convention on the Rights of the Child specifies that a child has the right from birth to a name. Certain isolated tribes, such as the Machiguenga of the Amazon, also lack personal names.&quot; (http://en.wikipedia.org/wiki/Personal_name)</rdfs:comment>
+        <obo:IAO_0000119>http://en.wikipedia.org/wiki/Personal_name</obo:IAO_0000119>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0020016 -->
+
+    <owl:Class rdf:about="&obo;IAO_0020016">
+        <rdfs:label xml:lang="en">given name</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0020015"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="&obo;IAO_0020015"/>
+            </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000117>Mathias Brochhausen</obo:IAO_0000117>
-        <obo:IAO_0000115 xml:lang="en">A role inhering in a human being or an organization or an aggregate of any of the aforementioned that is realized by the bearer being the agent in a declaration.</obo:IAO_0000115>
-        <obo:IAO_0000112 xml:lang="en">a judge&apos;s role of signing a court order, a hospital committee&apos;s to sanction conformance to a specific guideline for hospital employees.</obo:IAO_0000112>
+        <obo:IAO_0000119>http://en.wikipedia.org/wiki/Given_name</obo:IAO_0000119>
+        <obo:IAO_0000115 xml:lang="en">A given name, in Western contexts often referred to as a first name, is a personal name that specifies and differentiates between members of a group of individuals, especially in a family, all of whose members usually share the same family name (surname). A given name is purposefully given, usually by a child&apos;s parents at or near birth, in contrast to an inherited one such as a family name</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0020017 -->
+
+    <owl:Class rdf:about="&obo;IAO_0020017">
+        <rdfs:label xml:lang="en">family name</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0020015"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="&obo;IAO_0020015"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000117>Mathias Brochhausen</obo:IAO_0000117>
+        <obo:IAO_0000119>http://en.wikipedia.org/wiki/Family_name</obo:IAO_0000119>
+        <obo:IAO_0000115 xml:lang="en">A family name (in Western contexts often referred to as a surname or last name) is typically a part of a person&apos;s name which has been passed, according to law or custom, from one or both parents to their children.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -800,6 +706,7 @@ The term is used in the following meaning of being self generated. It does not s
 
     <owl:Class rdf:about="&obo;NCBITaxon_9606">
         <rdfs:label xml:lang="en">Homo sapiens</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_9606"/>
         <rdfs:subClassOf rdf:resource="&obo;OBI_0100026"/>
         <obo:IAO_0000118 rdf:datatype="&xsd;string">human being</obo:IAO_0000118>
         <obo:IAO_0000111 xml:lang="en">Homo sapiens</obo:IAO_0000111>
@@ -808,47 +715,11 @@ The term is used in the following meaning of being self generated. It does not s
     
 
 
-    <!-- http://purl.obolibrary.org/obo/OBI_0000245 -->
+    <!-- http://purl.obolibrary.org/obo/OBI_0000011 -->
 
-    <owl:Class rdf:about="&obo;OBI_0000245">
-        <rdfs:label xml:lang="en">organization</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;BFO_0000040"/>
-        <obo:IAO_0000119 rdf:datatype="&xsd;string">GROUP: OBI</obo:IAO_0000119>
-        <obo:IAO_0000117 rdf:datatype="&xsd;string">PERSON: Alan Ruttenberg</obo:IAO_0000117>
-        <obo:IAO_0000117 rdf:datatype="&xsd;string">PERSON: Bjoern Peters</obo:IAO_0000117>
-        <obo:IAO_0000117 rdf:datatype="&xsd;string">PERSON: Philippe Rocca-Serra</obo:IAO_0000117>
-        <obo:IAO_0000117 rdf:datatype="&xsd;string">PERSON: Susanna Sansone</obo:IAO_0000117>
-        <obo:IAO_0000115 xml:lang="en">An organization is a continuant entity which can play roles,  has members, and has a set of organization rules.  Members of organizations are either organizations themselves or individual people. Members can bear specific organization member roles that are determined in the organization rules. The organization rules also determine how decisions are made on behalf of the organization by the organization members.</obo:IAO_0000115>
-        <obo:IAO_0000116 xml:lang="en">BP: The definition summarizes long email discussions on the OBI developer, roles, biomaterial and denrie branches. It leaves open if an organization is a material entity or a dependent continuant, as no consensus was reached on that.  The current placement as material is therefore temporary, in order to move forward with development. Here is the entire email summary, on which the definition is based:
-
-1) there are organization_member_roles (president, treasurer, branch
-editor), with individual persons as bearers
-
-2) there are organization_roles (employer, owner, vendor, patent holder)
-
-3) an organization has a charter / rules / bylaws, which specify what roles
-there are, how they should be realized, and how to modify the
-charter/rules/bylaws themselves.
-
-It is debatable what the organization itself is (some kind of dependent
-continuant or an aggregate of people). This also determines who/what the
-bearer of organization_roles&apos; are. My personal favorite is still to define
-organization as a kind of &apos;legal entity&apos;, but thinking it through leads to
-all kinds of questions that are clearly outside the scope of OBI.
-
-Interestingly enough, it does not seem to matter much where we place
-organization itself, as long as we can subclass it (University, Corporation,
-Government Agency, Hospital), instantiate it (Affymetrix, NCBI, NIH, ISO,
-W3C, University of Oklahoma), and have it play roles.
-
-This leads to my proposal: We define organization through the statements 1 -
-3 above, but without an &apos;is a&apos; statement for now. We can leave it in its
-current place in the is_a hierarchy (material entity) or move it up to
-&apos;continuant&apos;. We leave further clarifications to BFO, and close this issue
-for now.</obo:IAO_0000116>
-        <obo:IAO_0000112 xml:lang="en">PMID: 16353909.AAPS J. 2005 Sep 22;7(2):E274-80. Review. The joint food and agriculture organization of the United Nations/World Health Organization Expert Committee on Food Additives and its role in the evaluation of the safety of veterinary drug residues in foods.</obo:IAO_0000112>
-        <obo:IAO_0000111 xml:lang="en">organization</obo:IAO_0000111>
-        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000122"/>
+    <owl:Class rdf:about="&obo;OBI_0000011">
+        <rdfs:label>planned process</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;BFO_0000015"/>
     </owl:Class>
     
 
@@ -875,53 +746,16 @@ This issue is outside the scope of OBI.</obo:IAO_0000116>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/OMRSE_00000022 -->
+    <!-- http://purl.org/obo/owl/PATO#PATO_0001025 -->
 
-    <owl:Class rdf:about="&obo;OMRSE_00000022">
-        <rdfs:label xml:lang="en">collection of organisms</rdfs:label>
-        <owl:equivalentClass>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OMRSE_00000020"/>
-                <owl:someValuesFrom rdf:resource="&obo;OBI_0100026"/>
-            </owl:Restriction>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="&obo;BFO_0000004"/>
-        <obo:IAO_0000115 xml:lang="en">An object aggregate of organisms.</obo:IAO_0000115>
-        <rdfs:comment xml:lang="en">Any arbitrary collection of organisms.  They need not be of the same taxonomic class.  </rdfs:comment>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OMRSE_00000023 -->
-
-    <owl:Class rdf:about="&obo;OMRSE_00000023">
-        <rdfs:label xml:lang="en">collection of humans</rdfs:label>
-        <owl:equivalentClass>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OMRSE_00000020"/>
-                <owl:someValuesFrom rdf:resource="&obo;NCBITaxon_9606"/>
-            </owl:Restriction>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="&obo;OMRSE_00000022"/>
-        <rdfs:comment xml:lang="en">An object aggregate all of whose components are human beings.</rdfs:comment>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OMRSE_00000033 -->
-
-    <owl:Class rdf:about="&obo;OMRSE_00000033">
-        <rdfs:label xml:lang="en">aggregate of organizations</rdfs:label>
-        <owl:equivalentClass>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OMRSE_00000020"/>
-                <owl:someValuesFrom rdf:resource="&obo;OBI_0000245"/>
-            </owl:Restriction>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="&obo;BFO_0000004"/>
-        <obo:IAO_0000115 xml:lang="en">An aggregate of organizations that have some feature in common, but is not itself an organization.</obo:IAO_0000115>
-        <rdfs:comment xml:lang="en">It is often convenient to group organizations together that otherwise might not even interact with one another. </rdfs:comment>
-        <obo:IAO_0000117 xml:lang="en">William R. Hogan</obo:IAO_0000117>
+    <owl:Class rdf:about="http://purl.org/obo/owl/PATO#PATO_0001025">
+        <rdfs:label xml:lang="en">pressure</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;BFO_0000019"/>
+        <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
+        <oboInOwl:inSubset rdf:resource="http://purl.org/obo/owl/obo#attribute_slim"/>
+        <oboInOwl:hasDefinition>
+            <rdf:Description/>
+        </oboInOwl:hasDefinition>
     </owl:Class>
 </rdf:RDF>
 
