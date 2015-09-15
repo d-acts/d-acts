@@ -68,7 +68,9 @@ However, there are some amendments from our side which are to be found in the do
 
     <!-- http://purl.obolibrary.org/obo/IAO_0000111 -->
 
-    <owl:AnnotationProperty rdf:about="&obo;IAO_0000111"/>
+    <owl:AnnotationProperty rdf:about="&obo;IAO_0000111">
+        <rdfs:label xml:lang="en">editor preferred term</rdfs:label>
+    </owl:AnnotationProperty>
     
 
 
@@ -141,6 +143,14 @@ However, there are some amendments from our side which are to be found in the do
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000600 -->
+
+    <rdf:Description rdf:about="&obo;IAO_0000600">
+        <rdfs:label xml:lang="en">elucidation</rdfs:label>
+    </rdf:Description>
+    
+
+
     <!-- http://www.geneontology.org/formats/oboInOwl#inSubset -->
 
     <rdf:Description rdf:about="&oboInOwl;inSubset">
@@ -157,6 +167,25 @@ However, there are some amendments from our side which are to be found in the do
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000054 -->
+
+    <owl:ObjectProperty rdf:about="&obo;BFO_0000054">
+        <rdfs:label xml:lang="en">realized in</rdfs:label>
+        <obo:IAO_0000412 rdf:datatype="&xsd;string">http://purl.obolibrary.org/obo/ro.owl</obo:IAO_0000412>
+        <rdfs:comment>Paraphrase of elucidation: a relation between a realizable entity and a process, where there is some material entity that is bearer of the realizable entity and participates in the process, and the realizable entity comes to be realized in the course of the process</rdfs:comment>
+        <obo:IAO_0000600 xml:lang="en">[copied from inverse property &apos;realizes&apos;] to say that b realizes c at t is to assert that there is some material entity d &amp; b is a process which has participant d at t &amp; c is a disposition or role of which d is bearer_of at t&amp; the type instantiated by b is correlated with the type instantiated by c. (axiom label in BFO2 Reference: [059-003])</obo:IAO_0000600>
+        <obo:IAO_0000118 xml:lang="en">is realized by</obo:IAO_0000118>
+        <obo:IAO_0000111 xml:lang="en">realized in</obo:IAO_0000111>
+        <obo:IAO_0000118 xml:lang="en">realized_in</obo:IAO_0000118>
+        <obo:IAO_0000112 xml:lang="en">this disease is realized in this disease course</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">this fragility is realized in this shattering</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">this investigator role is realized in this investigation</obo:IAO_0000112>
+        <rdfs:isDefinedBy rdf:resource="&obo;bfo.owl"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </owl:ObjectProperty>
     
 
 
@@ -221,12 +250,6 @@ It is important to note that this going out of existence of s is complete and un
     <owl:ObjectProperty rdf:about="&obo;OBI_0000299">
         <rdfs:domain rdf:resource="&obo;OBI_0000011"/>
     </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OBI_0000300 -->
-
-    <owl:ObjectProperty rdf:about="&obo;OBI_0000300"/>
     
 
 
@@ -439,7 +462,7 @@ Is part_of the appropriate relation to use for data items and documented identit
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="&obo;BFO_0000023"/>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="&obo;OBI_0000300"/>
+                        <owl:onProperty rdf:resource="&obo;BFO_0000054"/>
                         <owl:someValuesFrom rdf:resource="&obo;IAO_0020023"/>
                     </owl:Restriction>
                     <owl:Restriction>
@@ -449,7 +472,7 @@ Is part_of the appropriate relation to use for data items and documented identit
                                 <owl:onProperty rdf:resource="&obo;RO_0000053"/>
                                 <owl:someValuesFrom>
                                     <owl:Restriction>
-                                        <owl:onProperty rdf:resource="&obo;RO_0000058"/>
+                                        <owl:onProperty rdf:resource="&obo;RO_0000059"/>
                                         <owl:someValuesFrom rdf:resource="&obo;IAO_0020021"/>
                                     </owl:Restriction>
                                 </owl:someValuesFrom>
@@ -746,7 +769,7 @@ The term is used in the following meaning of being self generated. It does not s
                                 </owl:unionOf>
                             </owl:Class>
                             <owl:Restriction>
-                                <owl:onProperty rdf:resource="&obo;OBI_0000300"/>
+                                <owl:onProperty rdf:resource="&obo;BFO_0000054"/>
                                 <owl:allValuesFrom>
                                     <owl:Class>
                                         <owl:intersectionOf rdf:parseType="Collection">
@@ -803,7 +826,7 @@ The term is used in the following meaning of being self generated. It does not s
                         </owl:someValuesFrom>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="&obo;OBI_0000300"/>
+                        <owl:onProperty rdf:resource="&obo;BFO_0000054"/>
                         <owl:allValuesFrom rdf:resource="&obo;IAO_0021005"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
