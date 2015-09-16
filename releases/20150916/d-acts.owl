@@ -31,12 +31,12 @@
      xmlns:span="http://www.ifomis.org/bfo/1.1/span#"
      xmlns:snap="http://www.ifomis.org/bfo/1.1/snap#"
      xmlns:dc="http://purl.org/dc/elements/1.1/">
-    <owl:Ontology rdf:about="http://purl.obofoundry.org/obo/iao/d-acts/dev/d-acts.owl">
-        <dc:creator>Mauricio B. Almeida</dc:creator>
+    <owl:Ontology rdf:about="http://purl.obofoundry.org/obo/iao/d-acts/20150916/d-acts.owl">
+        <owl:versionInfo>2015-09-16</owl:versionInfo>
         <dc:creator>Amanda Hicks</dc:creator>
-        <dc:creator>Mathias Brochhausen</dc:creator>
+        <dc:creator>Mauricio B. Almeida</dc:creator>
         <dc:creator>Laura Slaughter</dc:creator>
-        <owl:versionInfo>2015-09-15</owl:versionInfo>
+        <dc:creator>Mathias Brochhausen</dc:creator>
         <rdfs:comment xml:lang="en">The ontology is based on a theory of document acts proposed by Barry Smith and Reinach&apos;s theory of social acts and legal entities:
 
 Reinach, A. (1989), Sämtliche Werke. Texkritische Ausgabe, Edited by Karl Schuhmann and Barry Smith, München: Philosophia Verlag.
@@ -47,8 +47,8 @@ Smith, B. (2012) &quot;How to Do Things With Documents&quot;, Rivista di estetic
 
 However, there are some amendments from our side which are to be found in the documentation.</rdfs:comment>
         <rdfs:comment xml:lang="en">This version includes identity documents. </rdfs:comment>
-        <owl:versionInfo xml:lang="en">development</owl:versionInfo>
         <dc:title xml:lang="en">document act ontology</dc:title>
+        <owl:versionInfo xml:lang="en">release</owl:versionInfo>
         <owl:imports rdf:resource="&obo;iao/2015-02-23/iao.owl"/>
         <owl:imports rdf:resource="&obo;iao/pno/bfo2/pno.owl"/>
     </owl:Ontology>
