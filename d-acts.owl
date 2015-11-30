@@ -49,6 +49,7 @@ However, there are some amendments from our side which are to be found in the do
         <rdfs:comment xml:lang="en">This version includes identity documents. </rdfs:comment>
         <owl:versionInfo xml:lang="en">development</owl:versionInfo>
         <dc:title xml:lang="en">document act ontology</dc:title>
+        <dc:license rdf:resource="http://creativecommons.org/licenses/by/3.0/"/>
         <owl:imports rdf:resource="&obo;iao/2015-02-23/iao.owl"/>
         <owl:imports rdf:resource="&obo;iao/pno/bfo2/pno.owl"/>
     </owl:Ontology>
