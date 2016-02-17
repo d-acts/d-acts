@@ -25,13 +25,13 @@
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
      xmlns:dc="http://purl.org/dc/elements/1.1/">
-    <owl:Ontology rdf:about="http://purl.obofoundry.org/obo/iao/d-acts/Feb2016/d-acts.owl">
+    <owl:Ontology rdf:about="http://purl.obofoundry.org/obo/iao/d-acts/2016-02-16/d-acts.owl">
         <obo:IAO_0000597 rdf:datatype="&xsd;string">IAO_0021000-IAO_0021999</obo:IAO_0000597>
+        <dc:creator>Amanda Hicks</dc:creator>
+        <owl:versionInfo xml:lang="en">February 2016 revision</owl:versionInfo>
+        <dc:creator>Laura Slaughter</dc:creator>
         <dc:creator>Mauricio B. Almeida</dc:creator>
         <owl:versionInfo>2016-02-16</owl:versionInfo>
-        <dc:creator>Amanda Hicks</dc:creator>
-        <dc:creator>Laura Slaughter</dc:creator>
-        <owl:versionInfo xml:lang="en">February 2016 revision</owl:versionInfo>
         <dc:creator>Mathias Brochhausen</dc:creator>
         <rdfs:comment xml:lang="en">The ontology is based on a theory of document acts proposed by Barry Smith and Reinach&apos;s theory of social acts and legal entities:
 
