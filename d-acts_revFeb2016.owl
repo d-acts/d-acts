@@ -679,7 +679,7 @@ The term is used in the following meaning of being self generated. It does not s
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000117>Mathias Brochhausen</obo:IAO_0000117>
-        <obo:IAO_0000115 xml:lang="en">Socio-legal generically dependent continuants are generically dependent continuants that come into existence through spcial acts and are concretized as realizable entities. They differ from information content entities in  that they are not about something, but exist as quasi-abstract social entities. Socio-legal generically dependent continuants are not concretized as qualities inhering in independent continuants, but only as realizable entities borne by an organism or an aggregate of organisms.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">continuants are generically dependent continuants that come into existence through social acts and are concretized as realizable entities, that bestow rights or obligations to their bearers.</obo:IAO_0000115>
         <obo:IAO_0000112 xml:lang="en">the claim of a piece of land, the obligation to pay rent to the owner of a rental property</obo:IAO_0000112>
     </owl:Class>
     
