@@ -30,8 +30,8 @@
         <dc:creator>Amanda Hicks</dc:creator>
         <owl:versionInfo xml:lang="en">February 2016 revision</owl:versionInfo>
         <dc:creator>Laura Slaughter</dc:creator>
+        <owl:versionInfo>2016-02-17</owl:versionInfo>
         <dc:creator>Mauricio B. Almeida</dc:creator>
-        <owl:versionInfo>2016-02-16</owl:versionInfo>
         <dc:creator>Mathias Brochhausen</dc:creator>
         <rdfs:comment xml:lang="en">The ontology is based on a theory of document acts proposed by Barry Smith and Reinach&apos;s theory of social acts and legal entities:
 
@@ -392,6 +392,17 @@ It is important to note that this going out of existence of s is complete and un
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_00021002 -->
+
+    <owl:Class rdf:about="&obo;IAO_00021002">
+        <rdfs:label xml:lang="en">declaration</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0021002"/>
+        <obo:IAO_0000115 xml:lang="en">A document act that postulates its content as a socio-legal fact for s specified group of people or organizations.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Mathias Brochhausen</obo:IAO_0000117>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/IAO_0020021 -->
 
     <owl:Class rdf:about="&obo;IAO_0020021">
@@ -657,8 +668,8 @@ Is part_of the appropriate relation to use for data items and documented identit
 
     <owl:Class rdf:about="&obo;IAO_0021003">
         <rdfs:label xml:lang="en">social act</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;BFO_0000015"/>
-        <obo:IAO_0000115 xml:lang="en">A process that is carried out by a conscious being or an aggregate of conscious beings and is spontaneous, directed towards other conscious beings and aggregates thereof and needs to be perceived.</obo:IAO_0000115>
+        <rdfs:subClassOf rdf:resource="&obo;OBI_0000011"/>
+        <obo:IAO_0000115 xml:lang="en">A planned process that is carried out by a conscious being or an aggregate of conscious beings and is spontaneous, directed towards other conscious beings and aggregates thereof and needs to be perceived.</obo:IAO_0000115>
         <obo:IAO_0000112 xml:lang="en">Colonel Klink giving Sergeant Schultz an order, Jake promising Jill to take her to the junior prom</obo:IAO_0000112>
         <obo:IAO_0000117>Mathias Brochhausen</obo:IAO_0000117>
         <rdfs:comment xml:lang="en">MB: Regarding the use of the term &apos;sponteneous&apos; in the definition:
