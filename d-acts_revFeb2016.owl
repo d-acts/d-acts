@@ -315,90 +315,14 @@ It is important to note that this going out of existence of s is complete and un
     
 
 
-    <!-- http://purl.obolibrary.org/obo/IAO_00021000 -->
-
-    <owl:Class rdf:about="&obo;IAO_00021000">
-        <rdfs:label xml:lang="en">document act performer role</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;BFO_0000023"/>
-        <rdfs:subClassOf>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="&obo;RO_0000052"/>
-                        <owl:someValuesFrom>
-                            <owl:Class>
-                                <owl:unionOf rdf:parseType="Collection">
-                                    <rdf:Description rdf:about="&obo;NCBITaxon_9606"/>
-                                    <rdf:Description rdf:about="&obo;OBI_0000245"/>
-                                    <rdf:Description rdf:about="&obo;OMRSE_00000023"/>
-                                    <rdf:Description rdf:about="&obo;OMRSE_00000033"/>
-                                </owl:unionOf>
-                            </owl:Class>
-                        </owl:someValuesFrom>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="&obo;BFO_0000054"/>
-                        <owl:allValuesFrom rdf:resource="&obo;IAO_0021002"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">A role inhering in a human being or an organization or an aggregate of any of the aforementioned that is realized by the bearer being the agent in a document act.</obo:IAO_0000115>
-        <obo:IAO_0000117 xml:lang="en">Mathias Brochhausen</obo:IAO_0000117>
-        <obo:IAO_0000112 xml:lang="en">a judge&apos;s role of signing a court order</obo:IAO_0000112>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/IAO_00021001 -->
-
-    <owl:Class rdf:about="&obo;IAO_00021001">
-        <rdfs:label xml:lang="en">document act target</rdfs:label>
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <owl:Class>
-                        <owl:unionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="&obo;NCBITaxon_9606"/>
-                            <rdf:Description rdf:about="&obo;OBI_0000245"/>
-                            <rdf:Description rdf:about="&obo;OMRSE_00000023"/>
-                            <rdf:Description rdf:about="&obo;OMRSE_00000033"/>
-                        </owl:unionOf>
-                    </owl:Class>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="&obo;RO_0000053"/>
-                        <owl:someValuesFrom>
-                            <owl:Class>
-                                <owl:intersectionOf rdf:parseType="Collection">
-                                    <owl:Restriction>
-                                        <owl:onProperty rdf:resource="&obo;RO_0000056"/>
-                                        <owl:someValuesFrom rdf:resource="&obo;IAO_0021002"/>
-                                    </owl:Restriction>
-                                    <owl:Restriction>
-                                        <owl:onProperty rdf:resource="&obo;RO_0000059"/>
-                                        <owl:someValuesFrom rdf:resource="&obo;IAO_0021004"/>
-                                    </owl:Restriction>
-                                </owl:intersectionOf>
-                            </owl:Class>
-                        </owl:someValuesFrom>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="&obo;BFO_0000040"/>
-        <obo:IAO_0000115>The human being or organization or aggregate of any of the aforementioned that is the bearer of a concretization of a socio-legal generically dependent continuant brought about by or transferred in a specific document act.</obo:IAO_0000115>
-        <obo:IAO_0000117 xml:lang="en">Mathias Brochhausen</obo:IAO_0000117>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/IAO_00021002 -->
 
     <owl:Class rdf:about="&obo;IAO_00021002">
         <rdfs:label xml:lang="en">declaration</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0021002"/>
-        <obo:IAO_0000115 xml:lang="en">A document act that postulates its content as a socio-legal fact for s specified group of people or organizations.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A document act that postulates its content as a socio-legal fact for a specified group of people or organizations.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Mathias Brochhausen</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="en">enactment</obo:IAO_0000118>
     </owl:Class>
     
 
@@ -669,7 +593,7 @@ Is part_of the appropriate relation to use for data items and documented identit
     <owl:Class rdf:about="&obo;IAO_0021003">
         <rdfs:label xml:lang="en">social act</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;OBI_0000011"/>
-        <obo:IAO_0000115 xml:lang="en">A planned process that is carried out by a conscious being or an aggregate of conscious beings and is spontaneous, directed towards other conscious beings and aggregates thereof and needs to be perceived.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A planned process that is carried out by a conscious being or an aggregate of conscious beings and is spontaneous, directed towards other conscious beings and aggregates thereof and that needs to be perceived.</obo:IAO_0000115>
         <obo:IAO_0000112 xml:lang="en">Colonel Klink giving Sergeant Schultz an order, Jake promising Jill to take her to the junior prom</obo:IAO_0000112>
         <obo:IAO_0000117>Mathias Brochhausen</obo:IAO_0000117>
         <rdfs:comment xml:lang="en">MB: Regarding the use of the term &apos;sponteneous&apos; in the definition:
@@ -839,6 +763,83 @@ The term is used in the following meaning of being self generated. It does not s
         <obo:IAO_0000115 xml:lang="en">A role inhering in a human being or an organization or an aggregate of any of the aforementioned that is realized by the bearer being the agent in a declaration.</obo:IAO_0000115>
         <obo:IAO_0000112 xml:lang="en">a judge&apos;s role of signing a court order, a hospital committee&apos;s to sanction conformance to a specific guideline for hospital employees.</obo:IAO_0000112>
         <obo:IAO_0000231 rdf:resource="&obo;IAO_0000103"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0021030 -->
+
+    <owl:Class rdf:about="&obo;IAO_0021030">
+        <rdfs:label xml:lang="en">document act target</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="&obo;NCBITaxon_9606"/>
+                            <rdf:Description rdf:about="&obo;OBI_0000245"/>
+                            <rdf:Description rdf:about="&obo;OMRSE_00000023"/>
+                            <rdf:Description rdf:about="&obo;OMRSE_00000033"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;RO_0000053"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="&obo;RO_0000056"/>
+                                        <owl:someValuesFrom rdf:resource="&obo;IAO_0021002"/>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="&obo;RO_0000059"/>
+                                        <owl:someValuesFrom rdf:resource="&obo;IAO_0021004"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&obo;BFO_0000040"/>
+        <obo:IAO_0000115>The human being or organization or aggregate of any of the aforementioned that is the bearer of a concretization of a socio-legal generically dependent continuant brought about by or transferred in a specific document act.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Mathias Brochhausen</obo:IAO_0000117>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0021031 -->
+
+    <owl:Class rdf:about="&obo;IAO_0021031">
+        <rdfs:label xml:lang="en">document act performer role</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;BFO_0000023"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;RO_0000052"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:unionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="&obo;NCBITaxon_9606"/>
+                                    <rdf:Description rdf:about="&obo;OBI_0000245"/>
+                                    <rdf:Description rdf:about="&obo;OMRSE_00000023"/>
+                                    <rdf:Description rdf:about="&obo;OMRSE_00000033"/>
+                                </owl:unionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;BFO_0000054"/>
+                        <owl:allValuesFrom rdf:resource="&obo;IAO_0021002"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">A role inhering in a human being or an organization or an aggregate of any of the aforementioned that is realized by the bearer being the agent in a document act.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Mathias Brochhausen</obo:IAO_0000117>
+        <obo:IAO_0000112 xml:lang="en">a judge&apos;s role of signing a court order</obo:IAO_0000112>
     </owl:Class>
     
 
