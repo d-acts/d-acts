@@ -320,7 +320,7 @@ It is important to note that this going out of existence of s is complete and un
     <owl:Class rdf:about="&obo;IAO_00021002">
         <rdfs:label xml:lang="en">declaration</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0021002"/>
-        <obo:IAO_0000115 xml:lang="en">A document act that postulates its content as a socio-legal fact for a specified group of people or organizations.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A document act that postulates a socio-legal fact for a specified group of people or organizations.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Mathias Brochhausen</obo:IAO_0000117>
         <obo:IAO_0000118 xml:lang="en">enactment</obo:IAO_0000118>
     </owl:Class>
@@ -593,7 +593,7 @@ Is part_of the appropriate relation to use for data items and documented identit
     <owl:Class rdf:about="&obo;IAO_0021003">
         <rdfs:label xml:lang="en">social act</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;OBI_0000011"/>
-        <obo:IAO_0000115 xml:lang="en">A planned process that is carried out by a conscious being or an aggregate of conscious beings and is spontaneous, directed towards other conscious beings and aggregates thereof and that needs to be perceived.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A process that is carried out by a conscious being or an aggregate of conscious beings, and is spontaneous, directed towards another conscious being or another aggregate of conscious beings, and that needs to be perceived.</obo:IAO_0000115>
         <obo:IAO_0000112 xml:lang="en">Colonel Klink giving Sergeant Schultz an order, Jake promising Jill to take her to the junior prom</obo:IAO_0000112>
         <obo:IAO_0000117>Mathias Brochhausen</obo:IAO_0000117>
         <rdfs:comment xml:lang="en">MB: Regarding the use of the term &apos;sponteneous&apos; in the definition:
@@ -614,7 +614,7 @@ The term is used in the following meaning of being self generated. It does not s
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000117>Mathias Brochhausen</obo:IAO_0000117>
-        <obo:IAO_0000115 xml:lang="en">continuants are generically dependent continuants that come into existence through social acts and are concretized as realizable entities, that bestow rights or obligations to their bearers.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">Socio-legal generically dependent continuants are generically dependent continuants that come into existence through social acts and that if they get concretized are concretized as realizable entities.</obo:IAO_0000115>
         <obo:IAO_0000112 xml:lang="en">the claim of a piece of land, the obligation to pay rent to the owner of a rental property</obo:IAO_0000112>
     </owl:Class>
     
