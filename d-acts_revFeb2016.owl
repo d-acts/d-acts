@@ -315,18 +315,6 @@ It is important to note that this going out of existence of s is complete and un
     
 
 
-    <!-- http://purl.obolibrary.org/obo/IAO_00021002 -->
-
-    <owl:Class rdf:about="&obo;IAO_00021002">
-        <rdfs:label xml:lang="en">declaration</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;IAO_0021002"/>
-        <obo:IAO_0000115 xml:lang="en">A document act that postulates a socio-legal fact for a specified group of people or organizations.</obo:IAO_0000115>
-        <obo:IAO_0000117 xml:lang="en">Mathias Brochhausen</obo:IAO_0000117>
-        <obo:IAO_0000118 xml:lang="en">enactment</obo:IAO_0000118>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/IAO_0020021 -->
 
     <owl:Class rdf:about="&obo;IAO_0020021">
@@ -840,6 +828,18 @@ The term is used in the following meaning of being self generated. It does not s
         <obo:IAO_0000115 xml:lang="en">A role inhering in a human being or an organization or an aggregate of any of the aforementioned that is realized by the bearer being the agent in a document act.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Mathias Brochhausen</obo:IAO_0000117>
         <obo:IAO_0000112 xml:lang="en">a judge&apos;s role of signing a court order</obo:IAO_0000112>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0021102 -->
+
+    <owl:Class rdf:about="&obo;IAO_0021102">
+        <rdfs:label xml:lang="en">declaration</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0021002"/>
+        <obo:IAO_0000115 xml:lang="en">A document act that postulates a socio-legal fact for a specified group of people or organizations.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Mathias Brochhausen</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="en">enactment</obo:IAO_0000118>
     </owl:Class>
     
 
