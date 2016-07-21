@@ -608,6 +608,17 @@ The term is used in the following meaning of being self generated. It does not s
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0021006 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0021006">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
+        <obo:IAO_0000115 xml:lang="en">A role that is either the specified output of an obligation generating social act or the concretization of a transferable obligation and that is realized by it&apos;s bearer being the providing part of a process that fulfills the previously agreed upon requirements.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Mathias Brochhausen</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">obligee role</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/IAO_0021014 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0021014">
@@ -834,7 +845,7 @@ The term is used in the following meaning of being self generated. It does not s
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0021300">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
-        <obo:IAO_0000115 xml:lang="en">A role that is either the specified output of an obligation generating social act or the concretization of a transferable obligation.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A role that is either the specified output of an obligation generating social act or the concretization of a transferable obligation and that is realized by it&apos;s bearer being the receiving part of a process that fulfills the previously agreed upon requirements.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">John Judkins</obo:IAO_0000117>
         <obo:IAO_0000117 xml:lang="en">Mathias Brochhausen</obo:IAO_0000117>
         <rdfs:label xml:lang="en">obligor role</rdfs:label>
