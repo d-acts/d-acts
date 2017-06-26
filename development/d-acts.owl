@@ -661,7 +661,6 @@ The term is used in the following meaning of being self generated. It does not s
         <obo:IAO_0000111 xml:lang="en">deontic declaration</obo:IAO_0000111>
         <obo:IAO_0000112 xml:lang="en">my consenting verbally to buy a used TV set for $ 500, John Robie&apos;s taking of Mrs. Steven&apos;s jewels, Jane Doe&apos;s revoking of informed consent over the phone.</obo:IAO_0000112>
         <obo:IAO_0000115 xml:lang="en">A social act that brings about, transfers or revokes a socio-legal generically dependent continuant or brings about or transforms a role. Declarations do not depend on words spoken or written, but sometimes are merely actions, for instance the signing of a document.</obo:IAO_0000115>
-        <obo:IAO_0000116 xml:lang="en">This is actually a speech act. It is, as such essentially different from a document act or a deontic document act. This has been different in previous versions of d-acts and is, I think, still different in OMRSE. MB-2017-02-20</obo:IAO_0000116>
         <obo:IAO_0000117 xml:lang="en">Mathias Brochhausen</obo:IAO_0000117>
         <obo:IAO_0000118 xml:lang="en">declaration</obo:IAO_0000118>
         <obo:IAO_0000118 xml:lang="en">status function declaration</obo:IAO_0000118>
