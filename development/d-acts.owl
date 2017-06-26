@@ -18,7 +18,7 @@
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/iao/2015-02-23/iao.owl"/>
         <dc:license rdf:resource="http://creativecommons.org/licenses/by/3.0/"/>
         <obo:IAO_0000597 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IAO_0021000-IAO_0021999</obo:IAO_0000597>
-        <owl:versionInfo>development version 2017-02-20</owl:versionInfo>
+        <owl:versionInfo>development version 2017-06-26</owl:versionInfo>
         <dc:creator>Mathias Brochhausen</dc:creator>
         <rdfs:comment xml:lang="en">The ontology is based on a theory of document acts proposed by Barry Smith and Reinach&apos;s theory of social acts and legal entities:
 
@@ -677,6 +677,17 @@ The term is used in the following meaning of being self generated. It does not s
         <obo:IAO_0000115 xml:lang="en">A role that is either the specified output of an obligation generating social act or the concretization of a transferable obligation and that is realized by it&apos;s bearer being the providing part of a process that fulfills the previously agreed upon requirements.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Mathias Brochhausen</obo:IAO_0000117>
         <rdfs:label xml:lang="en">obligee role</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0021007 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0021007">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000310"/>
+        <obo:IAO_0000117 xml:lang="en">A document that is intended to be the specified input of a document act. It will contain information of how the document act is going to be performed (by signing, by stamping, etc.). In many cases it also contains information about the social entities that are created through the document act.</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">Mathias Brochhausen</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">document act input document</rdfs:label>
     </owl:Class>
     
 
