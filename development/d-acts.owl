@@ -564,6 +564,7 @@ Is part_of the appropriate relation to use for data items and documented identit
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0021005"/>
         <obo:IAO_0000112 xml:lang="en">my filling in an immigration form, a judge&apos;s signing and stamping a court order</obo:IAO_0000112>
         <obo:IAO_0000115 xml:lang="en">A social act creating, revoking or transferring a socio-legal generically dependent continuant or a role by validating (signing, stamping, publishing) a document.</obo:IAO_0000115>
         <obo:IAO_0000117>Mathias Brochhausen</obo:IAO_0000117>
@@ -670,7 +671,7 @@ The term is used in the following meaning of being self generated. It does not s
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0021003"/>
         <obo:IAO_0000111 xml:lang="en">deontic declaration</obo:IAO_0000111>
-        <obo:IAO_0000112 xml:lang="en">my consenting verbally to buy a used TV set for $ 500, John Robie&apos;s taking of Mrs. Steven&apos;s jewels, Jane Doe&apos;s revoking of informed consent over the phone.</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">my consenting verbally to buy a used TV set for $ 500, John Robie&apos;s taking of Mrs. Steven&apos;s jewels, Jane Doe&apos;s revoking of informed consent over the phone, John Doe signing an employment contract.</obo:IAO_0000112>
         <obo:IAO_0000115 xml:lang="en">A social act that brings about, transfers or revokes a socio-legal generically dependent continuant or brings about or transforms a role. Declarations do not depend on words spoken or written, but sometimes are merely actions, for instance the signing of a document.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Mathias Brochhausen</obo:IAO_0000117>
         <obo:IAO_0000118 xml:lang="en">declaration</obo:IAO_0000118>
