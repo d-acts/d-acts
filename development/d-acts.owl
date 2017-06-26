@@ -497,7 +497,7 @@ Is part_of the appropriate relation to use for data items and documented identit
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0021003"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0021005"/>
                     <owl:Class>
                         <owl:unionOf rdf:parseType="Collection">
                             <owl:Restriction>
@@ -529,6 +529,10 @@ Is part_of the appropriate relation to use for data items and documented identit
                         </owl:unionOf>
                     </owl:Class>
                     <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000055"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0021022"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
                         <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0021007"/>
                     </owl:Restriction>
@@ -540,12 +544,20 @@ Is part_of the appropriate relation to use for data items and documented identit
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002218"/>
                         <owl:someValuesFrom>
                             <owl:Class>
-                                <owl:unionOf rdf:parseType="Collection">
-                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
-                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0000245"/>
-                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000023"/>
-                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000033"/>
-                                </owl:unionOf>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <owl:Class>
+                                        <owl:unionOf rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
+                                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0000245"/>
+                                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000023"/>
+                                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000033"/>
+                                        </owl:unionOf>
+                                    </owl:Class>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000053"/>
+                                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0021022"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
                             </owl:Class>
                         </owl:someValuesFrom>
                     </owl:Restriction>
