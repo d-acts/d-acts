@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://purl.obolibrary.org/obo/iao/d-acts/dev/d-acts.owl/"
-     xml:base="http://purl.obolibrary.org/obo/iao/d-acts/dev/d-acts.owl/"
+<rdf:RDF xmlns="http://purl.obolibrary.org/obo/iao/d-acts/dev/d-acts.owl#"
+     xml:base="http://purl.obolibrary.org/obo/iao/d-acts/dev/d-acts.owl"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
@@ -523,7 +523,7 @@ Is part_of the appropriate relation to use for data items and documented identit
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0021003">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
         <obo:IAO_0000112 xml:lang="en">Colonel Klink giving Sergeant Schultz an order, Jake promising Jill to take her to the junior prom</obo:IAO_0000112>
-        <obo:IAO_0000115 xml:lang="en">A process that is carried out by a conscious being or an aggregate of conscious beings, and is spontaneous, directed towards another conscious being or another aggregate of conscious beings, and that needs to be perceived.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A planned process that is carried out by a conscious being or an aggregate of conscious beings, and is self-generated, directed towards another conscious being or another aggregate of conscious beings, and that needs to be perceived.</obo:IAO_0000115>
         <obo:IAO_0000117>Mathias Brochhausen</obo:IAO_0000117>
         <rdfs:comment xml:lang="en">MB: Regarding the use of the term &apos;sponteneous&apos; in the definition:
 The term is used in the following meaning of being self generated. It does not stand in contrast to being planned.</rdfs:comment>
