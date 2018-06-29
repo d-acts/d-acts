@@ -525,8 +525,6 @@ Is part_of the appropriate relation to use for data items and documented identit
         <obo:IAO_0000112 xml:lang="en">Colonel Klink giving Sergeant Schultz an order, Jake promising Jill to take her to the junior prom</obo:IAO_0000112>
         <obo:IAO_0000115 xml:lang="en">A planned process that is carried out by a conscious being or an aggregate of conscious beings, and is self-generated, directed towards another conscious being or another aggregate of conscious beings, and that needs to be perceived.</obo:IAO_0000115>
         <obo:IAO_0000117>Mathias Brochhausen</obo:IAO_0000117>
-        <rdfs:comment xml:lang="en">MB: Regarding the use of the term &apos;sponteneous&apos; in the definition:
-The term is used in the following meaning of being self generated. It does not stand in contrast to being planned.</rdfs:comment>
         <rdfs:label xml:lang="en">social act</rdfs:label>
     </owl:Class>
     
