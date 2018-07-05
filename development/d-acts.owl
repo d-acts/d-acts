@@ -840,7 +840,7 @@ Is part_of the appropriate relation to use for data items and documented identit
     <!-- http://purl.obolibrary.org/obo/IAO_0021102 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0021102">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0021002"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0021009"/>
         <obo:IAO_0000115 xml:lang="en">A document act that postulates a socio-legal fact for a specified group of people or organizations.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Mathias Brochhausen</obo:IAO_0000117>
         <obo:IAO_0000118 xml:lang="en">enactment</obo:IAO_0000118>
