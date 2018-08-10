@@ -523,17 +523,12 @@ Is part_of the appropriate relation to use for data items and documented identit
     <!-- http://purl.obolibrary.org/obo/IAO_0021004 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0021004">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000031"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000312"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0021003"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>
         <obo:IAO_0000112 xml:lang="en">the claim of a piece of land, the obligation to pay rent to the owner of a rental property</obo:IAO_0000112>
         <obo:IAO_0000115 xml:lang="en">Socio-legal generically dependent continuants are generically dependent continuants that come into existence through social acts and that if they get concretized are concretized as realizable entities.</obo:IAO_0000115>
         <obo:IAO_0000117>Mathias Brochhausen</obo:IAO_0000117>
-        <rdfs:label xml:lang="en">socio-legal generically dependent continuant</rdfs:label>
+        <rdfs:label xml:lang="en">obsolete_socio-legal generically dependent continuant</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
