@@ -227,7 +227,7 @@ It is important to note that this going out of existence of s is complete and un
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <obo:IAO_0000115 xml:lang="en">a document that denotes some identity and is concretized by the bearer of some credential role</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A document that denotes some identity and is concretized by the bearer of some credential role.</obo:IAO_0000115>
         <obo:IAO_0000117>Amanda Hicks</obo:IAO_0000117>
         <rdfs:label xml:lang="en">identity document</rdfs:label>
     </owl:Class>
@@ -260,7 +260,7 @@ It is important to note that this going out of existence of s is complete and un
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">a documented identity is the aggregate of all data items about an entity.  Notice that a documented identity is not itself a document since a document is intended to be understood as a whole and data items about an individual are usually scattered across different documents.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A documented identity is the aggregate of all data items about an entity.  Notice that a documented identity is not itself a document since a document is intended to be understood as a whole and data items about an individual are usually scattered across different documents.</obo:IAO_0000115>
         <obo:IAO_0000117>Amanda Hicks</obo:IAO_0000117>
         <rdfs:comment xml:lang="en">is an aggregate of ICEs also an ICE? yes
 Is part_of the appropriate relation to use for data items and documented identities?</rdfs:comment>
@@ -339,7 +339,7 @@ Is part_of the appropriate relation to use for data items and documented identit
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
-        <obo:IAO_0000115 xml:lang="en"> a role that inheres in a concretization of an identity document and is realized by an authentication process</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A role that inheres in a concretization of an identity document and is realized by an authentication process.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Amanda Hicks</obo:IAO_0000117>
         <rdfs:label xml:lang="en">credential role</rdfs:label>
     </owl:Class>
