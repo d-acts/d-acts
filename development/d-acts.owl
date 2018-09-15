@@ -653,7 +653,7 @@ Is part_of the appropriate relation to use for data items and documented identit
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000054"/>
-                        <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0021002"/>
+                        <owl:allValuesFrom rdf:resource="http://purl.obolibary.org/obo/IAO_0021001"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
