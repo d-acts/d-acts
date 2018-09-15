@@ -2,6 +2,7 @@
 <rdf:RDF xmlns="http://purl.obolibrary.org/obo/iao/d-acts/dev/d-acts.owl/"
      xml:base="http://purl.obolibrary.org/obo/iao/d-acts/dev/d-acts.owl/"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:terms="http://purl.org/dc/terms/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
@@ -10,13 +11,12 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
-     xmlns:terms="http://purl.org/dc/terms/"
      xmlns:dc="http://purl.org/dc/elements/1.1/">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/iao/d-acts/dev/d-acts.owl">
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/iao/pno.owl"/>
         <dc:license rdf:resource="http://creativecommons.org/licenses/by/3.0/"/>
-        <terms:license xml:lang="en">http://creativecommons.org/licenses/by/3.0/</terms:license>
         <obo:IAO_0000597 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IAO_0021000-IAO_0021999</obo:IAO_0000597>
+        <terms:license xml:lang="en">http://creativecommons.org/licenses/by/3.0/</terms:license>
         <dc:creator>Mathias Brochhausen</dc:creator>
         <owl:versionInfo>development version 2018-08-09</owl:versionInfo>
         <dc:description xml:lang="en">The ontology is based on a theory of document acts proposed by Barry Smith and Reinach&apos;s theory of social acts and legal entities:
@@ -33,10 +33,10 @@ However, there are some amendments from our side which are to be found in the do
         <dc:creator>Mauricio B. Almeida</dc:creator>
         <dc:title xml:lang="en">document act ontology</dc:title>
     </owl:Ontology>
+    
 
 
-
-    <!--
+    <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // Object Properties
@@ -44,7 +44,7 @@ However, there are some amendments from our side which are to be found in the do
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/BFO_0000054 -->
@@ -63,7 +63,7 @@ However, there are some amendments from our side which are to be found in the do
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/bfo.owl"/>
         <rdfs:label xml:lang="en">realized in</rdfs:label>
     </owl:ObjectProperty>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/BFO_0000055 -->
@@ -72,7 +72,7 @@ However, there are some amendments from our side which are to be found in the do
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <rdfs:label xml:lang="en">realizes</rdfs:label>
     </owl:ObjectProperty>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/IAO_0021011 -->
@@ -89,7 +89,7 @@ It is important to note that this going out of existence of s is complete and un
         <obo:IAO_0000117>Mathias Brochhausen</obo:IAO_0000117>
         <rdfs:label xml:lang="en">legally revokes</rdfs:label>
     </owl:ObjectProperty>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/IAO_0021012 -->
@@ -105,7 +105,7 @@ It is important to note that this going out of existence of s is complete and un
         <rdfs:label xml:lang="en">obsolete_legally transfers</rdfs:label>
         <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:ObjectProperty>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/OMRSE_00000020 -->
@@ -117,7 +117,7 @@ It is important to note that this going out of existence of s is complete and un
 </rdfs:comment>
         <rdfs:label>is-aggregate-of</rdfs:label>
     </owl:ObjectProperty>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/RO_0002218 -->
@@ -134,10 +134,10 @@ It is important to note that this going out of existence of s is complete and un
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/ro/subsets#ro-eco"/>
         <rdfs:label xml:lang="en">has active participant</rdfs:label>
     </owl:ObjectProperty>
+    
 
 
-
-    <!--
+    <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // Classes
@@ -145,7 +145,7 @@ It is important to note that this going out of existence of s is complete and un
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-
+    
 
 
     <!-- http://purl.obolibary.org/obo/IAO_0021001 -->
@@ -172,7 +172,7 @@ It is important to note that this going out of existence of s is complete and un
         <obo:IAO_0000117>Mathias Brochhausen</obo:IAO_0000117>
         <rdfs:label xml:lang="en">deontic document act</rdfs:label>
     </owl:Class>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/IAO_0020021 -->
@@ -231,7 +231,7 @@ It is important to note that this going out of existence of s is complete and un
         <obo:IAO_0000117>Amanda Hicks</obo:IAO_0000117>
         <rdfs:label xml:lang="en">identity document</rdfs:label>
     </owl:Class>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/IAO_0020022 -->
@@ -266,7 +266,7 @@ It is important to note that this going out of existence of s is complete and un
 Is part_of the appropriate relation to use for data items and documented identities?</rdfs:comment>
         <rdfs:label xml:lang="en">documented identity</rdfs:label>
     </owl:Class>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/IAO_0020023 -->
@@ -307,7 +307,7 @@ Is part_of the appropriate relation to use for data items and documented identit
         <obo:IAO_0000117>Amanda Hicks</obo:IAO_0000117>
         <rdfs:label xml:lang="en">authentication</rdfs:label>
     </owl:Class>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/IAO_0020024 -->
@@ -343,7 +343,7 @@ Is part_of the appropriate relation to use for data items and documented identit
         <obo:IAO_0000117 xml:lang="en">Amanda Hicks</obo:IAO_0000117>
         <rdfs:label xml:lang="en">credential role</rdfs:label>
     </owl:Class>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/IAO_0021000 -->
@@ -354,18 +354,7 @@ Is part_of the appropriate relation to use for data items and documented identit
         <rdfs:label xml:lang="en">obsolete_claim</rdfs:label>
         <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
-
-
-
-    <!-- http://purl.obolibrary.org/obo/IAO_0021001 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0021001">
-        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>
-        <obo:IAO_0000231 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000226"/>
-        <rdfs:label xml:lang="en">obsolete_obligation</rdfs:label>
-        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
-    </owl:Class>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/IAO_0021002 -->
@@ -380,7 +369,7 @@ Is part_of the appropriate relation to use for data items and documented identit
         <rdfs:label xml:lang="en">obsolete_document act</rdfs:label>
         <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/IAO_0021003 -->
@@ -392,7 +381,7 @@ Is part_of the appropriate relation to use for data items and documented identit
         <obo:IAO_0000117>Mathias Brochhausen</obo:IAO_0000117>
         <rdfs:label xml:lang="en">social act</rdfs:label>
     </owl:Class>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/IAO_0021004 -->
@@ -405,7 +394,7 @@ Is part_of the appropriate relation to use for data items and documented identit
         <rdfs:label xml:lang="en">obsolete_socio-legal generically dependent continuant</rdfs:label>
         <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/IAO_0021005 -->
@@ -422,7 +411,7 @@ Is part_of the appropriate relation to use for data items and documented identit
         <rdfs:label xml:lang="en">obsolete_deontic declaration</rdfs:label>
         <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/IAO_0021006 -->
@@ -433,7 +422,7 @@ Is part_of the appropriate relation to use for data items and documented identit
         <obo:IAO_0000117 xml:lang="en">Mathias Brochhausen</obo:IAO_0000117>
         <rdfs:label xml:lang="en">obligee role</rdfs:label>
     </owl:Class>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/IAO_0021007 -->
@@ -444,7 +433,7 @@ Is part_of the appropriate relation to use for data items and documented identit
         <obo:IAO_0000117 xml:lang="en">Mathias Brochhausen</obo:IAO_0000117>
         <rdfs:label xml:lang="en">document act input document</rdfs:label>
     </owl:Class>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/IAO_0021008 -->
@@ -456,7 +445,7 @@ Is part_of the appropriate relation to use for data items and documented identit
         <obo:IAO_0000117 xml:lang="en">Neil Otte</obo:IAO_0000117>
         <rdfs:label xml:lang="en">deontic role</rdfs:label>
     </owl:Class>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/IAO_0021009 -->
@@ -481,7 +470,18 @@ Is part_of the appropriate relation to use for data items and documented identit
         <obo:IAO_0000117>Mathias Brochhausen</obo:IAO_0000117>
         <rdfs:label xml:lang="en">deontic declaration</rdfs:label>
     </owl:Class>
+    
 
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0021010 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0021010">
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>
+        <obo:IAO_0000231 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000226"/>
+        <rdfs:label xml:lang="en">obsolete_obligation</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+    </owl:Class>
+    
 
 
     <!-- http://purl.obolibrary.org/obo/IAO_0021014 -->
@@ -494,7 +494,7 @@ Is part_of the appropriate relation to use for data items and documented identit
         <rdfs:label xml:lang="en">obsolete_declaration executive role</rdfs:label>
         <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/IAO_0021015 -->
@@ -509,7 +509,7 @@ Is part_of the appropriate relation to use for data items and documented identit
         <rdfs:label xml:lang="en">obsolete_document template creator role</rdfs:label>
         <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/IAO_0021017 -->
@@ -522,7 +522,7 @@ Is part_of the appropriate relation to use for data items and documented identit
         <rdfs:label xml:lang="en">obsolete_claimant role</rdfs:label>
         <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/IAO_0021018 -->
@@ -535,7 +535,7 @@ Is part_of the appropriate relation to use for data items and documented identit
         <rdfs:label xml:lang="en">obsolete_obligator role</rdfs:label>
         <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/IAO_0021020 -->
@@ -549,7 +549,7 @@ Is part_of the appropriate relation to use for data items and documented identit
         <rdfs:label xml:lang="en">obsolete_declaration target</rdfs:label>
         <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/IAO_0021021 -->
@@ -584,7 +584,7 @@ Is part_of the appropriate relation to use for data items and documented identit
                                                             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000310"/>
                                                             <owl:Restriction>
                                                                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000056"/>
-                                                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0021002"/>
+                                                                <owl:someValuesFrom rdf:resource="http://purl.obolibary.org/obo/IAO_0021001"/>
                                                             </owl:Restriction>
                                                         </owl:intersectionOf>
                                                     </owl:Class>
@@ -604,7 +604,7 @@ Is part_of the appropriate relation to use for data items and documented identit
         <obo:IAO_0000117>Mathias Brochhausen</obo:IAO_0000117>
         <rdfs:label xml:lang="en">document act template creator role</rdfs:label>
     </owl:Class>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/IAO_0021022 -->
@@ -616,7 +616,7 @@ Is part_of the appropriate relation to use for data items and documented identit
         <obo:IAO_0000118 xml:lang="en">declaration performer role</obo:IAO_0000118>
         <rdfs:label xml:lang="en">deontic declaration performer role</rdfs:label>
     </owl:Class>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/IAO_0021030 -->
@@ -628,7 +628,7 @@ Is part_of the appropriate relation to use for data items and documented identit
         <rdfs:label xml:lang="en">obsoleted_document act target</rdfs:label>
         <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/IAO_0021031 -->
@@ -663,7 +663,7 @@ Is part_of the appropriate relation to use for data items and documented identit
         <obo:IAO_0000117 xml:lang="en">Mathias Brochhausen</obo:IAO_0000117>
         <rdfs:label xml:lang="en">document act performer role</rdfs:label>
     </owl:Class>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/IAO_0021102 -->
@@ -675,7 +675,7 @@ Is part_of the appropriate relation to use for data items and documented identit
         <obo:IAO_0000118 xml:lang="en">enactment</obo:IAO_0000118>
         <rdfs:label xml:lang="en">standing declaration</rdfs:label>
     </owl:Class>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/IAO_0021300 -->
@@ -687,7 +687,7 @@ Is part_of the appropriate relation to use for data items and documented identit
         <obo:IAO_0000117 xml:lang="en">Mathias Brochhausen</obo:IAO_0000117>
         <rdfs:label xml:lang="en">obligor role</rdfs:label>
     </owl:Class>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/NCBITaxon_9606 -->
@@ -699,7 +699,7 @@ Is part_of the appropriate relation to use for data items and documented identit
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncbitaxon.owl"/>
         <rdfs:label xml:lang="en">Homo sapiens</rdfs:label>
     </owl:Class>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/OBI_0000245 -->
@@ -744,7 +744,7 @@ for now.</obo:IAO_0000116>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GROUP: OBI</obo:IAO_0000119>
         <rdfs:label xml:lang="en">organization</rdfs:label>
     </owl:Class>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/OBI_0100026 -->
@@ -765,7 +765,7 @@ This issue is outside the scope of OBI.</obo:IAO_0000116>
         <obo:IAO_0000119 xml:lang="en">WEB: http://en.wikipedia.org/wiki/Organism</obo:IAO_0000119>
         <rdfs:label xml:lang="en">organism</rdfs:label>
     </owl:Class>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/OMRSE_00000022 -->
@@ -782,7 +782,7 @@ This issue is outside the scope of OBI.</obo:IAO_0000116>
         <rdfs:comment xml:lang="en">Any arbitrary collection of organisms.  They need not be of the same taxonomic class.  </rdfs:comment>
         <rdfs:label xml:lang="en">collection of organisms</rdfs:label>
     </owl:Class>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/OMRSE_00000023 -->
@@ -798,7 +798,7 @@ This issue is outside the scope of OBI.</obo:IAO_0000116>
         <rdfs:comment xml:lang="en">An object aggregate all of whose components are human beings.</rdfs:comment>
         <rdfs:label xml:lang="en">collection of humans</rdfs:label>
     </owl:Class>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/OMRSE_00000033 -->
@@ -821,3 +821,4 @@ This issue is outside the scope of OBI.</obo:IAO_0000116>
 
 
 <!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+
