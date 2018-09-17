@@ -17,8 +17,8 @@
         <dc:license rdf:resource="http://creativecommons.org/licenses/by/3.0/"/>
         <obo:IAO_0000597 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IAO_0021000-IAO_0021999</obo:IAO_0000597>
         <terms:license xml:lang="en">http://creativecommons.org/licenses/by/3.0/</terms:license>
+        <owl:versionInfo>development version 2018-09-16</owl:versionInfo>
         <dc:creator>Mathias Brochhausen</dc:creator>
-        <owl:versionInfo>development version 2018-08-09</owl:versionInfo>
         <dc:description xml:lang="en">The ontology is based on a theory of document acts proposed by Barry Smith and Reinach&apos;s theory of social acts and legal entities:
 
 Reinach, A. (1989), Sämtliche Werke. Texkritische Ausgabe, Edited by Karl Schuhmann and Barry Smith, München: Philosophia Verlag.
