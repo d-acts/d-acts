@@ -420,7 +420,7 @@ Is part_of the appropriate relation to use for data items and documented identit
     <!-- http://purl.obolibrary.org/obo/IAO_0021006 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0021006">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0021008"/>
         <obo:IAO_0000115 xml:lang="en">A role that is either the specified output of an obligation generating social act or the concretization of a transferable obligation and that is realized by it&apos;s bearer being the providing part of a process that fulfills the previously agreed upon requirements.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Mathias Brochhausen</obo:IAO_0000117>
         <rdfs:label xml:lang="en">obligee role</rdfs:label>
@@ -684,11 +684,23 @@ Is part_of the appropriate relation to use for data items and documented identit
     <!-- http://purl.obolibrary.org/obo/IAO_0021300 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0021300">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0021008"/>
         <obo:IAO_0000115 xml:lang="en">A role that is either the specified output of an obligation generating social act or the concretization of a transferable obligation and that is realized by it&apos;s bearer being the receiving part of a process that fulfills the previously agreed upon requirements.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">John Judkins</obo:IAO_0000117>
         <obo:IAO_0000117 xml:lang="en">Mathias Brochhausen</obo:IAO_0000117>
         <rdfs:label xml:lang="en">obligor role</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0621008 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0621008">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0021008"/>
+        <obo:IAO_0000115 xml:lang="en">A deontic role that, if realized, is realized in the creation of a deontic role</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">Rights and legal powers are deontic power roles. For instance, a consent power is a deontic power role that may be realized in the creation of a permission role, where the permission role then inheres in the person to whom consent has been provided.</obo:IAO_0000116>
+        <obo:IAO_0000117 xml:lang="en">J. Neil Otte</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">deontic power role</rdfs:label>
     </owl:Class>
     
 
