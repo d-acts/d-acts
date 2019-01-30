@@ -13,11 +13,11 @@
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
      xmlns:dc="http://purl.org/dc/elements/1.1/">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/iao/d-acts.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/iao/d-acts/release/2018-09-17/d-acts.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/iao/d-acts/release/2019-01-30/d-acts.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/iao/pno.owl"/>
         <dc:contributor>Cooper Stansbury</dc:contributor>
         <dc:license rdf:resource="http://creativecommons.org/licenses/by/3.0/"/>
-        <owl:versionInfo>release version 2018-09-17</owl:versionInfo>
+        <owl:versionInfo>release version 2019-01-30</owl:versionInfo>
         <dc:contributor>J. Neil Otte</dc:contributor>
         <obo:IAO_0000597 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IAO_0021000-IAO_0021999</obo:IAO_0000597>
         <terms:license xml:lang="en">http://creativecommons.org/licenses/by/3.0/</terms:license>
@@ -154,26 +154,13 @@ It is important to note that this going out of existence of s is complete and un
     <!-- http://purl.obolibary.org/obo/IAO_0021001 -->
 
     <owl:Class rdf:about="http://purl.obolibary.org/obo/IAO_0021001">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0021009"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0021007"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000310"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0021009"/>
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>
         <obo:IAO_0000112 xml:lang="en">my filling in an immigration form, a judge&apos;s signing and stamping a court order</obo:IAO_0000112>
         <obo:IAO_0000115 xml:lang="en">A deontic declaration creating or revoking a deontic role by lawfully manipulating (signing, stamping, publishing) a document.</obo:IAO_0000115>
         <obo:IAO_0000117>Mathias Brochhausen</obo:IAO_0000117>
-        <rdfs:label xml:lang="en">deontic document act</rdfs:label>
+        <obo:IAO_0000231 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000226"/>
+        <rdfs:label xml:lang="en">obsolete_deontic document act</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -360,6 +347,33 @@ Is part_of the appropriate relation to use for data items and documented identit
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0021001 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0021001">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0021009"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0021007"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000310"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0021009"/>
+        <obo:IAO_0000112 xml:lang="en">my filling in an immigration form, a judge&apos;s signing and stamping a court order</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">A deontic declaration creating or revoking a deontic role by lawfully manipulating (signing, stamping, publishing) a document.</obo:IAO_0000115>
+        <obo:IAO_0000117>Mathias Brochhausen</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">deontic document act</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/IAO_0021002 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0021002">
@@ -420,7 +434,7 @@ Is part_of the appropriate relation to use for data items and documented identit
     <!-- http://purl.obolibrary.org/obo/IAO_0021006 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0021006">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0021008"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
         <obo:IAO_0000115 xml:lang="en">A role that is either the specified output of an obligation generating social act or the concretization of a transferable obligation and that is realized by it&apos;s bearer being the providing part of a process that fulfills the previously agreed upon requirements.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Mathias Brochhausen</obo:IAO_0000117>
         <rdfs:label xml:lang="en">obligee role</rdfs:label>
@@ -684,23 +698,11 @@ Is part_of the appropriate relation to use for data items and documented identit
     <!-- http://purl.obolibrary.org/obo/IAO_0021300 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0021300">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0021008"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
         <obo:IAO_0000115 xml:lang="en">A role that is either the specified output of an obligation generating social act or the concretization of a transferable obligation and that is realized by it&apos;s bearer being the receiving part of a process that fulfills the previously agreed upon requirements.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">John Judkins</obo:IAO_0000117>
         <obo:IAO_0000117 xml:lang="en">Mathias Brochhausen</obo:IAO_0000117>
         <rdfs:label xml:lang="en">obligor role</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/IAO_0621008 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0621008">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0021008"/>
-        <obo:IAO_0000115 xml:lang="en">A deontic role that, if realized, is realized in the creation of a deontic role</obo:IAO_0000115>
-        <obo:IAO_0000116 xml:lang="en">Rights and legal powers are deontic power roles. For instance, a consent power is a deontic power role that may be realized in the creation of a permission role, where the permission role then inheres in the person to whom consent has been provided.</obo:IAO_0000116>
-        <obo:IAO_0000117 xml:lang="en">J. Neil Otte</obo:IAO_0000117>
-        <rdfs:label xml:lang="en">deontic power role</rdfs:label>
     </owl:Class>
     
 
