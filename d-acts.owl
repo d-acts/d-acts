@@ -13,11 +13,10 @@
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
      xmlns:dc="http://purl.org/dc/elements/1.1/">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/iao/d-acts.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/iao/d-acts/release/2019-01-30/d-acts.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/iao/d-acts/release/2019-04-03/d-acts.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/iao/pno.owl"/>
         <dc:contributor>Cooper Stansbury</dc:contributor>
         <dc:license rdf:resource="http://creativecommons.org/licenses/by/3.0/"/>
-        <owl:versionInfo>release version 2019-01-30</owl:versionInfo>
         <dc:contributor>J. Neil Otte</dc:contributor>
         <obo:IAO_0000597 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IAO_0021000-IAO_0021999</obo:IAO_0000597>
         <terms:license xml:lang="en">http://creativecommons.org/licenses/by/3.0/</terms:license>
@@ -31,11 +30,30 @@ Smith, B. (2008) “Searle and de Soto: The new ontology of the social world”,
 Smith, B. (2012) &quot;How to Do Things With Documents&quot;, Rivista di estetica, 50 (2/2012), LII: 179-198.
 
 However, there are some amendments from our side which are to be found in the documentation.</dc:description>
+        <dc:contributor>Sarah Bost</dc:contributor>
         <dc:creator>Laura Slaughter</dc:creator>
         <dc:creator>Amanda Hicks</dc:creator>
+        <owl:versionInfo>release version 2019-04-03</owl:versionInfo>
         <dc:creator>Mauricio B. Almeida</dc:creator>
         <dc:title xml:lang="en">document act ontology</dc:title>
     </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/terms/license -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
     
 
 
@@ -434,10 +452,11 @@ Is part_of the appropriate relation to use for data items and documented identit
     <!-- http://purl.obolibrary.org/obo/IAO_0021006 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0021006">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>
         <obo:IAO_0000115 xml:lang="en">A role that is either the specified output of an obligation generating social act or the concretization of a transferable obligation and that is realized by it&apos;s bearer being the providing part of a process that fulfills the previously agreed upon requirements.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Mathias Brochhausen</obo:IAO_0000117>
-        <rdfs:label xml:lang="en">obligee role</rdfs:label>
+        <rdfs:label xml:lang="en">obsolete obligee role</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -698,11 +717,12 @@ Is part_of the appropriate relation to use for data items and documented identit
     <!-- http://purl.obolibrary.org/obo/IAO_0021300 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0021300">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>
         <obo:IAO_0000115 xml:lang="en">A role that is either the specified output of an obligation generating social act or the concretization of a transferable obligation and that is realized by it&apos;s bearer being the receiving part of a process that fulfills the previously agreed upon requirements.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">John Judkins</obo:IAO_0000117>
         <obo:IAO_0000117 xml:lang="en">Mathias Brochhausen</obo:IAO_0000117>
-        <rdfs:label xml:lang="en">obligor role</rdfs:label>
+        <rdfs:label xml:lang="en">obsolete obligor role</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -832,6 +852,28 @@ This issue is outside the scope of OBI.</obo:IAO_0000116>
         <obo:IAO_0000117 xml:lang="en">William R. Hogan</obo:IAO_0000117>
         <rdfs:comment xml:lang="en">It is often convenient to group organizations together that otherwise might not even interact with one another. </rdfs:comment>
         <rdfs:label xml:lang="en">aggregate of organizations</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/iao/d-acts/dev/d-acts.owl#obligee_role -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/iao/d-acts/dev/d-acts.owl#obligee_role">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
+        <obo:IAO_0000115 xml:lang="en">A role that is either the specified output of an obligation generating social act or the concretization of a transferable obligation and that is realized by it&apos;s bearer being the receiving part of a process that fulfills the previously agreed upon requirements.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Sarah Bost</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">obligee role</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/iao/d-acts/dev/d-acts.owl#obligor_role -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/iao/d-acts/dev/d-acts.owl#obligor_role">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
+        <obo:IAO_0000115 xml:lang="en">A role that is either the specified output of an obligation generating social act or the concretization of a transferable obligation and that is realized by it&apos;s bearer being the providing part of a process that fulfills the previously agreed upon requirements.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Sarah Bost</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">obligor role</rdfs:label>
     </owl:Class>
 </rdf:RDF>
 
