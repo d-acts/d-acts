@@ -1,26 +1,28 @@
 <?xml version="1.0"?>
 <rdf:RDF xmlns="http://purl.obolibrary.org/obo/iao/d-acts/dev/d-acts.owl/"
      xml:base="http://purl.obolibrary.org/obo/iao/d-acts/dev/d-acts.owl/"
-     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-     xmlns:terms="http://purl.org/dc/terms/"
-     xmlns:owl="http://www.w3.org/2002/07/owl#"
-     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
-     xmlns:xml="http://www.w3.org/XML/1998/namespace"
-     xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
-     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
-     xmlns:dc="http://purl.org/dc/elements/1.1/">
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/iao/d-acts.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/iao/d-acts/release/2019-04-04/d-acts.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/iao/d-acts/release/2020-07-10/d-acts.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/iao/pno.owl"/>
-        <dc:contributor>Cooper Stansbury</dc:contributor>
-        <dc:license rdf:resource="http://creativecommons.org/licenses/by/3.0/"/>
-        <dc:contributor>J. Neil Otte</dc:contributor>
         <obo:IAO_0000597 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IAO_0021000-IAO_0021999</obo:IAO_0000597>
-        <terms:license xml:lang="en">http://creativecommons.org/licenses/by/3.0/</terms:license>
+        <dc:contributor>Cooper Stansbury</dc:contributor>
+        <dc:contributor>J. Neil Otte</dc:contributor>
+        <dc:contributor>Sarah Bost</dc:contributor>
+        <dc:creator>Amanda Hicks</dc:creator>
+        <dc:creator>Laura Slaughter</dc:creator>
         <dc:creator>Mathias Brochhausen</dc:creator>
+        <dc:creator>Mauricio B. Almeida</dc:creator>
         <dc:description xml:lang="en">The ontology is based on a theory of document acts proposed by Barry Smith and Reinach&apos;s theory of social acts and legal entities:
 
 Reinach, A. (1989), Sämtliche Werke. Texkritische Ausgabe, Edited by Karl Schuhmann and Barry Smith, München: Philosophia Verlag.
@@ -30,12 +32,10 @@ Smith, B. (2008) “Searle and de Soto: The new ontology of the social world”,
 Smith, B. (2012) &quot;How to Do Things With Documents&quot;, Rivista di estetica, 50 (2/2012), LII: 179-198.
 
 However, there are some amendments from our side which are to be found in the documentation.</dc:description>
-        <dc:contributor>Sarah Bost</dc:contributor>
-        <dc:creator>Laura Slaughter</dc:creator>
-        <owl:versionInfo>release version 2019-04-04</owl:versionInfo>
-        <dc:creator>Amanda Hicks</dc:creator>
-        <dc:creator>Mauricio B. Almeida</dc:creator>
+        <dc:license rdf:resource="http://creativecommons.org/licenses/by/3.0/"/>
         <dc:title xml:lang="en">document act ontology</dc:title>
+        <terms:license xml:lang="en">http://creativecommons.org/licenses/by/3.0/</terms:license>
+        <owl:versionInfo>release version 2020-07-10</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -51,9 +51,45 @@ However, there are some amendments from our side which are to be found in the do
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000115">
+        <rdfs:label xml:lang="en">definition</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">definition</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">textual definition</rdfs:label>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000117 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000117">
+        <rdfs:label>definition editor</rdfs:label>
+        <rdfs:label xml:lang="en">definition editor</rdfs:label>
+        <rdfs:label xml:lang="en">term editor</rdfs:label>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000412 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000412">
+        <rdfs:label xml:lang="en">imported from</rdfs:label>
+    </rdf:Description>
+    
+
+
     <!-- http://purl.org/dc/terms/license -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#label -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#label">
+        <rdfs:label>label</rdfs:label>
+    </rdf:Description>
     
 
 
@@ -350,6 +386,48 @@ Is part_of the appropriate relation to use for data items and documented identit
         <obo:IAO_0000115 xml:lang="en">A role that inheres in a concretization of an identity document and is realized by an authentication process.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Amanda Hicks</obo:IAO_0000117>
         <rdfs:label xml:lang="en">credential role</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0020025 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0020025">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0021008"/>
+        <obo:IAO_0000111 xml:lang="en">obligor role</obo:IAO_0000111>
+        <obo:IAO_0000112 xml:lang="en">Sam&apos;s obligor role realized by him taking Nigel to lunch after promising to do so; Sarah&apos;s obligor role realized by paying the purchase price to Layla after signing the contract specifying that she is buying a piece of land from Layla.</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">A role that is the specified output of an obligation generating social act and that is realized by it&apos;s bearer being the providing part of a process that fulfills the previously agreed upon requirements.</obo:IAO_0000115>
+        <obo:IAO_0000117>Mathias Brochhausen</obo:IAO_0000117>
+        <obo:IAO_0000117>Sarah Bost</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">obligor role</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0020026 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0020026">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0021008"/>
+        <obo:IAO_0000111 xml:lang="en">obligee role</obo:IAO_0000111>
+        <obo:IAO_0000112>Nigel&apos;s obligee role realized by Sam taking him out for lunch after Sam so promised; Layla&apos;s obligee role realized by receiving the money after signing a contract in which Sarah obtained a piece of land in exchange for a specified sum of money.</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">A role that is the specified output of an obligation generating social act and that is realized by it&apos;s bearer being the receiving part of a process that fulfills the previously agreed upon requirements.</obo:IAO_0000115>
+        <obo:IAO_0000117>Mathias Brochhausen</obo:IAO_0000117>
+        <obo:IAO_0000117>Sarah Bost</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">obligee role</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0020027 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0020027">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000024"/>
+        <obo:IAO_0000112 xml:lang="en">Tammy&apos;s owner role with regards to the house on 234 Evergreen Terrace; Walter&apos;s owner role with regards to the intellectual property on his movie script</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">A role in a human social process that is based on a social act and whose bearer exercises exclusive control over a property, where this control is permitted by one or more deontic roles, which are parts of the owner role.</obo:IAO_0000115>
+        <obo:IAO_0000117>Mathias Brochhausen</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">OBIB/ICO community</obo:IAO_0000119>
+        <obo:IAO_0000119>https://github.com/d-acts/d-acts/issues/29</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">owner role</rdfs:label>
     </owl:Class>
     
 
@@ -705,10 +783,12 @@ Is part_of the appropriate relation to use for data items and documented identit
     <!-- http://purl.obolibrary.org/obo/IAO_0021032 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0021032">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>
         <obo:IAO_0000115 xml:lang="en">A role that is either the specified output of an obligation generating social act or the concretization of a transferable obligation and that is realized by it&apos;s bearer being the receiving part of a process that fulfills the previously agreed upon requirements.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Sarah Bost</obo:IAO_0000117>
-        <rdfs:label xml:lang="en">obligee role</rdfs:label>
+        <obo:IAO_0000231 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000103"/>
+        <rdfs:label xml:lang="en">obsolete_obligee role</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -716,10 +796,12 @@ Is part_of the appropriate relation to use for data items and documented identit
     <!-- http://purl.obolibrary.org/obo/IAO_0021033 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0021033">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>
         <obo:IAO_0000115 xml:lang="en">A role that is either the specified output of an obligation generating social act or the concretization of a transferable obligation and that is realized by it&apos;s bearer being the providing part of a process that fulfills the previously agreed upon requirements.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Sarah Bost</obo:IAO_0000117>
-        <rdfs:label xml:lang="en">obligor role</rdfs:label>
+        <obo:IAO_0000231 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000103"/>
+        <rdfs:label xml:lang="en">obsolete_obligor role</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -860,6 +942,19 @@ This issue is outside the scope of OBI.</obo:IAO_0000116>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000024 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000024">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
+        <obo:IAO_0000115 xml:lang="en">A role inhering in an entity realized by social interactions in human society.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Mathias Brochhausen</obo:IAO_0000117>
+        <obo:IAO_0000412 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.obolibrary.org/obo/omrse.owl</obo:IAO_0000412>
+        <rdfs:comment xml:lang="en">Previous definition: A role played by an entity in human social processes.</rdfs:comment>
+        <rdfs:label xml:lang="en">role in human social processes</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/OMRSE_00000033 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000033">
@@ -878,9 +973,9 @@ This issue is outside the scope of OBI.</obo:IAO_0000116>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/iao/d-acts.owl#obligee_role -->
+    <!-- http://purl.obolibrary.org/obo/iao/d-acts/dev/d-acts.owl#obligee_role -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/iao/d-acts.owl#obligee_role">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/iao/d-acts/dev/d-acts.owl#obligee_role">
         <rdfs:subClassOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>
         <obo:IAO_0000115 xml:lang="en">A role that is either the specified output of an obligation generating social act or the concretization of a transferable obligation and that is realized by it&apos;s bearer being the receiving part of a process that fulfills the previously agreed upon requirements.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Sarah Bost</obo:IAO_0000117>
@@ -890,9 +985,9 @@ This issue is outside the scope of OBI.</obo:IAO_0000116>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/iao/d-acts.owl#obligor_role -->
+    <!-- http://purl.obolibrary.org/obo/iao/d-acts/dev/d-acts.owl#obligor_role -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/iao/d-acts.owl#obligor_role">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/iao/d-acts/dev/d-acts.owl#obligor_role">
         <rdfs:subClassOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>
         <obo:IAO_0000115 xml:lang="en">A role that is either the specified output of an obligation generating social act or the concretization of a transferable obligation and that is realized by it&apos;s bearer being the providing part of a process that fulfills the previously agreed upon requirements.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Sarah Bost</obo:IAO_0000117>
@@ -903,5 +998,5 @@ This issue is outside the scope of OBI.</obo:IAO_0000116>
 
 
 
-<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
 
