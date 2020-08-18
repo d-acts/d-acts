@@ -167,11 +167,12 @@ It is important to note that this going out of existence of s is complete and un
     <!-- http://purl.obolibrary.org/obo/OMRSE_00000020 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000020">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteProperty"/>
         <obo:IAO_0000231 xml:lang="en">BFO relation takes precedence.</obo:IAO_0000231>
         <rdfs:comment xml:lang="en">We anticipate BFO 2.0 including and defining this relation.  When it does, we will obsolete this property and declare it equivalent to the BFO 2.0 relation.
 </rdfs:comment>
-        <rdfs:label>is-aggregate-of</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">obsolete is-aggregate-of</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:ObjectProperty>
     
 
