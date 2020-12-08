@@ -684,6 +684,20 @@ https://plato.stanford.edu/entries/rights/#FormRighHohfAnalSyst discuss the clai
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0021019 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0021019">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0021008"/>
+        <obo:IAO_0000115 xml:lang="en">A deontic role that inheres in an agent A, that specifies that no agent B bears a claimant role agains A doing C.</obo:IAO_0000115>
+        <obo:IAO_0000117>J. Neil Ott</obo:IAO_0000117>
+        <obo:IAO_0000117>Mathias Brochhausen</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">Hohfeld, WN: Fundamental Legal Conceptions as Applied in Judicial Reasoning. Yale University Press, 1919.</obo:IAO_0000119>
+        <obo:IAO_0000119>https://plato.stanford.edu/entries/rights/</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">privilege holder role</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/IAO_0021020 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0021020">
