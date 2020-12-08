@@ -34,7 +34,7 @@ However, there are some amendments from our side which are to be found in the do
         <dc:license rdf:resource="http://creativecommons.org/licenses/by/3.0/"/>
         <dc:title xml:lang="en">document act ontology</dc:title>
         <terms:license xml:lang="en">http://creativecommons.org/licenses/by/3.0/</terms:license>
-        <owl:versionInfo>development version 2020-08-05</owl:versionInfo>
+        <owl:versionInfo>development version 2020-12-08</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -604,8 +604,8 @@ Thanks to W.R. Hogan for finding the Reinach quote.</rdfs:comment>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0021013">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0021008"/>
+        <obo:IAO_0000115 xml:lang="en">A deontic role that inheres in an agent A, that mutually depends on the existence of a duty holder role borne by agent B, and that specifies B providing or surrendering C to A.</obo:IAO_0000115>
         <obo:IAO_0000117>Mathias Brochhausen</obo:IAO_0000117>
-        <obo:IAO_0000119 xml:lang="en">A deontic role that inheres in an agent and that, if realized, is realized by another agent bearing a duty holder role acting in accordance with the specified duty.</obo:IAO_0000119>
         <obo:IAO_0000119 xml:lang="en">Hohfeld, WN: Fundamental Legal Conceptions as Applied in Judicial Reasoning. Yale University Press, 1919.</obo:IAO_0000119>
         <obo:IAO_0000119>https://plato.stanford.edu/entries/rights/</obo:IAO_0000119>
         <rdfs:comment xml:lang="en">Claimant roles can either be discharged by one act of fulfilling a duty (e.g. when I owe my friend $5) or they can remain intact and require ongoing adhering to a duty. 
