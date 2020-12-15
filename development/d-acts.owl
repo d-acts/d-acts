@@ -649,7 +649,7 @@ https://plato.stanford.edu/entries/rights/#FormRighHohfAnalSyst discuss the clai
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0021016">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0021008"/>
         <obo:IAO_0000115 xml:lang="en">A deontic role that inheres in an agent A, that mutually depends on the existence of a claimant role borne by agent B, and that specifies A doing, providing or surrendering C to B.</obo:IAO_0000115>
-        <obo:IAO_0000117>J. Neil Ott</obo:IAO_0000117>
+        <obo:IAO_0000117>J. Neil Otte</obo:IAO_0000117>
         <obo:IAO_0000117>Mathias Brochhausen</obo:IAO_0000117>
         <obo:IAO_0000119 xml:lang="en">Hohfeld, WN: Fundamental Legal Conceptions as Applied in Judicial Reasoning. Yale University Press, 1919.</obo:IAO_0000119>
         <obo:IAO_0000119>https://plato.stanford.edu/entries/rights/</obo:IAO_0000119>
