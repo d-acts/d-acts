@@ -609,8 +609,8 @@ Thanks to W.R. Hogan for finding the Reinach quote.</rdfs:comment>
         <obo:IAO_0000117>Mathias Brochhausen</obo:IAO_0000117>
         <obo:IAO_0000119 xml:lang="en">Hohfeld, WN: Fundamental Legal Conceptions as Applied in Judicial Reasoning. Yale University Press, 1919.</obo:IAO_0000119>
         <obo:IAO_0000119>https://plato.stanford.edu/entries/rights/</obo:IAO_0000119>
-        <rdfs:comment xml:lang="en">Claimant roles can either be discharged by one act of fulfilling a duty (e.g. when I owe my friend $5) or they can remain intact and require ongoing adhering to a duty. 
-https://plato.stanford.edu/entries/rights/#FormRighHohfAnalSyst discuss the claim of a child to freedom from abuse. That claim remains in existence and the duty to not abuse the child needs to be continuously be acted upon, by a multitude of agents (which all have a duty holder role).</rdfs:comment>
+        <rdfs:comment xml:lang="en">Claimant roles can either be discharged by one act of fulfilling a duty (e.g. when I pay back $5 owed to a friend) or they can remain intact and require ongoing adhering to a duty. 
+https://plato.stanford.edu/entries/rights/#FormRighHohfAnalSyst discuss the claim of a child to freedom from abuse. That claim remains in existence and the duty to not abuse the child needs to be continuously be acted upon, by a multitude of agents (which all have a duty holder role). This claim is mutually dependent on the duty to abstain from abusing the child.</rdfs:comment>
         <rdfs:label xml:lang="en">claimant role</rdfs:label>
     </owl:Class>
     
