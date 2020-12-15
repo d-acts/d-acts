@@ -779,6 +779,20 @@ https://plato.stanford.edu/entries/rights/#FormRighHohfAnalSyst discuss the clai
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0021023 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0021023">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0021008"/>
+        <obo:IAO_0000115 xml:lang="en">A deontic role that, if realized, is realized by the bearer of the role to create, alter, or annul deontic roles borne by themselves or others.</obo:IAO_0000115>
+        <obo:IAO_0000117>J. Neil Otte</obo:IAO_0000117>
+        <obo:IAO_0000117>Mathias Brochhausen</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">Hohfeld, WN: Fundamental Legal Conceptions as Applied in Judicial Reasoning. Yale University Press, 1919.</obo:IAO_0000119>
+        <obo:IAO_0000119>https://plato.stanford.edu/entries/rights/</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">power role</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/IAO_0021030 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0021030">
