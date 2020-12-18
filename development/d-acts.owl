@@ -17,7 +17,9 @@
         <obo:IAO_0000597 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IAO_0021000-IAO_0021999</obo:IAO_0000597>
         <dc:contributor>Cooper Stansbury</dc:contributor>
         <dc:contributor>J. Neil Otte</dc:contributor>
+        <dc:contributor>S. Clint Dowland</dc:contributor>
         <dc:contributor>Sarah Bost</dc:contributor>
+        <dc:contributor>William R. Hogan</dc:contributor>
         <dc:creator>Amanda Hicks</dc:creator>
         <dc:creator>Laura Slaughter</dc:creator>
         <dc:creator>Mathias Brochhausen</dc:creator>
@@ -34,7 +36,7 @@ However, there are some amendments from our side which are to be found in the do
         <dc:license rdf:resource="http://creativecommons.org/licenses/by/3.0/"/>
         <dc:title xml:lang="en">document act ontology</dc:title>
         <terms:license xml:lang="en">http://creativecommons.org/licenses/by/3.0/</terms:license>
-        <owl:versionInfo>development version 2020-12-15</owl:versionInfo>
+        <owl:versionInfo>development version 2020-12-18</owl:versionInfo>
     </owl:Ontology>
     
 
