@@ -36,7 +36,7 @@ However, there are some amendments from our side which are to be found in the do
         <dc:license rdf:resource="http://creativecommons.org/licenses/by/3.0/"/>
         <dc:title xml:lang="en">document act ontology</dc:title>
         <terms:license xml:lang="en">http://creativecommons.org/licenses/by/3.0/</terms:license>
-        <owl:versionInfo>development version 2020-12-18</owl:versionInfo>
+        <owl:versionInfo>development version 2021-01-07</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -785,7 +785,7 @@ https://plato.stanford.edu/entries/rights/#FormRighHohfAnalSyst discuss the clai
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0021023">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0021008"/>
-        <obo:IAO_0000115 xml:lang="en">A deontic role that, if realized, is realized by its bearer’s creating, altering, or annulling some deontic role.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A deontic role that, if realized, is realized by its bearer’s creating, altering, or annulling some deontic role or by otherwise changing the legal relations between entities.</obo:IAO_0000115>
         <obo:IAO_0000117>J. Neil Otte</obo:IAO_0000117>
         <obo:IAO_0000117>Mathias Brochhausen</obo:IAO_0000117>
         <obo:IAO_0000119 xml:lang="en">Hohfeld, WN: Fundamental Legal Conceptions as Applied in Judicial Reasoning. Yale University Press, 1919.</obo:IAO_0000119>
