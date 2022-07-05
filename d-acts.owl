@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://purl.obolibrary.org/obo/iao/d-acts/dev/d-acts.owl/"
-     xml:base="http://purl.obolibrary.org/obo/iao/d-acts/dev/d-acts.owl/"
+<rdf:RDF xmlns="http://purl.obolibrary.org/obo/iao/d-acts/d-acts.owl/"
+     xml:base="http://purl.obolibrary.org/obo/iao/d-acts/d-acts.owl/"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
@@ -12,8 +12,8 @@
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
-    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/iao/d-acts.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/iao/d-acts/release/2021-01-08/d-acts.owl"/>
+    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/iao/d-acts/d-acts.owl">
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/iao/d-acts/release/2022-07-05/d-acts.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/iao/pno.owl"/>
         <obo:IAO_0000597 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IAO_0021000-IAO_0021999</obo:IAO_0000597>
         <dc:contributor>Cooper Stansbury</dc:contributor>
@@ -37,7 +37,7 @@ However, there are some amendments from our side which are to be found in the do
         <dc:license rdf:resource="http://creativecommons.org/licenses/by/3.0/"/>
         <dc:title xml:lang="en">document act ontology</dc:title>
         <terms:license xml:lang="en">http://creativecommons.org/licenses/by/3.0/</terms:license>
-        <owl:versionInfo xml:lang="en">release version 2021-01-08</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">development version 2021-01-08</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -395,13 +395,15 @@ Is part_of the appropriate relation to use for data items and documented identit
     <!-- http://purl.obolibrary.org/obo/IAO_0020025 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0020025">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0021008"/>
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>
         <obo:IAO_0000111 xml:lang="en">obligor role</obo:IAO_0000111>
         <obo:IAO_0000112 xml:lang="en">Sam&apos;s obligor role realized by him taking Nigel to lunch after promising to do so; Sarah&apos;s obligor role realized by paying the purchase price to Layla after signing the contract specifying that she is buying a piece of land from Layla.</obo:IAO_0000112>
         <obo:IAO_0000115 xml:lang="en">A role that is the specified output of an obligation generating social act and that is realized by it&apos;s bearer being the providing part of a process that fulfills the previously agreed upon requirements.</obo:IAO_0000115>
         <obo:IAO_0000117>Mathias Brochhausen</obo:IAO_0000117>
         <obo:IAO_0000117>Sarah Bost</obo:IAO_0000117>
-        <rdfs:label xml:lang="en">obligor role</rdfs:label>
+        <obo:IAO_0100001>duty holder role (IAO:210016)</obo:IAO_0100001>
+        <rdfs:label xml:lang="en">obsolete obligor role</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -409,13 +411,15 @@ Is part_of the appropriate relation to use for data items and documented identit
     <!-- http://purl.obolibrary.org/obo/IAO_0020026 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0020026">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0021008"/>
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>
         <obo:IAO_0000111 xml:lang="en">obligee role</obo:IAO_0000111>
         <obo:IAO_0000112>Nigel&apos;s obligee role realized by Sam taking him out for lunch after Sam so promised; Layla&apos;s obligee role realized by receiving the money after signing a contract in which Sarah obtained a piece of land in exchange for a specified sum of money.</obo:IAO_0000112>
         <obo:IAO_0000115 xml:lang="en">A role that is the specified output of an obligation generating social act and that is realized by it&apos;s bearer being the receiving part of a process that fulfills the previously agreed upon requirements.</obo:IAO_0000115>
         <obo:IAO_0000117>Mathias Brochhausen</obo:IAO_0000117>
         <obo:IAO_0000117>Sarah Bost</obo:IAO_0000117>
-        <rdfs:label xml:lang="en">obligee role</rdfs:label>
+        <obo:IAO_0100001>claimant role (IAO:0021013)</obo:IAO_0100001>
+        <rdfs:label xml:lang="en">obsolete obligee role</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -1029,7 +1033,11 @@ This issue is outside the scope of OBI.</obo:IAO_0000116>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
         <obo:IAO_0000115 xml:lang="en">An aggregate of organizations that have some feature in common, but is not itself an organization.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">An object aggregate that is not itself an organization and whose members are only organizations that have some feature in common</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">William R. Hogan</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">William R. Hogan
+Amanda Hicks</obo:IAO_0000117>
+        <obo:IAO_0000412 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.obolibrary.org/obo/omrse/releases/2022-04-06/omrse.owl</obo:IAO_0000412>
         <rdfs:comment xml:lang="en">It is often convenient to group organizations together that otherwise might not even interact with one another. </rdfs:comment>
         <rdfs:label xml:lang="en">aggregate of organizations</rdfs:label>
     </owl:Class>
