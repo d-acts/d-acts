@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://purl.obolibrary.org/obo/iao/d-acts/d-acts.owl/"
-     xml:base="http://purl.obolibrary.org/obo/iao/d-acts/d-acts.owl/"
+<rdf:RDF xmlns="http://purl.obolibrary.org/obo/iao/d-acts.owl/"
+     xml:base="http://purl.obolibrary.org/obo/iao/d-acts.owl/"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
@@ -12,7 +12,7 @@
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
-    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/iao/d-acts/d-acts.owl">
+    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/iao/d-acts.owl">
         <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/iao/d-acts/release/2022-07-05/d-acts.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/iao/pno.owl"/>
         <obo:IAO_0000597 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IAO_0021000-IAO_0021999</obo:IAO_0000597>
@@ -37,7 +37,7 @@ However, there are some amendments from our side which are to be found in the do
         <dc:license rdf:resource="http://creativecommons.org/licenses/by/3.0/"/>
         <dc:title xml:lang="en">document act ontology</dc:title>
         <terms:license xml:lang="en">http://creativecommons.org/licenses/by/3.0/</terms:license>
-        <owl:versionInfo xml:lang="en">development version 2021-01-08</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">2022-07-05</owl:versionInfo>
     </owl:Ontology>
     
 
