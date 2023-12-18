@@ -13,15 +13,14 @@
      xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/iao/d-acts.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/iao/d-acts/release/2023-09-08/d-acts.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/iao/pno.owl"/>
-        <obo:IAO_0000597 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IAO_0021000-IAO_0021999</obo:IAO_0000597>
+        <obo:IAO_0000597>IAO_0021000-IAO_0021999</obo:IAO_0000597>
         <dc:contributor>Cooper Stansbury</dc:contributor>
         <dc:contributor>J. Neil Otte</dc:contributor>
+        <dc:contributor>Matthew Diller</dc:contributor>
         <dc:contributor>S. Clint Dowland</dc:contributor>
         <dc:contributor>Sarah Bost</dc:contributor>
         <dc:contributor>William R. Hogan</dc:contributor>
-        <dc:contributor>Matthew Diller</dc:contributor>
         <dc:creator>Amanda Hicks</dc:creator>
         <dc:creator>Laura Slaughter</dc:creator>
         <dc:creator>Mathias Brochhausen</dc:creator>
@@ -38,7 +37,7 @@ However, there are some amendments from our side which are to be found in the do
         <dc:license rdf:resource="http://creativecommons.org/licenses/by/3.0/"/>
         <dc:title xml:lang="en">document act ontology</dc:title>
         <terms:license xml:lang="en">http://creativecommons.org/licenses/by/3.0/</terms:license>
-        <owl:versionInfo xml:lang="en">2023-09-08</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">2023-12-18</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -58,8 +57,8 @@ However, there are some amendments from our side which are to be found in the do
 
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000115">
         <rdfs:label xml:lang="en">definition</rdfs:label>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">definition</rdfs:label>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">textual definition</rdfs:label>
+        <rdfs:label>definition</rdfs:label>
+        <rdfs:label>textual definition</rdfs:label>
     </rdf:Description>
     
 
@@ -117,7 +116,7 @@ However, there are some amendments from our side which are to be found in the do
         <obo:IAO_0000112 xml:lang="en">this investigator role is realized in this investigation</obo:IAO_0000112>
         <obo:IAO_0000118 xml:lang="en">is realized by</obo:IAO_0000118>
         <obo:IAO_0000118 xml:lang="en">realized_in</obo:IAO_0000118>
-        <obo:IAO_0000412 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.obolibrary.org/obo/ro.owl</obo:IAO_0000412>
+        <obo:IAO_0000412>http://purl.obolibrary.org/obo/ro.owl</obo:IAO_0000412>
         <obo:IAO_0000600 xml:lang="en">[copied from inverse property &apos;realizes&apos;] to say that b realizes c at t is to assert that there is some material entity d &amp; b is a process which has participant d at t &amp; c is a disposition or role of which d is bearer_of at t&amp; the type instantiated by b is correlated with the type instantiated by c. (axiom label in BFO2 Reference: [059-003])</obo:IAO_0000600>
         <rdfs:comment>Paraphrase of elucidation: a relation between a realizable entity and a process, where there is some material entity that is bearer of the realizable entity and participates in the process, and the realizable entity comes to be realized in the course of the process</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/bfo.owl"/>
@@ -190,7 +189,7 @@ It is important to note that this going out of existence of s is complete and un
         <obo:IAO_0000116>This may be obsoleted and replaced by the original &apos;has agent&apos; relation</obo:IAO_0000116>
         <obo:IAO_0000117>Chris Mungall</obo:IAO_0000117>
         <obo:IAO_0000118>has agent</obo:IAO_0000118>
-        <obo:IAO_0000412 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.obolibrary.org/obo/ro.owl</obo:IAO_0000412>
+        <obo:IAO_0000412>http://purl.obolibrary.org/obo/ro.owl</obo:IAO_0000412>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/ro/subsets#ro-eco"/>
         <rdfs:label xml:lang="en">has active participant</rdfs:label>
     </owl:ObjectProperty>
@@ -428,7 +427,7 @@ Is part_of the appropriate relation to use for data items and documented identit
     <!-- http://purl.obolibrary.org/obo/IAO_0020027 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0020027">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000024"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00002072"/>
         <obo:IAO_0000112 xml:lang="en">Tammy&apos;s owner role with regards to the house on 234 Evergreen Terrace; Walter&apos;s owner role with regards to the intellectual property on his movie script</obo:IAO_0000112>
         <obo:IAO_0000115 xml:lang="en">A role in a human social process that is based on a social act and whose bearer exercises exclusive control over a property, where this control is permitted by one or more deontic roles, which are parts of the owner role.</obo:IAO_0000115>
         <obo:IAO_0000117>Mathias Brochhausen</obo:IAO_0000117>
@@ -904,7 +903,7 @@ https://plato.stanford.edu/entries/rights/#FormRighHohfAnalSyst discuss the clai
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_9606">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0100026"/>
         <obo:IAO_0000111 xml:lang="en">Homo sapiens</obo:IAO_0000111>
-        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">human being</obo:IAO_0000118>
+        <obo:IAO_0000118>human being</obo:IAO_0000118>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncbitaxon.owl"/>
         <rdfs:label xml:lang="en">Homo sapiens</rdfs:label>
     </owl:Class>
@@ -946,11 +945,11 @@ This leads to my proposal: We define organization through the statements 1 -
 current place in the is_a hierarchy (material entity) or move it up to
 &apos;continuant&apos;. We leave further clarifications to BFO, and close this issue
 for now.</obo:IAO_0000116>
-        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Alan Ruttenberg</obo:IAO_0000117>
-        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Bjoern Peters</obo:IAO_0000117>
-        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Philippe Rocca-Serra</obo:IAO_0000117>
-        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Susanna Sansone</obo:IAO_0000117>
-        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GROUP: OBI</obo:IAO_0000119>
+        <obo:IAO_0000117>PERSON: Alan Ruttenberg</obo:IAO_0000117>
+        <obo:IAO_0000117>PERSON: Bjoern Peters</obo:IAO_0000117>
+        <obo:IAO_0000117>PERSON: Philippe Rocca-Serra</obo:IAO_0000117>
+        <obo:IAO_0000117>PERSON: Susanna Sansone</obo:IAO_0000117>
+        <obo:IAO_0000119>GROUP: OBI</obo:IAO_0000119>
         <rdfs:label xml:lang="en">organization</rdfs:label>
     </owl:Class>
     
@@ -966,11 +965,11 @@ for now.</obo:IAO_0000116>
         <obo:IAO_0000112 xml:lang="en">virus</obo:IAO_0000112>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000121"/>
         <obo:IAO_0000115 xml:lang="en">A material entity that is an individual living system, such as animal, plant, bacteria or virus, that is capable of replicating or reproducing, growth and maintenance in the right environment. An organism may be unicellular or made up, like humans, of many billions of cells divided into specialized tissues and organs.</obo:IAO_0000115>
-        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">10/21/09: This is a placeholder term, that should ideally be imported from the NCBI taxonomy, but the high level hierarchy there does not suit our needs (includes plasmids and &apos;other organisms&apos;)</obo:IAO_0000116>
-        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">13-02-2009:
+        <obo:IAO_0000116>10/21/09: This is a placeholder term, that should ideally be imported from the NCBI taxonomy, but the high level hierarchy there does not suit our needs (includes plasmids and &apos;other organisms&apos;)</obo:IAO_0000116>
+        <obo:IAO_0000116>13-02-2009:
 OBI doesn&apos;t take position as to  when an organism starts or ends being an organism - e.g. sperm, foetus.
 This issue is outside the scope of OBI.</obo:IAO_0000116>
-        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GROUP: OBI Biomaterial Branch</obo:IAO_0000117>
+        <obo:IAO_0000117>GROUP: OBI Biomaterial Branch</obo:IAO_0000117>
         <obo:IAO_0000119 xml:lang="en">WEB: http://en.wikipedia.org/wiki/Organism</obo:IAO_0000119>
         <rdfs:label xml:lang="en">organism</rdfs:label>
     </owl:Class>
@@ -1010,19 +1009,6 @@ This issue is outside the scope of OBI.</obo:IAO_0000116>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/OMRSE_00000024 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000024">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
-        <obo:IAO_0000115 xml:lang="en">A role inhering in an entity realized by social interactions in human society.</obo:IAO_0000115>
-        <obo:IAO_0000117 xml:lang="en">Mathias Brochhausen</obo:IAO_0000117>
-        <obo:IAO_0000412 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.obolibrary.org/obo/omrse.owl</obo:IAO_0000412>
-        <rdfs:comment xml:lang="en">Previous definition: A role played by an entity in human social processes.</rdfs:comment>
-        <rdfs:label xml:lang="en">role in human social processes</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/OMRSE_00000033 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000033">
@@ -1038,16 +1024,30 @@ This issue is outside the scope of OBI.</obo:IAO_0000116>
         <obo:IAO_0000117 xml:lang="en">William R. Hogan</obo:IAO_0000117>
         <obo:IAO_0000117 xml:lang="en">William R. Hogan
 Amanda Hicks</obo:IAO_0000117>
-        <obo:IAO_0000412 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.obolibrary.org/obo/omrse/releases/2022-04-06/omrse.owl</obo:IAO_0000412>
+        <obo:IAO_0000412>http://purl.obolibrary.org/obo/omrse/releases/2022-04-06/omrse.owl</obo:IAO_0000412>
         <rdfs:comment xml:lang="en">It is often convenient to group organizations together that otherwise might not even interact with one another. </rdfs:comment>
         <rdfs:label xml:lang="en">aggregate of organizations</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/iao/d-acts/dev/d-acts.owl#obligee_role -->
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00002072 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/iao/d-acts/dev/d-acts.owl#obligee_role">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00002072">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
+        <obo:IAO_0000115 xml:lang="en">A role that inheres in some entity that is realized in a social act.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Matthew Diller</obo:IAO_0000117>
+        <obo:IAO_0000412>http://purl.obolibrary.org/obo/omrse/releases/2023-10-08/omrse.owl</obo:IAO_0000412>
+        <dc:contributor xml:lang="en">Mathias Brochhausen</dc:contributor>
+        <rdfs:comment xml:lang="en">Previous definition: A role played by an entity in human social processes.</rdfs:comment>
+        <rdfs:label xml:lang="en">role in human social processes</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/iao/d-acts.owl#obligee_role -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/iao/d-acts.owl#obligee_role">
         <rdfs:subClassOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>
         <obo:IAO_0000115 xml:lang="en">A role that is either the specified output of an obligation generating social act or the concretization of a transferable obligation and that is realized by it&apos;s bearer being the receiving part of a process that fulfills the previously agreed upon requirements.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Sarah Bost</obo:IAO_0000117>
@@ -1057,9 +1057,9 @@ Amanda Hicks</obo:IAO_0000117>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/iao/d-acts/dev/d-acts.owl#obligor_role -->
+    <!-- http://purl.obolibrary.org/obo/iao/d-acts.owl#obligor_role -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/iao/d-acts/dev/d-acts.owl#obligor_role">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/iao/d-acts.owl#obligor_role">
         <rdfs:subClassOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>
         <obo:IAO_0000115 xml:lang="en">A role that is either the specified output of an obligation generating social act or the concretization of a transferable obligation and that is realized by it&apos;s bearer being the providing part of a process that fulfills the previously agreed upon requirements.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Sarah Bost</obo:IAO_0000117>
@@ -1070,5 +1070,5 @@ Amanda Hicks</obo:IAO_0000117>
 
 
 
-<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 4.5.25.2023-02-15T19:15:49Z) https://github.com/owlcs/owlapi -->
 
