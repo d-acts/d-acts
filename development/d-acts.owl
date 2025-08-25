@@ -780,7 +780,7 @@ https://plato.stanford.edu/entries/rights/#FormRighHohfAnalSyst discuss the clai
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0021022">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
-        <obo:IAO_0000115 xml:lang="en">A role inhering in a human being or an organization or an aggregate of any of the aforementioned that is realized by the bearer being the agent in a declaration.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A power role inhering in a human being or an organization or an aggregate of any of the aforementioned that is realized by the bearer being the agent in a deontic declaration.</obo:IAO_0000115>
         <obo:IAO_0000117>Mathias Brochhausen</obo:IAO_0000117>
         <obo:IAO_0000118 xml:lang="en">declaration performer role</obo:IAO_0000118>
         <rdfs:label xml:lang="en">deontic declaration performer role</rdfs:label>
