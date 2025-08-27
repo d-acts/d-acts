@@ -13,7 +13,7 @@
      xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/iao/d-acts.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/iao/d-acts/release/2025-08-25/d-acts.owl.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/iao/d-acts/release/2025-08-27/d-acts.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/iao/pno.owl"/>
         <obo:IAO_0000597>IAO_0021000-IAO_0021999</obo:IAO_0000597>
         <dc:contributor>Cooper Stansbury</dc:contributor>
@@ -38,7 +38,7 @@ However, there are some amendments from our side which are to be found in the do
         <dc:license rdf:resource="http://creativecommons.org/licenses/by/3.0/"/>
         <dc:title xml:lang="en">document act ontology</dc:title>
         <terms:license xml:lang="en">http://creativecommons.org/licenses/by/3.0/</terms:license>
-        <owl:versionInfo xml:lang="en">release version - 2025-08-26</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">release version - 2025-08-27</owl:versionInfo>
     </owl:Ontology>
     
 
